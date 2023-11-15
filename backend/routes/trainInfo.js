@@ -44,7 +44,7 @@ async function getTrainNoInfo(trainNo) {
         console.error('Error fetching the webpage:', error);
     }
 
-    console.log(trainInfo[0]);
+    //console.log(trainInfo[0]);
 }
 
 // Define a route with a parameter

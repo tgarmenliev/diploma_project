@@ -13,6 +13,7 @@ const port = 3000;
 
 app.use(cors())
 
+//app.use('/api', apiRoutes);
 app.use('/api/live', liveRoutes);
 app.use('/api/trainInfo', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);
