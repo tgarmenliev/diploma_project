@@ -6,6 +6,7 @@ var cors = require('cors')
 const liveRoutes = require('./routes/live');
 const trainInfoRoutes = require('./routes/trainInfo');
 const scheduleRoutes = require('./routes/schedule');
+const scheduleSecRoutes = require('./routes/schedule-sec');
 
 const app = express();
 const port = 3000;
@@ -15,6 +16,7 @@ app.use(cors())
 app.use('/api/live', liveRoutes);
 app.use('/api/trainInfo', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);
+app.use('/api/schedule-sec', scheduleSecRoutes);
 
 // Start the server
 app.listen(port, () => {
