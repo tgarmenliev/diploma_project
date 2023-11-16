@@ -126,11 +126,7 @@ async function get_trains_info(fromStation, toStation, date) {
 
         divText = splitWords(divText);
 
-        console.log(divText);
-
         trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo);
-
-        console.log(trainsInfo);
 
         return trainsInfo;
     }
@@ -156,7 +152,7 @@ function formatDate(date) {
 
     string += date.getFullYear();
   
-    console.log(string);
+    //console.log(string);
   
     return string;
 }

@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
+// time format
 // "2023-11-15T14:29:39.3985234+02:00"
 
 const get_trains_info = async (fromStation, toStation, date) => {
@@ -22,9 +23,7 @@ const get_trains_info = async (fromStation, toStation, date) => {
     throw Error(response.message);
   }
 
-
   //needed: name, stations, depart, arrive, total_time, distance
-  //console.log(response.data[0].options);
 
   var length = response.data[0].options.length;
   var trains = [];
@@ -40,10 +39,6 @@ const get_trains_info = async (fromStation, toStation, date) => {
     }
     trains.push(train);
   }
-
-  //console.log(trains.length)
-
-  //response.data[0].options.forEach(train, index => console.log(train.trains[index].name));
 
   return trains;
 };
@@ -78,7 +73,7 @@ function formatDate(date) {
   return string;
 }
 
-router.get('/:from/:to', async (req, res) => {
+/*router.get('/:from/:to', async (req, res) => {
   const fromStation = req.params.from;
   const toStation = req.params.to;
   const currentDate = new Date(); // Get the current date
@@ -97,19 +92,20 @@ router.get('/:from/:to', async (req, res) => {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
-});
+});*/
 
-/*router.get('/:from/:to/:date', async (req, res) => {
+router.get('/:from/:to/:date', async (req, res) => {
   const from = req.params.from;
   const to = req.params.to;
+
   const date = req.params.date;
+  const formattedDate = formatDate(new Date(date)); // Format the date as a string
 
   try {
-    let trains_info = await get_trains_info(stationName, to, date);
+    let trains_info = await get_trains_info(from, to, formattedDate);
 
     const data = {
-      trains_info: trains_info,
-      info: 'Hello from live'
+      trains_info: trains_info
     };
 
     res.json(data);
@@ -118,6 +114,6 @@ router.get('/:from/:to', async (req, res) => {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
-});*/
+});
 
 module.exports = router;

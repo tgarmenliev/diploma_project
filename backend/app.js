@@ -17,7 +17,7 @@ app.use(cors())
 app.use('/api/live', liveRoutes);
 app.use('/api/trainInfo', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);
-app.use('/api/schedule-sec', scheduleSecRoutes);
+app.use('/api/schedule', scheduleSecRoutes);
 
 // Start the server
 app.listen(port, () => {
