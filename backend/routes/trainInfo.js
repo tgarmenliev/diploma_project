@@ -18,6 +18,60 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
+function makeJsonTrainInfo(string, trainNumber) {
+  let result = {};
+
+  let type = "";
+  let fromIndex = 0;
+
+  for(let index = 0; index < string.length; index++) {
+    type += string[index];
+
+    if(string[index] === 'влак') {
+      fromIndex = index + 1;
+      break;
+    }
+
+    type += " ";
+  }
+
+  result = {
+    type: type,
+    trainNumber: trainNumber,
+    stations: [],
+  };
+
+  for(let index = fromIndex; index < string.length; index++) {
+    type = "";
+
+    for(; index < string.length; index++) {
+      
+      var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
+
+      if ((timePattern.test(string[index])) || (string[index] === '↦') || (string[index] === '↤')) {
+        break;
+      }
+
+      if(type !== "") {
+        type += " ";
+      }
+
+      type += string[index];
+    }
+
+
+    result.stations.push({
+      station: type,
+      arrive: string[index],
+      depart: string[index + 1],
+    });
+
+    index++;
+  }
+
+  return result;
+}
+
 async function getTrainNoInfo(trainNo) {
     const url = 'https://razpisanie.bdz.bg/bg/train-info/' + trainNo;
 
@@ -34,17 +88,17 @@ async function getTrainNoInfo(trainNo) {
         const $ = cheerio.load(response.data);
 
         // Select the specific <div> and extract all the text
-        const divText = $(divSelector).text().trim();
+        let divText = $(divSelector).text().trim();
 
-        trainInfo = splitWords(divText);
+        divText = splitWords(divText);
 
-        return trainInfo;
+        divText = makeJsonTrainInfo(divText, trainNo);
+
+        return divText;
     }
     catch(error) {
         console.error('Error fetching the webpage:', error);
     }
-
-    //console.log(trainInfo[0]);
 }
 
 // Define a route with a parameter
@@ -56,7 +110,6 @@ router.get('/:trainNo', async (req, res) => {
   
       const data = {
         trains_info: trains_info,
-        info: 'Hello from train info'
       };
   
       res.json(data);
