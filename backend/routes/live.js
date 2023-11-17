@@ -66,14 +66,11 @@ function makeTrainJson(string, trainNum, delayInfo) {
     type: trainNum[0],
     trainNum: trainNum[1]
   };
-  console.log("prefix: " + prefix);
   if(prefix) {
-    console.log("prefix is 1");
     result["time"] = string[1];
     result["delayedTime"] = string[0];
   }
   else {
-    console.log("prefix is 0");
     result["time"] = string[0];
   }
 
