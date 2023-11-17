@@ -18,6 +18,68 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
+function get_delay_info(info) {
+  let delayMinutes = 0;
+  let delayString = "";
+  let delayInfo = "";
+
+  for(let index = 0; index < 3; index++) {
+    delayString += info[index];
+    delayString += " ";
+
+    if(index === 1) {
+      delayMinutes = parseInt(info[index]);
+    }
+
+  }
+
+  for(let index = 3; index < info.length; index++) {
+    delayInfo += info[index];
+    delayInfo += " ";
+  }
+
+  return {
+    delayMinutes: delayMinutes,
+    delayString: delayString,
+    delayInfo: delayInfo,
+  };
+}
+
+function makeTrainJson(string, trainNum, delayInfo) {
+  let result = {};
+
+  let prefix = (delayInfo.length !== 0);
+
+  let station = "";
+
+  for(let index = 1 + prefix; index < string.length; index++) {
+    station += string[index];
+    station += " ";
+  }
+
+  result = {
+    direction: station,
+    time: 0,
+    isDelayed: prefix,
+    delayedTime: 0,
+    delayInfo: delayInfo,
+    type: trainNum[0],
+    trainNum: trainNum[1]
+  };
+  console.log("prefix: " + prefix);
+  if(prefix) {
+    console.log("prefix is 1");
+    result["time"] = string[1];
+    result["delayedTime"] = string[0];
+  }
+  else {
+    console.log("prefix is 0");
+    result["time"] = string[0];
+  }
+
+  return result;
+}
+
 async function get_trains_info(station) {
 
   const url = 'https://live.bdz.bg/bg/' + station + '/departures';
@@ -29,16 +91,31 @@ async function get_trains_info(station) {
     // Load the HTML content of the page into Cheerio
     const content = cheerio.load(response.data);
 
-    // Selector for the specific <div> you want to scrape
-    const divSelector = '.timetableItem';
+    let trainsInfo = [];
 
-    // Select the specific <div> and extract all the text
-    const divText = content(divSelector).text().trim();
+    content('.timetableItem').each((index, element) => {
+      let currInfo = {};
 
-    // Split the text into an array of words
-    const wordsArray = splitWords(divText);
+      let timeNames = content(element).find('.mb-lg-0').text(); // Replace 'time-class' with the actual class or selector for the time
+      timeNames = splitWords(timeNames);
+
+      let trainNum = content(element).find('.text-nowrap').text(); // Replace 'train-name-class' with the actual class or selector for the train name
+      trainNum = splitWords(trainNum);
+
+      let delayInfo = content(element).find('.col-lg-3').text();
+      delayInfo = splitWords(delayInfo);
+      if(delayInfo.length !== 0) {
+        delayInfo = get_delay_info(delayInfo);
+      }
+
+      currInfo = makeTrainJson(timeNames, trainNum, delayInfo);
+
+      trainsInfo.push(currInfo);
+      
+      //console.log(currInfo);
+    });
     
-    return wordsArray;
+    return trainsInfo;
 
   } catch (error) {
     throw error;
@@ -54,7 +131,6 @@ router.get('/:stationName', async (req, res) => {
 
     const data = {
       trains_info: trains_info,
-      info: 'Hello from live'
     };
 
     res.json(data);
