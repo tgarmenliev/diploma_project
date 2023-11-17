@@ -88,6 +88,20 @@ async function get_trains_info(station) {
     // Load the HTML content of the page into Cheerio
     const content = cheerio.load(response.data);
 
+    //const divSelector = '.mb-0';
+    //let divText = content(divSelector).text().trim();
+    //console.log(divText);
+
+    let result = {};
+
+    let station = "";
+
+    content('#content').each((index, element) => {
+      station = content(element).find('.mb-0').text();
+      station = splitWords(station);
+      station = station[station.length - 1];
+    });
+
     let trainsInfo = [];
 
     content('.timetableItem').each((index, element) => {
@@ -108,11 +122,14 @@ async function get_trains_info(station) {
       currInfo = makeTrainJson(timeNames, trainNum, delayInfo);
 
       trainsInfo.push(currInfo);
-      
-      //console.log(currInfo);
     });
+
+    result = {
+      station: station,
+      trains: trainsInfo,
+    };
     
-    return trainsInfo;
+    return result;
 
   } catch (error) {
     throw error;

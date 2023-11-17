@@ -1,0 +1,133 @@
+{
+    "trains_info": {
+        "type": "Пътнически влак",
+        "trainNumber": "30123",
+        "stations": [
+            {
+                "station": "София",
+                "arrive": "↦",
+                "depart": "19:39"
+            },
+            {
+                "station": "Подуяне Пътническа",
+                "arrive": "19:47",
+                "depart": "19:48"
+            },
+            {
+                "station": "Подуяне Разпр.ср.р.",
+                "arrive": "19:51",
+                "depart": "19:51"
+            },
+            {
+                "station": "Смирненски",
+                "arrive": "19:54",
+                "depart": "19:54"
+            },
+            {
+                "station": "Искърско шосе",
+                "arrive": "19:58",
+                "depart": "19:58"
+            },
+            {
+                "station": "Искър",
+                "arrive": "20:00",
+                "depart": "20:01"
+            },
+            {
+                "station": "Казичене",
+                "arrive": "20:06",
+                "depart": "20:07"
+            },
+            {
+                "station": "Равно поле",
+                "arrive": "20:12",
+                "depart": "20:12"
+            },
+            {
+                "station": "Мусачево",
+                "arrive": "20:15",
+                "depart": "20:16"
+            },
+            {
+                "station": "Столник",
+                "arrive": "20:23",
+                "depart": "20:29"
+            },
+            {
+                "station": "Горна Малина",
+                "arrive": "20:36",
+                "depart": "20:36"
+            },
+            {
+                "station": "Негушево",
+                "arrive": "20:41",
+                "depart": "20:41"
+            },
+            {
+                "station": "Саранци",
+                "arrive": "20:44",
+                "depart": "20:45"
+            },
+            {
+                "station": "Чеканчево",
+                "arrive": "20:48",
+                "depart": "20:48"
+            },
+            {
+                "station": "Макоцево",
+                "arrive": "20:51",
+                "depart": "20:52"
+            },
+            {
+                "station": "Макоцево - спирка",
+                "arrive": "20:54",
+                "depart": "20:54"
+            },
+            {
+                "station": "Долно Камарци",
+                "arrive": "20:59",
+                "depart": "21:00"
+            },
+            {
+                "station": "Буново",
+                "arrive": "21:06",
+                "depart": "21:06"
+            },
+            {
+                "station": "Мирково",
+                "arrive": "21:11",
+                "depart": "21:12"
+            },
+            {
+                "station": "Мирково - спирка",
+                "arrive": "21:15",
+                "depart": "21:15"
+            },
+            {
+                "station": "Челопеч",
+                "arrive": "21:21",
+                "depart": "21:21"
+            },
+            {
+                "station": "Златица",
+                "arrive": "21:24",
+                "depart": "21:25"
+            },
+            {
+                "station": "Пирдоп",
+                "arrive": "21:29",
+                "depart": "21:30"
+            },
+            {
+                "station": "Антон",
+                "arrive": "21:35",
+                "depart": "21:36"
+            },
+            {
+                "station": "Копривщица",
+                "arrive": "21:44",
+                "depart": "↤"
+            }
+        ]
+    }
+}

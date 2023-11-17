@@ -1,0 +1,51 @@
+{
+    "trains_info": {
+        "station": "Искър",
+        "trains": [
+            {
+                "direction": "София ",
+                "time": "21:44",
+                "isDelayed": true,
+                "delayedTime": "21:40",
+                "delayInfo": {
+                    "delayMinutes": 4,
+                    "delayString": "Закъснение 4 мин. ",
+                    "delayInfo": ""
+                },
+                "type": "БВ",
+                "trainNum": "1614"
+            },
+            {
+                "direction": "Варна ",
+                "time": "21:43",
+                "isDelayed": true,
+                "delayedTime": "21:39",
+                "delayInfo": {
+                    "delayMinutes": 4,
+                    "delayString": "Закъснение 4 мин. ",
+                    "delayInfo": ""
+                },
+                "type": "БВ",
+                "trainNum": "8657"
+            },
+            {
+                "direction": "Бургас ",
+                "time": "22:34",
+                "isDelayed": false,
+                "delayedTime": 0,
+                "delayInfo": [],
+                "type": "БВ",
+                "trainNum": "8627"
+            },
+            {
+                "direction": "Варна ",
+                "time": "23:15",
+                "isDelayed": false,
+                "delayedTime": 0,
+                "delayInfo": [],
+                "type": "БВ",
+                "trainNum": "3637"
+            }
+        ]
+    }
+}
