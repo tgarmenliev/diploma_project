@@ -31,7 +31,11 @@ function makeMoreInfoTrainJSON(string) {
     return trains;
 }
 
-function makeJsonSchedule(string, numOfTransfers, moreInfoJson) {
+function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date) {
+
+    let result = {};
+
+    result["date"] = date;
 
     let trains = [];
     let curr_train = {};
@@ -40,9 +44,17 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson) {
 
         let transfer_stations = [];
 
+        console.log(string);
+
         index++;
         curr_train = {
-            from: string[index]
+            "duration": "",
+            "depart": "",
+            "arrive": "",
+            "depart_date": "",
+            "arrive_date": "",
+            "num_of_transfers": 0,
+            "trains": [],
         }
         index += 2;
 
@@ -93,6 +105,26 @@ function splitWords(inputString) {
     return textWithoutSpaces;
 }
 
+function getRoute(string) {
+    let route = "";
+    
+    var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
+
+    for(let index = 1; index < string.length; index++) {
+        if (timePattern.test(string[index])) {
+            break;
+          }
+    
+          if(route !== "") {
+            route += " ";
+          }
+    
+          route += string[index];
+    }
+
+    return route;
+}
+
 async function get_trains_info(fromStation, toStation, date) {
     const url = "https://razpisanie.bdz.bg/bg/" + fromStation + "/" + toStation + "/" + date;
 
@@ -128,7 +160,15 @@ async function get_trains_info(fromStation, toStation, date) {
 
         trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo);
 
-        return trainsInfo;
+        // translate from and to stations!!!!!
+
+        let result = {
+            "date": date,
+            "route": getRoute(divText),
+            "options": trainsInfo,
+        };
+
+        return result;
     }
     catch(error) {
         console.error('Error fetching the webpage:', error);
@@ -161,17 +201,14 @@ function formatDate(date) {
 router.get('/:from/:to', async (req, res) => {
     const fromStation = req.params.from;
     const toStation = req.params.to;
+
     const currentDate = new Date(); // Get the current date
     const formattedDate = formatDate(currentDate); // Format the date as a string
 
     try {
         let trains_info = await get_trains_info(fromStation, toStation, formattedDate);
-        
-        const data = {
-            trains_info: trains_info
-        };
 
-        res.json(data);
+        res.json(trains_info);
     } catch (error) {
         // Handle the error appropriately, e.g., send an error response
         console.error('Error:', error);

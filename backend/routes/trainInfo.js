@@ -43,10 +43,9 @@ function makeJsonTrainInfo(string, trainNumber) {
 
   for(let index = fromIndex; index < string.length; index++) {
     type = "";
+    var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
     for(; index < string.length; index++) {
-      
-      var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
       if ((timePattern.test(string[index])) || (string[index] === '↦') || (string[index] === '↤')) {
         break;

@@ -58,13 +58,11 @@ function makeTrainsToOption(trains) {
 
 }
 
-function makeOptionsTrains(response) {
-  //needed: date, name, options
+function makeOptionsTrains(options) {
   // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
   // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
   let result = [];
-  let options = response.data[0].options;
 
   for(let index = 0; index < options.length; index++)
   {
@@ -118,22 +116,7 @@ const get_trains_info = async (fromStation, toStation, date) => {
   result["date"] = response.data[0].date;
   result["route"] = response.data[0].name;
 
-  result["options"] = makeOptionsTrains(response);
-
-  /*var length = response.data[0].options.length;
-  var trains = [];
-  for (var i = 0; i < length; i++) {
-    let item = response.data[0].options[i];
-    var train = {
-      name: item.trains[0].name,
-      stations: item.trains[0].stations,
-      depart: item.trains[0].depart,
-      arrive: item.trains[0].arrive,
-      total_time: item.trains[0].total_time,
-      distance: item.trains[0].distance
-    }
-    trains.push(train);
-  }*/
+  result["options"] = makeOptionsTrains(response.data[0].options);
 
   return result;
 };
