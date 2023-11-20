@@ -51,7 +51,7 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson) {
             index += 2;
         }
 
-        curr_train["num_of_transfers"] = numOfTransfers[curr_cycle];
+        curr_train["num_of_transfers"] = transfer_stations.length;
         curr_train["transfer_stations"] = transfer_stations;
         curr_train["to"] = string[index++];
         curr_train["depart"] = string[index++];

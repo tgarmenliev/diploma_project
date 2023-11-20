@@ -6,7 +6,94 @@ const axios = require('axios');
 // time format
 // "2023-11-15T14:29:39.3985234+02:00"
 
+function splitWords(inputString) {
+
+  let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
+
+  // Use a regular expression to split words by spaces
+  textWithoutSpaces = textWithoutSpaces.split(/\s+/);
+
+  // Filter out any empty strings
+  // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
+  textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване');
+
+  return textWithoutSpaces;
+}
+
+function makeTrainsToOption(trains) {
+  // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+
+  let result = [];
+
+  for(let index = 0; index < trains.length; index++)
+  {
+    let currentTrain = {};
+
+    let nameWithoutSpaces = splitWords(trains[index].name);
+
+    let splitStations = trains[index].stations.split(" - ");
+
+    currentTrain["from"] = splitStations[0];
+    currentTrain["to"] = splitStations[1];
+
+    currentTrain["depart"] = trains[index].depart;
+    currentTrain["arrive"] = trains[index].arrive;
+    currentTrain["depart_date"] = trains[index].depart_date;
+    currentTrain["arrive_date"] = trains[index].arrive_date;
+
+    currentTrain["train_type"] = nameWithoutSpaces[0];
+    currentTrain["train_number"] = nameWithoutSpaces[1];
+
+    currentTrain["duration"] = trains[index].total_time;
+
+    if(trains[index].time_to_wait === "00:00")
+      currentTrain["time_to_wait_next"] = 0;
+    else
+      currentTrain["time_to_wait_next"] = trains[index].time_to_wait;
+
+    result.push(currentTrain);
+  }
+
+  return result;
+
+}
+
+function makeOptionsTrains(response) {
+  //needed: date, name, options
+  // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
+  // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+
+  let result = [];
+  let options = response.data[0].options;
+
+  for(let index = 0; index < options.length; index++)
+  {
+    let currentOption = {};
+
+    currentOption["duration"] = options[index].total_time;
+    currentOption["departure_time"] = options[index].departure_time;
+    currentOption["arrival_time"] = options[index].arrival_time;
+    currentOption["departure_date"] = options[index].departure_date;
+    currentOption["arrival_date"] = options[index].arrival_date;
+    currentOption["num_of_transfers"] = options[index].trains.length - 1;
+
+    currentOption["trains"] = makeTrainsToOption(options[index].trains);
+
+    result.push(currentOption);
+  }
+
+  return result;
+}
+
 const get_trains_info = async (fromStation, toStation, date) => {
+  // translate stations!!!
+  //let from = fromStation.toUpperCase();
+  //let to = toStation.toUpperCase();
+
+  //from = translateStation(from);
+  //to = translateStation(to);
+
+
   const response = await axios.post('https://tickets.bdz.bg/portal/api/POSRoute/Trains', [
     {
       "station_from": fromStation,
@@ -23,9 +110,17 @@ const get_trains_info = async (fromStation, toStation, date) => {
     throw Error(response.message);
   }
 
-  //needed: name, stations, depart, arrive, total_time, distance
+  //needed: date, name, options
+  // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
+  // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
-  var length = response.data[0].options.length;
+  let result = {}
+  result["date"] = response.data[0].date;
+  result["route"] = response.data[0].name;
+
+  result["options"] = makeOptionsTrains(response);
+
+  /*var length = response.data[0].options.length;
   var trains = [];
   for (var i = 0; i < length; i++) {
     let item = response.data[0].options[i];
@@ -38,9 +133,9 @@ const get_trains_info = async (fromStation, toStation, date) => {
       distance: item.trains[0].distance
     }
     trains.push(train);
-  }
+  }*/
 
-  return trains;
+  return result;
 };
 
 function formatDate(date) {
@@ -73,27 +168,6 @@ function formatDate(date) {
   return string;
 }
 
-/*router.get('/:from/:to', async (req, res) => {
-  const fromStation = req.params.from;
-  const toStation = req.params.to;
-  const currentDate = new Date(); // Get the current date
-  const formattedDate = formatDate(currentDate); // Format the date as a string
-
-  try {
-    let trains_info = await get_trains_info(fromStation, toStation, formattedDate);
-    
-    const data = {
-      trains_info: trains_info
-    };
-
-    res.json(data);
-  } catch (error) {
-    // Handle the error appropriately, e.g., send an error response
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-});*/
-
 router.get('/:from/:to/:date', async (req, res) => {
   const from = req.params.from;
   const to = req.params.to;
@@ -104,11 +178,7 @@ router.get('/:from/:to/:date', async (req, res) => {
   try {
     let trains_info = await get_trains_info(from, to, formattedDate);
 
-    const data = {
-      trains_info: trains_info
-    };
-
-    res.json(data);
+    res.json(trains_info);
   } catch (error) {
     // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);
