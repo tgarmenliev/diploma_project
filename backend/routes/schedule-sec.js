@@ -31,11 +31,7 @@ function makeMoreInfoTrainJSON(string) {
     return trains;
 }
 
-function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date) {
-
-    let result = {};
-
-    result["date"] = date;
+function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) {
 
     let trains = [];
     let curr_train = {};
@@ -44,18 +40,20 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date) {
 
         let transfer_stations = [];
 
-        console.log(string);
+        //console.log(string);
 
         index++;
+
         curr_train = {
             "duration": "",
-            "depart": "",
-            "arrive": "",
-            "depart_date": "",
-            "arrive_date": "",
+            "departure_time": "",
+            "arrival_time": "",
+            "departure_date": date,
+            "arrival_date": "",
             "num_of_transfers": 0,
             "trains": [],
         }
+        
         index += 2;
 
         for(let j = 0; j < numOfTransfers[curr_cycle]; j++) {
@@ -64,17 +62,26 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date) {
         }
 
         curr_train["num_of_transfers"] = transfer_stations.length;
-        curr_train["transfer_stations"] = transfer_stations;
         curr_train["to"] = string[index++];
-        curr_train["depart"] = string[index++];
+        curr_train["departure_time"] = string[index];
+
+        let arrayDep = string[index].split(":");
 
         // Skip dashes
-        index++;
+        index += 2;
 
-        curr_train["arrive"] = string[index++];
+        curr_train["arrival_time"] = string[index];
+
+        let arrayArr = string[index].split(":");
+
+        if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
+            curr_train["arrival_date"] = tommorow;
+        } else {
+            curr_train["arrival_date"] = date;
+        }
 
         // Skip useless info
-        index += 2;
+        index += 3;
 
         curr_train["train_type"] = string[index++];
         curr_train["train_number"] = string[index++];
@@ -122,10 +129,10 @@ function getRoute(string) {
           route += string[index];
     }
 
-    return route;
+    return route.toUpperCase();
 }
 
-async function get_trains_info(fromStation, toStation, date) {
+async function get_trains_info(fromStation, toStation, date, tommorow) {
     const url = "https://razpisanie.bdz.bg/bg/" + fromStation + "/" + toStation + "/" + date;
 
     const divSelector = '.schedule-table';
@@ -158,7 +165,7 @@ async function get_trains_info(fromStation, toStation, date) {
 
         divText = splitWords(divText);
 
-        trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo);
+        trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo, date, tommorow);
 
         // translate from and to stations!!!!!
 
@@ -205,8 +212,12 @@ router.get('/:from/:to', async (req, res) => {
     const currentDate = new Date(); // Get the current date
     const formattedDate = formatDate(currentDate); // Format the date as a string
 
+    let tommorow = new Date();
+    tommorow.setDate(currentDate.getDate() + 1);
+    const formattedTommorow = formatDate(tommorow);
+
     try {
-        let trains_info = await get_trains_info(fromStation, toStation, formattedDate);
+        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTommorow);
 
         res.json(trains_info);
     } catch (error) {

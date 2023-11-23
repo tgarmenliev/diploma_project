@@ -1,0 +1,37 @@
+да се добави към schedule:
+	- дата
+	- маршрут
+	
+schedule example:
+
+{
+	date:
+	route:
+	options:
+	[
+		{
+			duration:
+			num_of_transfers:
+			transfer_stations:
+			depart:
+			arrive:
+			depart_date:
+			arrive_date:
+			trains:
+			[
+				{
+					from:
+					to:
+					depart:
+					arrive:
+					train_number:
+					train_type:
+					duration:
+					time_to_wait_next:
+				}
+				... //more trains
+			]
+		}
+		... //more options for trains
+	]
+}
