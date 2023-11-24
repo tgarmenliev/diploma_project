@@ -65,7 +65,7 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
             curr_train["arrive_date"] = date;
         }
 
-        trains.append(curr_train);
+        trains.push(curr_train);
         return trains;
     }
     
