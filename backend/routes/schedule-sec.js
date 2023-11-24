@@ -230,15 +230,15 @@ function getRoute(string) {
     var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
     for(let index = 1; index < string.length; index++) {
-        if (timePattern.test(string[index])) {
+        if(index === 1) {
+            route += string[index];
+        }
+
+        if (timePattern.test(string[index + 1])) {
+            route += " - ";
+            route += string[index];
             break;
-          }
-    
-          if(route !== "") {
-            route += " ";
-          }
-    
-          route += string[index];
+        }
     }
 
     return route.toUpperCase();

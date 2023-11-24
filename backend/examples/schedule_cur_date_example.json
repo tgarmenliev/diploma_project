@@ -1,351 +1,404 @@
 {
-    "trains_info": [
+    "date": "24.11.2023",
+    "route": "ПИРДОП - ПЛОВДИВ",
+    "options": [
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "1",
-            "transfer_stations": [
-                "Казичене"
-            ],
-            "to": "Пловдив",
-            "depart": "05:05",
-            "arrive": "08:56",
-            "train_type": "БВ",
-            "train_number": "3636",
             "duration": "03:51",
-            "more_info": [
+            "departure_time": "05:05",
+            "arrival_time": "08:56",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 1,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "05:05",
+                    "from": "Пирдоп",
+                    "to": "Казичене",
+                    "depart": "05:05",
+                    "arrive": "06:28",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "3636"
+                    "train_number": "3636",
+                    "duration": "01:23",
+                    "time_to_wait_next": "00:18"
                 },
                 {
-                    "station": "Казичене",
-                    "arrive_at": "06:28",
-                    "depart_at": "06:46",
+                    "from": "Казичене",
+                    "to": "Пловдив",
+                    "depart": "06:46",
+                    "arrive": "08:56",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "8601"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "08:56",
-                    "depart_at": "↤",
-                    "train_type": "БВ",
-                    "train_number": "8601"
+                    "train_number": "8601",
+                    "duration": "02:10",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "2",
-            "transfer_stations": [
-                "Карлово",
-                "Филипово"
-            ],
-            "to": "Пловдив",
-            "depart": "07:45",
-            "arrive": "11:00",
-            "train_type": "ПВ",
-            "train_number": "30111",
             "duration": "03:15",
-            "more_info": [
+            "departure_time": "07:45",
+            "arrival_time": "11:00",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 2,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "07:45",
+                    "from": "Пирдоп",
+                    "to": "Карлово",
+                    "depart": "07:45",
+                    "arrive": "08:59",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "ПВ",
-                    "train_number": "30111"
+                    "train_number": "30111",
+                    "duration": "01:14",
+                    "time_to_wait_next": "00:21"
                 },
                 {
-                    "station": "Карлово",
-                    "arrive_at": "08:59",
-                    "depart_at": "09:20",
+                    "from": "Карлово",
+                    "to": "Филипово",
+                    "depart": "09:20",
+                    "arrive": "10:31",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "КПВ",
-                    "train_number": "82203"
+                    "train_number": "82203",
+                    "duration": "01:11",
+                    "time_to_wait_next": "00:09"
                 },
                 {
-                    "station": "Филипово",
-                    "arrive_at": "10:31",
-                    "depart_at": "10:40",
+                    "from": "Филипово",
+                    "to": "Пловдив",
+                    "depart": "10:40",
+                    "arrive": "11:00",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "Авт",
-                    "train_number": "82203"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "11:00",
-                    "depart_at": "↤",
-                    "train_type": "Авт",
-                    "train_number": "82203"
+                    "train_number": "82203",
+                    "duration": "00:20",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "2",
-            "transfer_stations": [
-                "Карлово",
-                "Филипово"
-            ],
-            "to": "Пловдив",
-            "depart": "08:55",
-            "arrive": "14:00",
-            "train_type": "БВ",
-            "train_number": "3621",
             "duration": "05:05",
-            "more_info": [
+            "departure_time": "08:55",
+            "arrival_time": "14:00",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 2,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "08:55",
+                    "from": "Пирдоп",
+                    "to": "Карлово",
+                    "depart": "08:55",
+                    "arrive": "09:45",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "3621"
+                    "train_number": "3621",
+                    "duration": "00:50",
+                    "time_to_wait_next": "02:35"
                 },
                 {
-                    "station": "Карлово",
-                    "arrive_at": "09:45",
-                    "depart_at": "12:20",
+                    "from": "Карлово",
+                    "to": "Филипово",
+                    "depart": "12:20",
+                    "arrive": "13:31",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "КПВ",
-                    "train_number": "82205"
+                    "train_number": "82205",
+                    "duration": "01:11",
+                    "time_to_wait_next": "00:09"
                 },
                 {
-                    "station": "Филипово",
-                    "arrive_at": "13:31",
-                    "depart_at": "13:40",
+                    "from": "Филипово",
+                    "to": "Пловдив",
+                    "depart": "13:40",
+                    "arrive": "14:00",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "Авт",
-                    "train_number": "82205"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "14:00",
-                    "depart_at": "↤",
-                    "train_type": "Авт",
-                    "train_number": "82205"
+                    "train_number": "82205",
+                    "duration": "00:20",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "1",
-            "transfer_stations": [
-                "Казичене"
-            ],
-            "to": "Пловдив",
-            "depart": "10:12",
-            "arrive": "14:43",
-            "train_type": "БВ",
-            "train_number": "3602",
             "duration": "04:31",
-            "more_info": null
+            "departure_time": "10:12",
+            "arrival_time": "14:43",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 1,
+            "trains": [
+                {
+                    "from": "Пирдоп",
+                    "to": "Казичене",
+                    "depart": "10:12",
+                    "arrive": "11:09",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
+                    "train_type": "БВ",
+                    "train_number": "3602",
+                    "duration": "00:57",
+                    "time_to_wait_next": "00:55"
+                },
+                {
+                    "from": "Казичене",
+                    "to": "Пловдив",
+                    "depart": "12:04",
+                    "arrive": "14:43",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
+                    "train_type": "ПВ",
+                    "train_number": "10113",
+                    "duration": "02:39",
+                    "time_to_wait_next": 0
+                }
+            ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "1",
-            "transfer_stations": [
-                "Казичене"
-            ],
-            "to": "Пловдив",
-            "depart": "13:27",
-            "arrive": "18:12",
-            "train_type": "БВ",
-            "train_number": "3692",
             "duration": "04:45",
-            "more_info": [
+            "departure_time": "13:27",
+            "arrival_time": "18:12",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 1,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "13:27",
+                    "from": "Пирдоп",
+                    "to": "Казичене",
+                    "depart": "13:27",
+                    "arrive": "14:33",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "3692"
+                    "train_number": "3692",
+                    "duration": "01:06",
+                    "time_to_wait_next": "01:13"
                 },
                 {
-                    "station": "Казичене",
-                    "arrive_at": "14:33",
-                    "depart_at": "15:46",
+                    "from": "Казичене",
+                    "to": "Пловдив",
+                    "depart": "15:46",
+                    "arrive": "18:12",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "1613"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "18:12",
-                    "depart_at": "↤",
-                    "train_type": "БВ",
-                    "train_number": "1613"
+                    "train_number": "1613",
+                    "duration": "02:26",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "2",
-            "transfer_stations": [
-                "Карлово",
-                "Филипово"
-            ],
-            "to": "Пловдив",
-            "depart": "15:04",
-            "arrive": "17:50",
-            "train_type": "БВ",
-            "train_number": "3623",
             "duration": "02:46",
-            "more_info": [
+            "departure_time": "15:04",
+            "arrival_time": "17:50",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 2,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "15:04",
+                    "from": "Пирдоп",
+                    "to": "Карлово",
+                    "depart": "15:04",
+                    "arrive": "15:52",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "3623"
+                    "train_number": "3623",
+                    "duration": "00:48",
+                    "time_to_wait_next": "00:05"
                 },
                 {
-                    "station": "Карлово",
-                    "arrive_at": "15:52",
-                    "depart_at": "15:57",
+                    "from": "Карлово",
+                    "to": "Филипово",
+                    "depart": "15:57",
+                    "arrive": "17:05",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "КПВ",
-                    "train_number": "82273"
+                    "train_number": "82273",
+                    "duration": "01:08",
+                    "time_to_wait_next": "00:25"
                 },
                 {
-                    "station": "Филипово",
-                    "arrive_at": "17:05",
-                    "depart_at": "17:30",
+                    "from": "Филипово",
+                    "to": "Пловдив",
+                    "depart": "17:30",
+                    "arrive": "17:50",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "Авт",
-                    "train_number": "80102"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "17:50",
-                    "depart_at": "↤",
-                    "train_type": "Авт",
-                    "train_number": "80102"
+                    "train_number": "80102",
+                    "duration": "00:20",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "1",
-            "transfer_stations": [
-                "Казичене"
-            ],
-            "to": "Пловдив",
-            "depart": "15:17",
-            "arrive": "19:10",
-            "train_type": "ПВ",
-            "train_number": "30116",
             "duration": "03:53",
-            "more_info": [
+            "departure_time": "15:17",
+            "arrival_time": "19:10",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 1,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "15:17",
+                    "from": "Пирдоп",
+                    "to": "Казичене",
+                    "depart": "15:17",
+                    "arrive": "16:38",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "ПВ",
-                    "train_number": "30116"
+                    "train_number": "30116",
+                    "duration": "01:21",
+                    "time_to_wait_next": "00:05"
                 },
                 {
-                    "station": "Казичене",
-                    "arrive_at": "16:38",
-                    "depart_at": "16:43",
+                    "from": "Казичене",
+                    "to": "Пловдив",
+                    "depart": "16:43",
+                    "arrive": "19:10",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "8641"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "19:10",
-                    "depart_at": "↤",
-                    "train_type": "БВ",
-                    "train_number": "8641"
+                    "train_number": "8641",
+                    "duration": "02:27",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "2",
-            "transfer_stations": [
-                "Карлово",
-                "Филипово"
-            ],
-            "to": "Пловдив",
-            "depart": "15:56",
-            "arrive": "19:05",
-            "train_type": "ПВ",
-            "train_number": "30113",
             "duration": "03:09",
-            "more_info": [
+            "departure_time": "15:56",
+            "arrival_time": "19:05",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 2,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "15:56",
+                    "from": "Пирдоп",
+                    "to": "Карлово",
+                    "depart": "15:56",
+                    "arrive": "17:02",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "ПВ",
-                    "train_number": "30113"
+                    "train_number": "30113",
+                    "duration": "01:06",
+                    "time_to_wait_next": "00:27"
                 },
                 {
-                    "station": "Карлово",
-                    "arrive_at": "17:02",
-                    "depart_at": "17:29",
+                    "from": "Карлово",
+                    "to": "Филипово",
+                    "depart": "17:29",
+                    "arrive": "18:36",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "КПВ",
-                    "train_number": "82209"
+                    "train_number": "82209",
+                    "duration": "01:07",
+                    "time_to_wait_next": "00:09"
                 },
                 {
-                    "station": "Филипово",
-                    "arrive_at": "18:36",
-                    "depart_at": "18:45",
+                    "from": "Филипово",
+                    "to": "Пловдив",
+                    "depart": "18:45",
+                    "arrive": "19:05",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "Авт",
-                    "train_number": "82209"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "19:05",
-                    "depart_at": "↤",
-                    "train_type": "Авт",
-                    "train_number": "82209"
+                    "train_number": "82209",
+                    "duration": "00:20",
+                    "time_to_wait_next": 0
                 }
             ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "2",
-            "transfer_stations": [
-                "Карлово",
-                "Филипово"
-            ],
-            "to": "Пловдив",
-            "depart": "17:59",
-            "arrive": "20:50",
-            "train_type": "БВ",
-            "train_number": "3601",
             "duration": "02:51",
-            "more_info": null
+            "departure_time": "17:59",
+            "arrival_time": "20:50",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 2,
+            "trains": [
+                {
+                    "from": "Пирдоп",
+                    "to": "Карлово",
+                    "depart": "17:59",
+                    "arrive": "18:49",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
+                    "train_type": "БВ",
+                    "train_number": "3601",
+                    "duration": "00:50",
+                    "time_to_wait_next": "00:21"
+                },
+                {
+                    "from": "Карлово",
+                    "to": "Филипово",
+                    "depart": "19:10",
+                    "arrive": "20:20",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
+                    "train_type": "КПВ",
+                    "train_number": "82211",
+                    "duration": "01:10",
+                    "time_to_wait_next": "00:10"
+                },
+                {
+                    "from": "Филипово",
+                    "to": "Пловдив",
+                    "depart": "20:30",
+                    "arrive": "20:50",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
+                    "train_type": "Авт",
+                    "train_number": "82211",
+                    "duration": "00:20",
+                    "time_to_wait_next": 0
+                }
+            ]
         },
         {
-            "from": "Пирдоп",
-            "num_of_transfers": "1",
-            "transfer_stations": [
-                "Казичене"
-            ],
-            "to": "Пловдив",
-            "depart": "19:35",
-            "arrive": "23:58",
-            "train_type": "БВ",
-            "train_number": "3624",
             "duration": "04:23",
-            "more_info": [
+            "departure_time": "19:35",
+            "arrival_time": "23:58",
+            "departure_date": "24.11.2023",
+            "arrival_date": "24.11.2023",
+            "num_of_transfers": 1,
+            "trains": [
                 {
-                    "station": "Пирдоп",
-                    "arrive_at": "↦",
-                    "depart_at": "19:35",
+                    "from": "Пирдоп",
+                    "to": "Казичене",
+                    "depart": "19:35",
+                    "arrive": "20:39",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "3624"
+                    "train_number": "3624",
+                    "duration": "01:04",
+                    "time_to_wait_next": "01:07"
                 },
                 {
-                    "station": "Казичене",
-                    "arrive_at": "20:39",
-                    "depart_at": "21:46",
+                    "from": "Казичене",
+                    "to": "Пловдив",
+                    "depart": "21:46",
+                    "arrive": "23:58",
+                    "depart_date": "24.11.2023",
+                    "arrive_date": "24.11.2023",
                     "train_type": "БВ",
-                    "train_number": "8657"
-                },
-                {
-                    "station": "Пловдив",
-                    "arrive_at": "23:58",
-                    "depart_at": "↤",
-                    "train_type": "БВ",
-                    "train_number": "8657"
+                    "train_number": "8657",
+                    "duration": "02:12",
+                    "time_to_wait_next": 0
                 }
             ]
         }
