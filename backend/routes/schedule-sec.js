@@ -7,15 +7,12 @@ const cheerio = require('cheerio');
 
 
 function makeMoreInfoTrainJSON(string) {
-    // error check
-    if(string.length % 5 !== 0) {
-        return null;
-    }
-
     let trains = [];
     let curr_train = {};
+
+    var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
     
-    for(let i = 0; i < string.length; i+=5) {
+    for(let i = 0; i < string.length;) {
 
         curr_train = {
             station: string[i],
@@ -25,15 +22,26 @@ function makeMoreInfoTrainJSON(string) {
             train_number: string[i+4]
         }
 
+        i += 5;
+
+        if(i + 2 < string.length) {
+            if((!timePattern.test(string[i + 1])) && (string[i + 1] !== '↦') && (string[i + 1] !== '↤')) {
+                i += 1;
+            }
+        }
+
         trains.push(curr_train);
+
+        if(string.length - i < 5)
+            break;
     }
 
     return trains;
 }
 
 function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, date, tommorow, duration) {
-    let trains = [];
     let curr_train = {};
+    let trains = [];
 
     if(transfer_stations.length === 0) {
         curr_train = {
@@ -57,27 +65,77 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
             curr_train["arrive_date"] = date;
         }
 
-        return curr_train;
+        trains.append(curr_train);
+        return trains;
     }
+    
+    let isTommorow = false;
 
-    /*for(let i = 0; i < moreInfoJson.length; i++) {
+    for(let i = 0; i < moreInfoJson.length - 1; i++) {
         // combine the info from the two jsons
         curr_train = {
-            "from": fromStation,
-            "to": transfer_stations[i],
-            "depart": "",
-            "arrive": "",
-            "depart_date": "",
+            "from": i === 0 ? fromStation : transfer_stations[i - 1],
+            "to": i === moreInfoJson.length - 2 ? toStation : transfer_stations[i],
+            "depart": moreInfoJson[i]["depart_at"],
+            "arrive": moreInfoJson[i + 1]["arrive_at"],
+            "depart_date": isTommorow ? tommorow : date,
             "arrive_date": "",
-            "train_type": "",
-            "train_number": "",
+            "train_type": moreInfoJson[i]["train_type"],
+            "train_number": moreInfoJson[i]["train_number"],
             "duration": "",
             "time_to_wait_next": "",
         }
 
-        curr_train["depart"] = moreInfoJson[i]["depart_at"];
-    }*/
+        let arrayDep = moreInfoJson[i]["depart_at"].split(":");
+        let arrayArr = moreInfoJson[i + 1]["arrive_at"].split(":");
+        if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
+            curr_train["arrive_date"] = tommorow;
+            isTommorow = true;
+        } else {
+            curr_train["arrive_date"] = date;
+        }
 
+        let dep = moreInfoJson[i]["depart_at"].split(":");
+        let arr = moreInfoJson[i + 1]["arrive_at"].split(":");
+        let depDate = new Date();
+        let arrDate = new Date();
+
+        depDate.setHours(dep[0]);
+        depDate.setMinutes(dep[1]);
+        arrDate.setHours(arr[0]);
+        arrDate.setMinutes(arr[1]);
+
+        let diff = arrDate.getTime() - depDate.getTime();
+        let minutes = Math.floor(diff / 60000);
+
+        // convert minutes to hours and minutes
+        let hours = Math.floor(minutes / 60);
+        let mins = minutes % 60;
+        curr_train["duration"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
+
+        if(i !== moreInfoJson.length - 2) {
+
+            dep = moreInfoJson[i + 1]["depart_at"].split(":");
+
+            depDate.setHours(dep[0]);
+            depDate.setMinutes(dep[1]);
+
+            diff = depDate.getTime() - arrDate.getTime();
+            minutes = Math.floor(diff / 60000);
+
+            //convert minutes to hours and minutes
+            hours = Math.floor(minutes / 60);
+            mins = minutes % 60;
+            curr_train["time_to_wait_next"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
+            
+        } else {
+            curr_train["time_to_wait_next"] = 0;
+        }
+
+        trains.push(curr_train);
+    }
+
+    return trains;
 }
 
 function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) {
@@ -209,6 +267,7 @@ async function get_trains_info(fromStation, toStation, date, tommorow) {
             viaText = splitWords(viaText);
 
             numOfTransfers[index] = ((viaText.length / 5) - 2).toFixed();
+
             if(index !== 0) {
                 fullResponseInfo.push(makeMoreInfoTrainJSON(viaText));
             }

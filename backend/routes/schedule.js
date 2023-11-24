@@ -33,8 +33,11 @@ function makeTrainsToOption(trains) {
 
     let splitStations = trains[index].stations.split(" - ");
 
-    currentTrain["from"] = splitStations[0];
-    currentTrain["to"] = splitStations[1];
+    currentTrain["from"] = splitStations[0].toLowerCase();
+    currentTrain["to"] = splitStations[1].toLowerCase();
+    
+    currentTrain["from"] = splitStations[0].charAt(0).toUpperCase() + splitStations[0].slice(1).toLowerCase();
+    currentTrain["to"] = splitStations[1].charAt(0).toUpperCase() + splitStations[1].slice(1).toLowerCase();
 
     currentTrain["depart"] = trains[index].depart;
     currentTrain["arrive"] = trains[index].arrive;
