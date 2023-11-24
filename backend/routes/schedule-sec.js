@@ -31,6 +31,55 @@ function makeMoreInfoTrainJSON(string) {
     return trains;
 }
 
+function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, date, tommorow, duration) {
+    let trains = [];
+    let curr_train = {};
+
+    if(transfer_stations.length === 0) {
+        curr_train = {
+            "from": fromStation,
+            "to": toStation,
+            "depart": moreInfoJson[0]["depart_at"],
+            "arrive": moreInfoJson[1]["arrive_at"],
+            "depart_date": date,
+            "arrive_date": "",
+            "train_type": moreInfoJson[0]["train_type"],
+            "train_number": moreInfoJson[0]["train_number"],
+            "duration": duration,
+            "time_to_wait_next": 0,
+        };
+
+        let arrayDep = moreInfoJson[0]["depart_at"].split(":");
+        let arrayArr = moreInfoJson[1]["arrive_at"].split(":");
+        if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
+            curr_train["arrive_date"] = tommorow;
+        } else {
+            curr_train["arrive_date"] = date;
+        }
+
+        return curr_train;
+    }
+
+    /*for(let i = 0; i < moreInfoJson.length; i++) {
+        // combine the info from the two jsons
+        curr_train = {
+            "from": fromStation,
+            "to": transfer_stations[i],
+            "depart": "",
+            "arrive": "",
+            "depart_date": "",
+            "arrive_date": "",
+            "train_type": "",
+            "train_number": "",
+            "duration": "",
+            "time_to_wait_next": "",
+        }
+
+        curr_train["depart"] = moreInfoJson[i]["depart_at"];
+    }*/
+
+}
+
 function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) {
 
     let trains = [];
@@ -43,6 +92,8 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
         //console.log(string);
 
         index++;
+
+        fromStation = string[index];
 
         curr_train = {
             "duration": "",
@@ -62,7 +113,7 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
         }
 
         curr_train["num_of_transfers"] = transfer_stations.length;
-        curr_train["to"] = string[index++];
+        toStation = string[index++];
         curr_train["departure_time"] = string[index];
 
         let arrayDep = string[index].split(":");
@@ -81,12 +132,15 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
         }
 
         // Skip useless info
-        index += 3;
+        index += 5;
 
-        curr_train["train_type"] = string[index++];
-        curr_train["train_number"] = string[index++];
         curr_train["duration"] = string[index];
-        curr_train["more_info"] = moreInfoJson[curr_cycle - 1];
+
+        //curr_train["trains"] = moreInfoJson[curr_cycle - 1];
+
+        //curr_train["trains"] = transfer_stations;
+
+        curr_train["trains"] = makeTrains(fromStation, toStation, moreInfoJson[curr_cycle - 1], transfer_stations, date, tommorow, curr_train["duration"]);
 
         // Continue to the next train
         index++;
