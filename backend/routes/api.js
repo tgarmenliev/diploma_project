@@ -2,96 +2,40 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const cheerio = require('cheerio');
 
-async function getNomenclatures() {
-  const response = await axios.get('https://tickets.bdz.bg/portal/api/Nomenclatures/GetNomenclatures');
-  return response.data;
-}
+async function getPosition(trainNumber) {
+  const url = "https://radar.bdz.bg/bg?train=" + trainNumber;
 
-function romanizeBulgarian(text) {
-  const bulgarianToRoman = {
-    а: 'a',
-    б: 'b',
-    в: 'v',
-    г: 'g',
-    д: 'd',
-    е: 'e',
-    ж: 'zh',
-    з: 'z',
-    и: 'i',
-    й: 'j',
-    к: 'k',
-    л: 'l',
-    м: 'm',
-    н: 'n',
-    о: 'o',
-    п: 'p',
-    р: 'r',
-    с: 's',
-    т: 't',
-    у: 'u',
-    ф: 'f',
-    х: 'h',
-    ц: 'c',
-    ч: 'ch',
-    ш: 'sh',
-    щ: 'sht',
-    ъ: 'a',
-    ь: 'j',
-    ю: 'ju',
-    я: 'ja',
-    '.': '', // Remove dots
-  };
-
-  const words = text
-    .replace(/[-\s.]+/g, '-') // Replace multiple spaces, dots, and dashes with a single dash
-    .split('-');
-
-  const romanizedWords = words.map(word => {
-    // Special case: if the word is "СП.", convert it to "st"
-    console.log(word);
-    if (word.toLowerCase() === 'сп') {
-      return 'st';
-    }
-
-    return word
-      .toLowerCase()
-      .split('')
-      .map(char => bulgarianToRoman[char] || char)
-      .join('');
-  });
-
-  // Remove the trailing dash if it exists
-  const result = romanizedWords.join('-').replace(/-$/, '');
-
-  return result;
-}
-
-function translateStations(nomenclatures) {
-  let result = [];
-  let current = {};
-
-  nomenclatures.stations.forEach(st => {
-    current = {
-      id: st.id,
-      name: st.name,
-      romanizedName: romanizeBulgarian(st.name),
-    };
-    result.push(current);
-  });
-
-  return result;
-}
-
-router.get('/:station', async (req, res) => {
-  let station = req.params.station;
+  const elementId = '.text-uppercase';
 
   try {
-    //let result = await getNomenclatures();
+    // Make an HTTP request to fetch the HTML content
+    const response = await axios.get(url);
 
-    let translated = translateStations(await getNomenclatures());
+    // Load the HTML content into Cheerio
+    const $ = cheerio.load(response.data);
 
-    res.json(translated);
+    // Get the text content of the element with the specified ID
+    const elementText = $(elementId).text().trim();
+
+    console.log("Gotten text");
+    // Output the result
+    console.log(elementText);
+
+    return elementText;
+  } catch (error) {
+    console.error('Error fetching the webpage:', error);
+  }
+}
+
+router.get('/:train', async (req, res) => {
+  let train = req.params.train;
+
+  try {
+    let result = await getPosition(train);
+
+    res.json(result);
 
   } catch (error) {
     // Handle the error appropriately, e.g., send an error response
