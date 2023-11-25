@@ -157,7 +157,7 @@ function formatDate(date) {
 const stations = require('../stations.json');
 
 function translateStation(station) {
-  const foundStation = stations.find((s) => s.transliterated === station);
+  const foundStation = stations.find((s) => s.romanizedName === station);
   if (foundStation) {
     return foundStation.id;
   } else {
