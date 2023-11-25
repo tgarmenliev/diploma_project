@@ -34,6 +34,7 @@ router.get('/:train', async (req, res) => {
 
   try {
     let result = await getPosition(train);
+    scrapeTrains();
 
     res.json(result);
 
