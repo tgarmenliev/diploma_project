@@ -154,15 +154,29 @@ function formatDate(date) {
   return string;
 }
 
+const stations = require('../stations.json');
+
+function translateStation(station) {
+  const foundStation = stations.find((s) => s.transliterated === station);
+  if (foundStation) {
+    return foundStation.id;
+  } else {
+    return null; // Station not found
+  }
+}
+
 router.get('/:from/:to/:date', async (req, res) => {
   const from = req.params.from;
   const to = req.params.to;
+
+  const fromStationID = translateStation(from);
+  const toStationID = translateStation(to);
 
   const date = req.params.date;
   const formattedDate = formatDate(new Date(date)); // Format the date as a string
 
   try {
-    let trains_info = await get_trains_info(from, to, formattedDate);
+    let trains_info = await get_trains_info(fromStationID, toStationID, formattedDate);
 
     res.json(trains_info);
   } catch (error) {

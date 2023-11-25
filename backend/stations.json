@@ -1,3487 +1,3487 @@
 [
-    {
-        "id": 611,
-        "name": "АБЛАНИЦА",
-        "transliterated": "ablanica"
-    },
-    {
-        "id": 417,
-        "name": "АВРАМОВО",
-        "transliterated": "avramovo"
-    },
-    {
-        "id": 61,
-        "name": "АЙТОС",
-        "transliterated": "ajtos"
-    },
-    {
-        "id": 599,
-        "name": "АЛДОМИРОВЦИ",
-        "transliterated": "aldomirovci"
-    },
-    {
-        "id": 173,
-        "name": "АЛЕКСАНДРОВО",
-        "transliterated": "aleksandrovo"
-    },
-    {
-        "id": 453,
-        "name": "АЛЕКСАНДЪР ДИМИТРОВ",
-        "transliterated": "aleksandar-dimitrov"
-    },
-    {
-        "id": 513,
-        "name": "АЛФАТАР",
-        "transliterated": "alfatar"
-    },
-    {
-        "id": 538,
-        "name": "АНЕВО",
-        "transliterated": "anevo"
-    },
-    {
-        "id": 440,
-        "name": "АНТОН",
-        "transliterated": "anton"
-    },
-    {
-        "id": 472,
-        "name": "АРКОВНА",
-        "transliterated": "arkovna"
-    },
-    {
-        "id": 12,
-        "name": "АСЕНОВГРАД",
-        "transliterated": "asenovgrad"
-    },
-    {
-        "id": 367,
-        "name": "АСЕНОВО",
-        "transliterated": "asenovo"
-    },
-    {
-        "id": 278,
-        "name": "АСЕНОВЦИ",
-        "transliterated": "asenovci"
-    },
-    {
-        "id": 166,
-        "name": "АСПАРУХОВО",
-        "transliterated": "asparuhovo"
-    },
-    {
-        "id": 345,
-        "name": "АТОЛОВО",
-        "transliterated": "atolovo"
-    },
-    {
-        "id": 627,
-        "name": "БАЙКОВО",
-        "transliterated": "bajkovo"
-    },
-    {
-        "id": 380,
-        "name": "БАЛКАН",
-        "transliterated": "balkan"
-    },
-    {
-        "id": 384,
-        "name": "БАНКОВИЦА",
-        "transliterated": "bankovica"
-    },
-    {
-        "id": 77,
-        "name": "БАНКЯ",
-        "transliterated": "bankja"
-    },
-    {
-        "id": 255,
-        "name": "БАНСКО",
-        "transliterated": "bansko"
-    },
-    {
-        "id": 124,
-        "name": "БАНЯ",
-        "transliterated": "banja"
-    },
-    {
-        "id": 62,
-        "name": "БАТАНОВЦИ",
-        "transliterated": "batanovci"
-    },
-    {
-        "id": 495,
-        "name": "БАТИШНИЦА",
-        "transliterated": "batishnica"
-    },
-    {
-        "id": 571,
-        "name": "БАЧО КИРО",
-        "transliterated": "bacho-kiro"
-    },
-    {
-        "id": 407,
-        "name": "БЕЗИМЕННА",
-        "transliterated": "bezimenna"
-    },
-    {
-        "id": 491,
-        "name": "БЕЗМЕР",
-        "transliterated": "bezmer"
-    },
-    {
-        "id": 694,
-        "name": "БЕЛА ВОДА",
-        "transliterated": "bela-voda"
-    },
-    {
-        "id": 126,
-        "name": "БЕЛИ ИЗВОР",
-        "transliterated": "beli-izvor"
-    },
-    {
-        "id": 322,
-        "name": "БЕЛИЦА",
-        "transliterated": "belica"
-    },
-    {
-        "id": 50,
-        "name": "БЕЛОВО",
-        "transliterated": "belovo"
-    },
-    {
-        "id": 58,
-        "name": "БЕЛОЗЕМ",
-        "transliterated": "belozem"
-    },
-    {
-        "id": 588,
-        "name": "БЕЛО ПОЛЕ",
-        "transliterated": "belo-pole"
-    },
-    {
-        "id": 56,
-        "name": "БЕЛОСЛАВ",
-        "transliterated": "beloslav"
-    },
-    {
-        "id": 449,
-        "name": "БЕЛЩИЦА",
-        "transliterated": "belshtica"
-    },
-    {
-        "id": 589,
-        "name": "БЕНКОВСКИ",
-        "transliterated": "benkovski"
-    },
-    {
-        "id": 185,
-        "name": "БЕРКОВИЦА",
-        "transliterated": "berkovica"
-    },
-    {
-        "id": 400,
-        "name": "БИСЕР",
-        "transliterated": "biser"
-    },
-    {
-        "id": 426,
-        "name": "БЛАГОВО",
-        "transliterated": "blagovo"
-    },
-    {
-        "id": 51,
-        "name": "БЛАГОЕВГРАД",
-        "transliterated": "blagoevgrad"
-    },
-    {
-        "id": 396,
-        "name": "БЛАГОЕВГРАД - СП.",
-        "transliterated": "blagoevgrad-st"
-    },
-    {
-        "id": 324,
-        "name": "БЛАГОЙ ЗАХАРИЕВ",
-        "transliterated": "blagoj-zahariev"
-    },
-    {
-        "id": 298,
-        "name": "БОБОВ ДОЛ",
-        "transliterated": "bobov-dol"
-    },
-    {
-        "id": 489,
-        "name": "БОБОШЕВО",
-        "transliterated": "boboshevo"
-    },
-    {
-        "id": 89,
-        "name": "БОВ",
-        "transliterated": "bov"
-    },
-    {
-        "id": 330,
-        "name": "БОГДАНЦИ",
-        "transliterated": "bogdanci"
-    },
-    {
-        "id": 609,
-        "name": "БОЖИЧЕН",
-        "transliterated": "bozhichen"
-    },
-    {
-        "id": 421,
-        "name": "БОЖКОВЦИ",
-        "transliterated": "bozhkovci"
-    },
-    {
-        "id": 398,
-        "name": "БОЖУРИЦА",
-        "transliterated": "bozhurica"
-    },
-    {
-        "id": 256,
-        "name": "БОЖУРИЩЕ",
-        "transliterated": "bozhurishte"
-    },
-    {
-        "id": 549,
-        "name": "БОЗАДЖИИ",
-        "transliterated": "bozadzhii"
-    },
-    {
-        "id": 231,
-        "name": "БОЙКА",
-        "transliterated": "bojka"
-    },
-    {
-        "id": 19,
-        "name": "БОЙЧИНОВЦИ",
-        "transliterated": "bojchinovci"
-    },
-    {
-        "id": 606,
-        "name": "БОКИЛОВЦИ",
-        "transliterated": "bokilovci"
-    },
-    {
-        "id": 102,
-        "name": "БОРОВО",
-        "transliterated": "borovo"
-    },
-    {
-        "id": 253,
-        "name": "БОРОВЦИ",
-        "transliterated": "borovci"
-    },
-    {
-        "id": 395,
-        "name": "БОРУЩИЦА",
-        "transliterated": "borushtica"
-    },
-    {
-        "id": 235,
-        "name": "БОРЯНА",
-        "transliterated": "borjana"
-    },
-    {
-        "id": 444,
-        "name": "БОТЕВ",
-        "transliterated": "botev"
-    },
-    {
-        "id": 416,
-        "name": "БОТЕВО",
-        "transliterated": "botevo"
-    },
-    {
-        "id": 536,
-        "name": "БОТУНЕЦ",
-        "transliterated": "botunec"
-    },
-    {
-        "id": 245,
-        "name": "БРАЦИГОВО",
-        "transliterated": "bracigovo"
-    },
-    {
-        "id": 591,
-        "name": "БРИГАДИР",
-        "transliterated": "brigadir"
-    },
-    {
-        "id": 640,
-        "name": "БРИГАДИРСКА СЛАВА",
-        "transliterated": "brigadirska-slava"
-    },
-    {
-        "id": 33,
-        "name": "БРУСАРЦИ",
-        "transliterated": "brusarci"
-    },
-    {
-        "id": 471,
-        "name": "БРУСЕН",
-        "transliterated": "brusen"
-    },
-    {
-        "id": 658,
-        "name": "БРЪЧМА",
-        "transliterated": "brachma"
-    },
-    {
-        "id": 667,
-        "name": "БРЯСТ",
-        "transliterated": "brjast"
-    },
-    {
-        "id": 377,
-        "name": "БУНОВО",
-        "transliterated": "bunovo"
-    },
-    {
-        "id": 9,
-        "name": "БУРГАС",
-        "transliterated": "burgas"
-    },
-    {
-        "id": 689,
-        "name": "БУРГАС-РАЗПРЕДЕЛИТЕЛНА-СПИРКА",
-        "transliterated": "burgas-razpredelitelna-spirka"
-    },
-    {
-        "id": 137,
-        "name": "БУРГАС-ТОВАРНА",
-        "transliterated": "burgas-tovarna"
-    },
-    {
-        "id": 176,
-        "name": "БУТОВО",
-        "transliterated": "butovo"
-    },
-    {
-        "id": 535,
-        "name": "БЪЗОВЕЦ",
-        "transliterated": "bazovec"
-    },
-    {
-        "id": 461,
-        "name": "БЪЛГАРОВО",
-        "transliterated": "balgarovo"
-    },
-    {
-        "id": 553,
-        "name": "БЪРДОКВА",
-        "transliterated": "bardokva"
-    },
-    {
-        "id": 186,
-        "name": "БЯГА",
-        "transliterated": "bjaga"
-    },
-    {
-        "id": 111,
-        "name": "БЯЛА",
-        "transliterated": "bjala"
-    },
-    {
-        "id": 399,
-        "name": "БЯЛ БРЯГ",
-        "transliterated": "bjal-brjag"
-    },
-    {
-        "id": 115,
-        "name": "ВАГОНО-РЕМОНТНО ДЕПО ПЛОВДИВ",
-        "transliterated": "vagono-remontno-depo-plovdiv"
-    },
-    {
-        "id": 53,
-        "name": "ВАКАРЕЛ",
-        "transliterated": "vakarel"
-    },
-    {
-        "id": 503,
-        "name": "ВАКАРЕЛ - СП.",
-        "transliterated": "vakarel-sp"
-    },
-    {
-        "id": 412,
-        "name": "ВАРВАРА",
-        "transliterated": "varvara"
-    },
-    {
-        "id": 4,
-        "name": "ВАРНА",
-        "transliterated": "varna"
-    },
-    {
-        "id": 133,
-        "name": "ВАРНА - СП.",
-        "transliterated": "varna-sp"
-    },
-    {
-        "id": 379,
-        "name": "ВАСИЛ ЛЕВСКИ",
-        "transliterated": "vasil-levski"
-    },
-    {
-        "id": 107,
-        "name": "ВАСИЛОВЦИ",
-        "transliterated": "vasilovci"
-    },
-    {
-        "id": 443,
-        "name": "ВЕДРОВО",
-        "transliterated": "vedrovo"
-    },
-    {
-        "id": 37,
-        "name": "ВЕЛИКО ТЪРНОВО",
-        "transliterated": "veliko-tarnovo"
-    },
-    {
-        "id": 113,
-        "name": "ВЕЛИНГРАД",
-        "transliterated": "velingrad"
-    },
-    {
-        "id": 467,
-        "name": "ВЕЛИНГРАД ЮГ",
-        "transliterated": "velingrad-jug"
-    },
-    {
-        "id": 636,
-        "name": "ВЕЛИНО",
-        "transliterated": "velino"
-    },
-    {
-        "id": 134,
-        "name": "ВЕЛИЧКОВО",
-        "transliterated": "velichkovo"
-    },
-    {
-        "id": 302,
-        "name": "ВЕНЧАН",
-        "transliterated": "venchan"
-    },
-    {
-        "id": 112,
-        "name": "ВЕРИЛА",
-        "transliterated": "verila"
-    },
-    {
-        "id": 362,
-        "name": "ВЕРИНСКО",
-        "transliterated": "verinsko"
-    },
-    {
-        "id": 202,
-        "name": "ВЕТОВО",
-        "transliterated": "vetovo"
-    },
-    {
-        "id": 438,
-        "name": "ВЕТРЕН",
-        "transliterated": "vetren"
-    },
-    {
-        "id": 623,
-        "name": "ВИДБОЛ",
-        "transliterated": "vidbol"
-    },
-    {
-        "id": 49,
-        "name": "ВИДИН ПЪТНИЧЕСКА",
-        "transliterated": "vidin"
-    },
-    {
-        "id": 191,
-        "name": "ВИНИЦА",
-        "transliterated": "vinica"
-    },
-    {
-        "id": 459,
-        "name": "ВИСОКА ПОЛЯНА",
-        "transliterated": "visoka-poljana"
-    },
-    {
-        "id": 192,
-        "name": "ВЛАДАЯ",
-        "transliterated": "vladaja"
-    },
-    {
-        "id": 165,
-        "name": "ВЛАДИМИР ПАВЛОВ",
-        "transliterated": "vladimir-pavlov"
-    },
-    {
-        "id": 117,
-        "name": "ВЛАДО ТРИЧКОВ",
-        "transliterated": "vlado-trichkov"
-    },
-    {
-        "id": 229,
-        "name": "ВЛАСАТИЦА",
-        "transliterated": "vlasatica"
-    },
-    {
-        "id": 409,
-        "name": "ВОДНЯНЦИ",
-        "transliterated": "vodnjanci"
-    },
-    {
-        "id": 184,
-        "name": "ВОЛУЯК",
-        "transliterated": "volujak"
-    },
-    {
-        "id": 10,
-        "name": "ВРАЦА",
-        "transliterated": "vraca"
-    },
-    {
-        "id": 91,
-        "name": "ВРАЦА - СПИРКА",
-        "transliterated": "vraca-st"
-    },
-    {
-        "id": 219,
-        "name": "ВРЪБНИЦА",
-        "transliterated": "vrabnica"
-    },
-    {
-        "id": 514,
-        "name": "ВЪБЕЛ",
-        "transliterated": "vabel"
-    },
-    {
-        "id": 136,
-        "name": "ВЪЛЧИ ДОЛ",
-        "transliterated": "valchi-dol"
-    },
-    {
-        "id": 447,
-        "name": "ВЪЛЧИН",
-        "transliterated": "valchin"
-    },
-    {
-        "id": 307,
-        "name": "ГАБАРЕВО",
-        "transliterated": "gabarevo"
-    },
-    {
-        "id": 295,
-        "name": "ГАБРОВНИЦА",
-        "transliterated": "gabrovnica"
-    },
-    {
-        "id": 76,
-        "name": "ГАБРОВО",
-        "transliterated": "gabrovo"
-    },
-    {
-        "id": 500,
-        "name": "ГАВРАИЛОВО",
-        "transliterated": "gavrailovo"
-    },
-    {
-        "id": 385,
-        "name": "ГАНЧОВЕЦ",
-        "transliterated": "ganchovec"
-    },
-    {
-        "id": 294,
-        "name": "ГЕНЕРАЛ КИСЕЛОВО",
-        "transliterated": "general-kiselovo"
-    },
-    {
-        "id": 411,
-        "name": "ГЕНЕРАЛ КОВАЧЕВ",
-        "transliterated": "general-kovachev"
-    },
-    {
-        "id": 647,
-        "name": "ГЕНЕРАЛ КОЛЕВО",
-        "transliterated": "general-kolevo"
-    },
-    {
-        "id": 142,
-        "name": "ГЕНЕРАЛ ТОДОРОВ",
-        "transliterated": "general-todorov"
-    },
-    {
-        "id": 175,
-        "name": "ГЕНЕРАЛ ТОШЕВО",
-        "transliterated": "general-toshevo"
-    },
-    {
-        "id": 402,
-        "name": "ГЛУМЧЕ",
-        "transliterated": "glumche"
-    },
-    {
-        "id": 566,
-        "name": "ГЛУХАР",
-        "transliterated": "gluhar"
-    },
-    {
-        "id": 477,
-        "name": "ГОЛЯМА ВОДА",
-        "transliterated": "goljama-voda"
-    },
-    {
-        "id": 390,
-        "name": "ГОЛЯМО ДРЯНОВО",
-        "transliterated": "goljamo-drjanovo"
-    },
-    {
-        "id": 507,
-        "name": "ГОЛЯМО НОВО",
-        "transliterated": "goljamo-novo"
-    },
-    {
-        "id": 406,
-        "name": "ГОЛЯМО СЕЛО",
-        "transliterated": "goljamo-selo"
-    },
-    {
-        "id": 563,
-        "name": "ГОЛЯМ ПОРОВЕЦ",
-        "transliterated": "goljam-porovec"
-    },
-    {
-        "id": 569,
-        "name": "ГОРИЦА",
-        "transliterated": "gorica"
-    },
-    {
-        "id": 28,
-        "name": "ГОРНА БАНЯ",
-        "transliterated": "gorna-banja"
-    },
-    {
-        "id": 701,
-        "name": "ГОРНА БАНЯ СП",
-        "transliterated": "stop-gorna-banja-metro"
-    },
-    {
-        "id": 487,
-        "name": "ГОРНА КРЕТА",
-        "transliterated": "gorna-kreta"
-    },
-    {
-        "id": 545,
-        "name": "ГОРНА МАЛИНА",
-        "transliterated": "gorna-malina"
-    },
-    {
-        "id": 275,
-        "name": "ГОРНА МАХАЛА",
-        "transliterated": "gorna-mahala"
-    },
-    {
-        "id": 5,
-        "name": "ГОРНА ОРЯХОВИЦА",
-        "transliterated": "gorna-orjahovica"
-    },
-    {
-        "id": 141,
-        "name": "ГОРНИ ДЪБНИК",
-        "transliterated": "gorni-dabnik"
-    },
-    {
-        "id": 445,
-        "name": "ГОРНО БОТЕВО",
-        "transliterated": "gorno-botevo"
-    },
-    {
-        "id": 301,
-        "name": "ГОРСКО ДЮЛЕВО",
-        "transliterated": "gorsko-djulevo"
-    },
-    {
-        "id": 662,
-        "name": "Г.ОРЯХОВИЦА-ПР.ПАРК",
-        "transliterated": "gorjahovica-prpark"
-    },
-    {
-        "id": 671,
-        "name": "Г.ОРЯХОВИЦА РАЗПР.П.",
-        "transliterated": "gorna-orjahovica-razprp"
-    },
-    {
-        "id": 522,
-        "name": "ГРАДЕШНИЦА",
-        "transliterated": "gradeshnica"
-    },
-    {
-        "id": 155,
-        "name": "ГРАДИЩЕ",
-        "transliterated": "gradishte"
-    },
-    {
-        "id": 139,
-        "name": "ГРАФ ИГНАТИЕВО",
-        "transliterated": "graf-ignatievo"
-    },
-    {
-        "id": 270,
-        "name": "ГРИВИЦА",
-        "transliterated": "grivica"
-    },
-    {
-        "id": 279,
-        "name": "ГУЛИЙНА БАНЯ",
-        "transliterated": "gulijna-banja"
-    },
-    {
-        "id": 478,
-        "name": "ГУРКОВО",
-        "transliterated": "gurkovo"
-    },
-    {
-        "id": 246,
-        "name": "ГЪЛЪБНИК",
-        "transliterated": "galabnik"
-    },
-    {
-        "id": 676,
-        "name": "ГЮЕШЕВО",
-        "transliterated": "gjueshevo"
-    },
-    {
-        "id": 365,
-        "name": "ДАГОНОВО",
-        "transliterated": "dagonovo"
-    },
-    {
-        "id": 328,
-        "name": "ДАМЯНИЦА",
-        "transliterated": "damjanica"
-    },
-    {
-        "id": 57,
-        "name": "ДАСКАЛОВО",
-        "transliterated": "daskalovo"
-    },
-    {
-        "id": 80,
-        "name": "ДВЕ МОГИЛИ",
-        "transliterated": "dve-mogili"
-    },
-    {
-        "id": 483,
-        "name": "ДЕБЕЛЕЦ",
-        "transliterated": "debelec"
-    },
-    {
-        "id": 515,
-        "name": "ДЕБЕЛИ ЛАК",
-        "transliterated": "debeli-lak"
-    },
-    {
-        "id": 383,
-        "name": "ДЕВНЯ",
-        "transliterated": "devnja"
-    },
-    {
-        "id": 389,
-        "name": "ДЕЛЯН",
-        "transliterated": "deljan"
-    },
-    {
-        "id": 582,
-        "name": "ДЖЕБЕЛ",
-        "transliterated": "dzhebel"
-    },
-    {
-        "id": 602,
-        "name": "ДЖЕРМАН",
-        "transliterated": "dzherman"
-    },
-    {
-        "id": 355,
-        "name": "ДЖУЛЮНИЦА",
-        "transliterated": "dzhuljunica"
-    },
-    {
-        "id": 244,
-        "name": "ДИБИЧ",
-        "transliterated": "dibich"
-    },
-    {
-        "id": 502,
-        "name": "ДИВДЯДОВО",
-        "transliterated": "divdjadovo"
-    },
-    {
-        "id": 359,
-        "name": "ДИМИТРИЕВО",
-        "transliterated": "dimitrievo"
-    },
-    {
-        "id": 23,
-        "name": "ДИМИТРОВГРАД",
-        "transliterated": "dimitrovgrad"
-    },
-    {
-        "id": 637,
-        "name": "ДИМИТРОВГРАД СЕВЕР",
-        "transliterated": "dimitrovgrad-sever"
-    },
-    {
-        "id": 617,
-        "name": "ДИМИТРОВГРАД ЮГ СП.",
-        "transliterated": "dimitrovgrad-jug-sp"
-    },
-    {
-        "id": 197,
-        "name": "ДИМОВО",
-        "transliterated": "dimovo"
-    },
-    {
-        "id": 151,
-        "name": "ДОБРИНА",
-        "transliterated": "dobrina"
-    },
-    {
-        "id": 303,
-        "name": "ДОБРИНИЩЕ",
-        "transliterated": "dobrinishte"
-    },
-    {
-        "id": 652,
-        "name": "ДОБРИНОВО",
-        "transliterated": "dobrinovo"
-    },
-    {
-        "id": 46,
-        "name": "ДОБРИЧ",
-        "transliterated": "dobrich"
-    },
-    {
-        "id": 448,
-        "name": "ДОБРИЧ - СЕВЕР",
-        "transliterated": "dobrich-sever"
-    },
-    {
-        "id": 615,
-        "name": "ДОБРОДАН",
-        "transliterated": "dobrodan"
-    },
-    {
-        "id": 613,
-        "name": "ДОЖДЕВИЦА",
-        "transliterated": "dozhdevica"
-    },
-    {
-        "id": 343,
-        "name": "ДОЙРЕНЦИ",
-        "transliterated": "dojrenci"
-    },
-    {
-        "id": 601,
-        "name": "ДОЛАПИТЕ",
-        "transliterated": "dolapite"
-    },
-    {
-        "id": 542,
-        "name": "ДОЛЕНЕ",
-        "transliterated": "dolene"
-    },
-    {
-        "id": 172,
-        "name": "ДОЛНА МАХАЛА",
-        "transliterated": "dolna-mahala"
-    },
-    {
-        "id": 505,
-        "name": "ДОЛНА МИТРОПОЛИЯ",
-        "transliterated": "dolna-mitropolija"
-    },
-    {
-        "id": 465,
-        "name": "ДОЛНИ ВИТ",
-        "transliterated": "dolni-vit"
-    },
-    {
-        "id": 277,
-        "name": "ДОЛНИ ДЪБНИК",
-        "transliterated": "dolni-dabnik"
-    },
-    {
-        "id": 283,
-        "name": "ДОЛНИ РАКОВЕЦ",
-        "transliterated": "dolni-rakovec"
-    },
-    {
-        "id": 243,
-        "name": "ДОЛНО ЕЗЕРОВО",
-        "transliterated": "dolno-ezerovo"
-    },
-    {
-        "id": 413,
-        "name": "ДОЛНО КАМАРЦИ",
-        "transliterated": "dolno-kamarci"
-    },
-    {
-        "id": 585,
-        "name": "ДОЛНО СЕЛО",
-        "transliterated": "dolno-selo"
-    },
-    {
-        "id": 311,
-        "name": "ДОЛНО ЦЕРОВЕНЕ",
-        "transliterated": "dolno-cerovene"
-    },
-    {
-        "id": 162,
-        "name": "ДОНЧЕВО",
-        "transliterated": "donchevo"
-    },
-    {
-        "id": 171,
-        "name": "ДРАГИЧЕВО",
-        "transliterated": "dragichevo"
-    },
-    {
-        "id": 212,
-        "name": "ДРАГОМАН",
-        "transliterated": "dragoman"
-    },
-    {
-        "id": 455,
-        "name": "ДРАГОМАН - СП.",
-        "transliterated": "dragoman-sp"
-    },
-    {
-        "id": 188,
-        "name": "ДРАГОМИРОВО",
-        "transliterated": "dragomirovo"
-    },
-    {
-        "id": 314,
-        "name": "ДРАЛФА",
-        "transliterated": "dralfa"
-    },
-    {
-        "id": 672,
-        "name": "ДРАСОВ",
-        "transliterated": "drasov"
-    },
-    {
-        "id": 195,
-        "name": "ДРЕНОВЕЦ",
-        "transliterated": "drenovec"
-    },
-    {
-        "id": 657,
-        "name": "ДРОПЛА",
-        "transliterated": "dropla"
-    },
-    {
-        "id": 528,
-        "name": "ДРУЖБА",
-        "transliterated": "druzhba"
-    },
-    {
-        "id": 66,
-        "name": "ДРЯНОВО",
-        "transliterated": "drjanovo"
-    },
-    {
-        "id": 344,
-        "name": "ДРЯНОВО - СП.",
-        "transliterated": "drjanovo-st"
-    },
-    {
-        "id": 429,
-        "name": "ДУЛОВО",
-        "transliterated": "dulovo"
-    },
-    {
-        "id": 296,
-        "name": "ДУНАВЦИ",
-        "transliterated": "dunavci"
-    },
-    {
-        "id": 71,
-        "name": "ДУПНИЦА",
-        "transliterated": "dupnica"
-    },
-    {
-        "id": 486,
-        "name": "ДУПНИЦА - СП.",
-        "transliterated": "dupnica-st"
-    },
-    {
-        "id": 316,
-        "name": "ДЪБЕНЕ",
-        "transliterated": "dabene"
-    },
-    {
-        "id": 419,
-        "name": "ДЪБОВА МАХАЛА",
-        "transliterated": "dabova-mahala"
-    },
-    {
-        "id": 87,
-        "name": "ДЪБОВО",
-        "transliterated": "dabovo"
-    },
-    {
-        "id": 643,
-        "name": "ДЪЛГА ЛЪКА",
-        "transliterated": "dalga-laka"
-    },
-    {
-        "id": 78,
-        "name": "ДЪЛГОПОЛ",
-        "transliterated": "dalgopol"
-    },
-    {
-        "id": 331,
-        "name": "ДЪСКОТНА",
-        "transliterated": "daskotna"
-    },
-    {
-        "id": 688,
-        "name": "ДЮЛЕВО",
-        "transliterated": "djulevo"
-    },
-    {
-        "id": 614,
-        "name": "ДЯКОВО",
-        "transliterated": "djakovo"
-    },
-    {
-        "id": 327,
-        "name": "ЕГЪЛНИЦА",
-        "transliterated": "egalnica"
-    },
-    {
-        "id": 143,
-        "name": "ЕЗЕРОВО",
-        "transliterated": "ezerovo"
-    },
-    {
-        "id": 621,
-        "name": "ЕЗЕРОВО-СПИРКА",
-        "transliterated": "ezerovo-spirka"
-    },
-    {
-        "id": 392,
-        "name": "ЕЛЕНИНО",
-        "transliterated": "elenino"
-    },
-    {
-        "id": 32,
-        "name": "ЕЛИН ПЕЛИН",
-        "transliterated": "elin-pelin"
-    },
-    {
-        "id": 233,
-        "name": "ЕЛИСЕЙНА",
-        "transliterated": "elisejna"
-    },
-    {
-        "id": 572,
-        "name": "ЕЛИТ",
-        "transliterated": "elit"
-    },
-    {
-        "id": 167,
-        "name": "ЕРДЕН",
-        "transliterated": "erden"
-    },
-    {
-        "id": 353,
-        "name": "ЖАБЛЯНО",
-        "transliterated": "zhabljano"
-    },
-    {
-        "id": 376,
-        "name": "ЖЕГЛИЦА",
-        "transliterated": "zheglica"
-    },
-    {
-        "id": 648,
-        "name": "ЖЕЛЕЗНИЦА",
-        "transliterated": "zheleznica"
-    },
-    {
-        "id": 247,
-        "name": "ЖЕЛЕН",
-        "transliterated": "zhelen"
-    },
-    {
-        "id": 446,
-        "name": "ЖЕЛЪД",
-        "transliterated": "zhelad"
-    },
-    {
-        "id": 299,
-        "name": "ЖЕЛЮ ВОЙВОДА",
-        "transliterated": "zhelju-vojvoda"
-    },
-    {
-        "id": 544,
-        "name": "ЖЕЛЯЗНА ВРАТА",
-        "transliterated": "zheljazna-vrata"
-    },
-    {
-        "id": 315,
-        "name": "ЖИВКОВО",
-        "transliterated": "zhivkovo"
-    },
-    {
-        "id": 285,
-        "name": "ЖИТНИЦА",
-        "transliterated": "zhitnica"
-    },
-    {
-        "id": 436,
-        "name": "ЖП.ШКОЛА - ЛАКАТНИК",
-        "transliterated": "zhp-shkola-lakatnik"
-    },
-    {
-        "id": 333,
-        "name": "ЗАВЕТ",
-        "transliterated": "zavet"
-    },
-    {
-        "id": 527,
-        "name": "ЗАВЕТ - СП.",
-        "transliterated": "zavet-sp"
-    },
-    {
-        "id": 492,
-        "name": "ЗАВОЙ",
-        "transliterated": "zavoj"
-    },
-    {
-        "id": 21,
-        "name": "ЗАХАРНА ФАБРИКА",
-        "transliterated": "zaharna-fabrika"
-    },
-    {
-        "id": 442,
-        "name": "ЗВЕЗДЕЛИНА",
-        "transliterated": "zvezdelina"
-    },
-    {
-        "id": 94,
-        "name": "ЗВЕРИНО",
-        "transliterated": "zverino"
-    },
-    {
-        "id": 293,
-        "name": "ЗВЪНИЧЕВО",
-        "transliterated": "zvanichevo"
-    },
-    {
-        "id": 435,
-        "name": "ЗДРАВЕЦ",
-        "transliterated": "zdravec"
-    },
-    {
-        "id": 79,
-        "name": "ЗЕМЕН",
-        "transliterated": "zemen"
-    },
-    {
-        "id": 127,
-        "name": "ЗИМНИЦА",
-        "transliterated": "zimnica"
-    },
-    {
-        "id": 304,
-        "name": "ЗЛАТИЦА",
-        "transliterated": "zlatica"
-    },
-    {
-        "id": 665,
-        "name": "ЗЛАТНА НИВА",
-        "transliterated": "zlatna-niva"
-    },
-    {
-        "id": 644,
-        "name": "ЗЛАТУША",
-        "transliterated": "zlatusha"
-    },
-    {
-        "id": 656,
-        "name": "ЗМЕЙОВО",
-        "transliterated": "zmejovo"
-    },
-    {
-        "id": 372,
-        "name": "ИВАН ВАЗОВО",
-        "transliterated": "ivan-vazovo"
-    },
-    {
-        "id": 393,
-        "name": "ИВАНКОВЦИ",
-        "transliterated": "ivankovci"
-    },
-    {
-        "id": 97,
-        "name": "ИВАНОВО",
-        "transliterated": "ivanovo"
-    },
-    {
-        "id": 510,
-        "name": "ИВАНСКИ",
-        "transliterated": "ivanski"
-    },
-    {
-        "id": 321,
-        "name": "ИВАНЯНЕ",
-        "transliterated": "ivanjane"
-    },
-    {
-        "id": 597,
-        "name": "ИГАНОВО",
-        "transliterated": "iganovo"
-    },
-    {
-        "id": 103,
-        "name": "ИЛИЯНЦИ",
-        "transliterated": "ilijanci"
-    },
-    {
-        "id": 26,
-        "name": "ИСКЪР",
-        "transliterated": "iskar"
-    },
-    {
-        "id": 696,
-        "name": "ИСКЪРСКО ШОСЕ",
-        "transliterated": "iskarsko-shose"
-    },
-    {
-        "id": 190,
-        "name": "ИСПЕРИХ",
-        "transliterated": "isperih"
-    },
-    {
-        "id": 74,
-        "name": "ИХТИМАН",
-        "transliterated": "ihtiman"
-    },
-    {
-        "id": 508,
-        "name": "ЙОГЛАВ",
-        "transliterated": "joglav"
-    },
-    {
-        "id": 138,
-        "name": "КАДИЕВО",
-        "transliterated": "kadievo"
-    },
-    {
-        "id": 40,
-        "name": "КАЗАНЛЪК",
-        "transliterated": "kazanlak"
-    },
-    {
-        "id": 620,
-        "name": "КАЗАЧЕВО",
-        "transliterated": "kazachevo"
-    },
-    {
-        "id": 187,
-        "name": "КАЗИЧЕНЕ",
-        "transliterated": "kazichene"
-    },
-    {
-        "id": 554,
-        "name": "КАЛЕЙЦА",
-        "transliterated": "kalejca"
-    },
-    {
-        "id": 581,
-        "name": "КАЛИПЕТРОВО",
-        "transliterated": "kalipetrovo"
-    },
-    {
-        "id": 227,
-        "name": "КАЛИТИНОВО",
-        "transliterated": "kalitinovo"
-    },
-    {
-        "id": 163,
-        "name": "КАЛИЩА",
-        "transliterated": "kalishta"
-    },
-    {
-        "id": 678,
-        "name": "КАЛОТИНА-ЗАПАД",
-        "transliterated": "kalotina-zapad"
-    },
-    {
-        "id": 305,
-        "name": "КАЛОФЕР",
-        "transliterated": "kalofer"
-    },
-    {
-        "id": 129,
-        "name": "КАЛОЯНОВЕЦ",
-        "transliterated": "kalojanovec"
-    },
-    {
-        "id": 271,
-        "name": "КАЛОЯНОВО",
-        "transliterated": "kalojanovo"
-    },
-    {
-        "id": 320,
-        "name": "КАЛОЯНЦИ",
-        "transliterated": "kalojanci"
-    },
-    {
-        "id": 432,
-        "name": "КАЛУГЕРИЦА",
-        "transliterated": "kalugerica"
-    },
-    {
-        "id": 346,
-        "name": "КАМЕНЕЦ",
-        "transliterated": "kamenec"
-    },
-    {
-        "id": 358,
-        "name": "КАМЕННИ КАРИЕРИ",
-        "transliterated": "kamenni-karieri"
-    },
-    {
-        "id": 104,
-        "name": "КАМЕНО",
-        "transliterated": "kameno"
-    },
-    {
-        "id": 518,
-        "name": "КАМЕНЯК",
-        "transliterated": "kamenjak"
-    },
-    {
-        "id": 523,
-        "name": "КАРАВЕЛЬОВО",
-        "transliterated": "karaveljovo"
-    },
-    {
-        "id": 183,
-        "name": "КАРАГЕОРГИЕВО",
-        "transliterated": "karageorgievo"
-    },
-    {
-        "id": 211,
-        "name": "КАРАДЖАЛОВО",
-        "transliterated": "karadzhalovo"
-    },
-    {
-        "id": 600,
-        "name": "КАРАДЖАТА",
-        "transliterated": "karadzhata"
-    },
-    {
-        "id": 653,
-        "name": "КАРБИНЦИ",
-        "transliterated": "karbinci"
-    },
-    {
-        "id": 222,
-        "name": "КАРДАМ",
-        "transliterated": "kardam"
-    },
-    {
-        "id": 693,
-        "name": "КАРИЕРА-СКАКАВИЦА",
-        "transliterated": "kariera-skakavica"
-    },
-    {
-        "id": 38,
-        "name": "КАРЛОВО",
-        "transliterated": "karlovo"
-    },
-    {
-        "id": 282,
-        "name": "КАРЛУКОВО",
-        "transliterated": "karlukovo"
-    },
-    {
-        "id": 41,
-        "name": "КАРНОБАТ",
-        "transliterated": "karnobat"
-    },
-    {
-        "id": 67,
-        "name": "КАСПИЧАН",
-        "transliterated": "kaspichan"
-    },
-    {
-        "id": 156,
-        "name": "КАТУНИЦА",
-        "transliterated": "katunica"
-    },
-    {
-        "id": 225,
-        "name": "КЕРМЕН",
-        "transliterated": "kermen"
-    },
-    {
-        "id": 555,
-        "name": "КЕСАРЕВО",
-        "transliterated": "kesarevo"
-    },
-    {
-        "id": 548,
-        "name": "КИПРА",
-        "transliterated": "kipra"
-    },
-    {
-        "id": 567,
-        "name": "КИТАНЧЕВО",
-        "transliterated": "kitanchevo"
-    },
-    {
-        "id": 276,
-        "name": "КЛИКАЧ",
-        "transliterated": "klikach"
-    },
-    {
-        "id": 632,
-        "name": "КЛИМАТ.УЧИЛИЩЕ",
-        "transliterated": "klimat-uchilishte"
-    },
-    {
-        "id": 356,
-        "name": "КЛИМАШ",
-        "transliterated": "klimash"
-    },
-    {
-        "id": 350,
-        "name": "КЛИСУРА",
-        "transliterated": "klisura"
-    },
-    {
-        "id": 481,
-        "name": "КНИЖОВНИК",
-        "transliterated": "knizhovnik"
-    },
-    {
-        "id": 182,
-        "name": "КОВАЧЕВО",
-        "transliterated": "kovachevo"
-    },
-    {
-        "id": 405,
-        "name": "КОЗАРЕВЕЦ",
-        "transliterated": "kozarevec"
-    },
-    {
-        "id": 269,
-        "name": "КОЗАРСКО",
-        "transliterated": "kozarsko"
-    },
-    {
-        "id": 264,
-        "name": "КОМАРЕВО",
-        "transliterated": "komarevo"
-    },
-    {
-        "id": 109,
-        "name": "КОМУНАРИ",
-        "transliterated": "komunari"
-    },
-    {
-        "id": 607,
-        "name": "КОНАРЕ",
-        "transliterated": "konare"
-    },
-    {
-        "id": 616,
-        "name": "КОНДОФРЕЙ",
-        "transliterated": "kondofrej"
-    },
-    {
-        "id": 575,
-        "name": "КОНСТАНТИНОВО",
-        "transliterated": "konstantinovo"
-    },
-    {
-        "id": 252,
-        "name": "КОНЬОВО",
-        "transliterated": "konjovo"
-    },
-    {
-        "id": 297,
-        "name": "КОПАНИЦА",
-        "transliterated": "kopanica"
-    },
-    {
-        "id": 257,
-        "name": "КОПИЛОВЦИ",
-        "transliterated": "kopilovci"
-    },
-    {
-        "id": 397,
-        "name": "КОПРИВЩИЦА",
-        "transliterated": "koprivshtica"
-    },
-    {
-        "id": 462,
-        "name": "КОСТАНДОВО",
-        "transliterated": "kostandovo"
-    },
-    {
-        "id": 669,
-        "name": "КОСТА ПЕТРОВ",
-        "transliterated": "kosta-petrov"
-    },
-    {
-        "id": 39,
-        "name": "КОСТЕНЕЦ",
-        "transliterated": "kostenec"
-    },
-    {
-        "id": 98,
-        "name": "КОСТИНБРОД",
-        "transliterated": "kostinbrod"
-    },
-    {
-        "id": 228,
-        "name": "КОСТИНБРОД - СП.",
-        "transliterated": "kostinbrod-sp"
-    },
-    {
-        "id": 695,
-        "name": "КОЧЕВО",
-        "transliterated": "kochevo"
-    },
-    {
-        "id": 512,
-        "name": "КОЧЕРИНОВО",
-        "transliterated": "kocherinovo"
-    },
-    {
-        "id": 259,
-        "name": "КОЧОВО",
-        "transliterated": "kochovo"
-    },
-    {
-        "id": 470,
-        "name": "КОШАРИТЕ",
-        "transliterated": "kosharite"
-    },
-    {
-        "id": 558,
-        "name": "КОШОВ",
-        "transliterated": "koshov"
-    },
-    {
-        "id": 540,
-        "name": "КРАКРА",
-        "transliterated": "krakra"
-    },
-    {
-        "id": 475,
-        "name": "КРЕМИКОВЦИ",
-        "transliterated": "kremikovci"
-    },
-    {
-        "id": 680,
-        "name": "КРЕПОСТ",
-        "transliterated": "krepost"
-    },
-    {
-        "id": 382,
-        "name": "КРЕСНА",
-        "transliterated": "kresna"
-    },
-    {
-        "id": 460,
-        "name": "КРЕСНА - СП.",
-        "transliterated": "kresna-sp"
-    },
-    {
-        "id": 437,
-        "name": "КРЕТА",
-        "transliterated": "kreta"
-    },
-    {
-        "id": 240,
-        "name": "КРИВА БАРА",
-        "transliterated": "kriva-bara"
-    },
-    {
-        "id": 506,
-        "name": "КРИВНЯ",
-        "transliterated": "krivnja"
-    },
-    {
-        "id": 60,
-        "name": "КРИВОДОЛ",
-        "transliterated": "krivodol"
-    },
-    {
-        "id": 361,
-        "name": "КРИЧИМ",
-        "transliterated": "krichim"
-    },
-    {
-        "id": 148,
-        "name": "КРУМ",
-        "transliterated": "krum"
-    },
-    {
-        "id": 20,
-        "name": "КРУМОВО",
-        "transliterated": "krumovo"
-    },
-    {
-        "id": 154,
-        "name": "КРУШЕТО",
-        "transliterated": "krusheto"
-    },
-    {
-        "id": 456,
-        "name": "КРЪСТЕЦ",
-        "transliterated": "krastec"
-    },
-    {
-        "id": 580,
-        "name": "КУБРАТОВО",
-        "transliterated": "kubratovo"
-    },
-    {
-        "id": 414,
-        "name": "КУЛАТА",
-        "transliterated": "kulata"
-    },
-    {
-        "id": 174,
-        "name": "КУМАРИЦА",
-        "transliterated": "kumarica"
-    },
-    {
-        "id": 189,
-        "name": "КУНИНО",
-        "transliterated": "kunino"
-    },
-    {
-        "id": 101,
-        "name": "КУРИЛО",
-        "transliterated": "kurilo"
-    },
-    {
-        "id": 178,
-        "name": "КУРТОВО КОНАРЕ",
-        "transliterated": "kurtovo-konare"
-    },
-    {
-        "id": 578,
-        "name": "КУТУГЕРЦИ",
-        "transliterated": "kutugerci"
-    },
-    {
-        "id": 248,
-        "name": "КУЦИНА",
-        "transliterated": "kucina"
-    },
-    {
-        "id": 132,
-        "name": "КЪРДЖАЛИ",
-        "transliterated": "kardzhali"
-    },
-    {
-        "id": 368,
-        "name": "КЪРНАРЕ",
-        "transliterated": "karnare"
-    },
-    {
-        "id": 534,
-        "name": "КЪРШАЛЕВО",
-        "transliterated": "karshalevo"
-    },
-    {
-        "id": 52,
-        "name": "КЮСТЕНДИЛ",
-        "transliterated": "kjustendil"
-    },
-    {
-        "id": 404,
-        "name": "ЛАЗАР ПАМПОРОВ",
-        "transliterated": "lazar-pamporov"
-    },
-    {
-        "id": 73,
-        "name": "ЛАКАТНИК",
-        "transliterated": "lakatnik"
-    },
-    {
-        "id": 423,
-        "name": "ЛЕВИЩЕ",
-        "transliterated": "levishte"
-    },
-    {
-        "id": 17,
-        "name": "ЛЕВСКИ",
-        "transliterated": "levski"
-    },
-    {
-        "id": 319,
-        "name": "ЛЕСИЧЕРИ",
-        "transliterated": "lesicheri"
-    },
-    {
-        "id": 428,
-        "name": "ЛЕСКА",
-        "transliterated": "leska"
-    },
-    {
-        "id": 250,
-        "name": "ЛЕТНИЦА",
-        "transliterated": "letnica"
-    },
-    {
-        "id": 539,
-        "name": "ЛЕШНИЦА",
-        "transliterated": "leshnica"
-    },
-    {
-        "id": 480,
-        "name": "ЛИСТЕЦ",
-        "transliterated": "listec"
-    },
-    {
-        "id": 249,
-        "name": "ЛОВЕЦ",
-        "transliterated": "lovec"
-    },
-    {
-        "id": 83,
-        "name": "ЛОВЕЧ",
-        "transliterated": "lovech"
-    },
-    {
-        "id": 682,
-        "name": "ЛОВЕЧ-СЕВЕР",
-        "transliterated": "lovech-sever"
-    },
-    {
-        "id": 300,
-        "name": "ЛОВЕЧ - СП.",
-        "transliterated": "lovech-sp"
-    },
-    {
-        "id": 651,
-        "name": "ЛОВЕЧ - ЮГ",
-        "transliterated": "lovech-jug"
-    },
-    {
-        "id": 281,
-        "name": "ЛОЗАРЕВО",
-        "transliterated": "lozarevo"
-    },
-    {
-        "id": 690,
-        "name": "ЛОЗОВО",
-        "transliterated": "lozovo"
-    },
-    {
-        "id": 661,
-        "name": "ЛОКОРСКО",
-        "transliterated": "lokorsko"
-    },
-    {
-        "id": 34,
-        "name": "ЛОМ",
-        "transliterated": "lom"
-    },
-    {
-        "id": 625,
-        "name": "ЛОМЕЦ",
-        "transliterated": "lomec"
-    },
-    {
-        "id": 90,
-        "name": "ЛУКОВО",
-        "transliterated": "lukovo"
-    },
-    {
-        "id": 223,
-        "name": "ЛЮБИМЕЦ",
-        "transliterated": "ljubimec"
-    },
-    {
-        "id": 474,
-        "name": "ЛЮЛЯКОВО",
-        "transliterated": "ljuljakovo"
-    },
-    {
-        "id": 254,
-        "name": "ЛЮТИБРОД",
-        "transliterated": "ljutibrod"
-    },
-    {
-        "id": 199,
-        "name": "МАВРУДОВО",
-        "transliterated": "mavrudovo"
-    },
-    {
-        "id": 232,
-        "name": "МАДАРА",
-        "transliterated": "madara"
-    },
-    {
-        "id": 525,
-        "name": "МАЗАРАЧЕВО",
-        "transliterated": "mazarachevo"
-    },
-    {
-        "id": 450,
-        "name": "МАКОЦЕВО",
-        "transliterated": "makocevo"
-    },
-    {
-        "id": 524,
-        "name": "МАКОЦЕВО - СП.",
-        "transliterated": "makocevo-sp"
-    },
-    {
-        "id": 660,
-        "name": "МАКРЕШ",
-        "transliterated": "makresh"
-    },
-    {
-        "id": 574,
-        "name": "МАЛЕВО",
-        "transliterated": "malevo"
-    },
-    {
-        "id": 608,
-        "name": "МАЛО СЕЛО",
-        "transliterated": "malo-selo"
-    },
-    {
-        "id": 241,
-        "name": "МАНОЛЕ",
-        "transliterated": "manole"
-    },
-    {
-        "id": 309,
-        "name": "МАНОЛОВО",
-        "transliterated": "manolovo"
-    },
-    {
-        "id": 520,
-        "name": "МАРЕК",
-        "transliterated": "marek"
-    },
-    {
-        "id": 517,
-        "name": "МАРИКОСТИНО",
-        "transliterated": "marikostino"
-    },
-    {
-        "id": 425,
-        "name": "МАРИНО ПОЛЕ",
-        "transliterated": "marino-pole"
-    },
-    {
-        "id": 642,
-        "name": "МАРКО НИКОЛОВ",
-        "transliterated": "marko-nikolov"
-    },
-    {
-        "id": 593,
-        "name": "МАСЛИНОВО",
-        "transliterated": "maslinovo"
-    },
-    {
-        "id": 119,
-        "name": "МЕДКОВЕЦ",
-        "transliterated": "medkovec"
-    },
-    {
-        "id": 401,
-        "name": "МЕДОВИНА",
-        "transliterated": "medovina"
-    },
-    {
-        "id": 457,
-        "name": "МЕЖДЕН",
-        "transliterated": "mezhden"
-    },
-    {
-        "id": 8,
-        "name": "МЕЗДРА",
-        "transliterated": "mezdra"
-    },
-    {
-        "id": 348,
-        "name": "МЕЗДРА ЮГ",
-        "transliterated": "mezdra-jug"
-    },
-    {
-        "id": 504,
-        "name": "МЕРИЧЛЕРИ",
-        "transliterated": "merichleri"
-    },
-    {
-        "id": 273,
-        "name": "МЕРИЧЛЕРИ-СП.",
-        "transliterated": "merichleri-sp"
-    },
-    {
-        "id": 22,
-        "name": "МЕТАЛ-СП.",
-        "transliterated": "metal-stop"
-    },
-    {
-        "id": 531,
-        "name": "МИЛКОВИЦА",
-        "transliterated": "milkovica"
-    },
-    {
-        "id": 494,
-        "name": "МИРКОВО",
-        "transliterated": "mirkovo"
-    },
-    {
-        "id": 622,
-        "name": "МИРКОВО - СП.",
-        "transliterated": "mirkovo-st"
-    },
-    {
-        "id": 144,
-        "name": "МИХАЙЛОВО",
-        "transliterated": "mihajlovo"
-    },
-    {
-        "id": 251,
-        "name": "МИХАЛЦИ-СТАМБОЛОВО",
-        "transliterated": "mihalci-stambolovo"
-    },
-    {
-        "id": 619,
-        "name": "МЛАМОЛОВО",
-        "transliterated": "mlamolovo"
-    },
-    {
-        "id": 326,
-        "name": "МОКРИЩЕ",
-        "transliterated": "mokrishte"
-    },
-    {
-        "id": 201,
-        "name": "МОМИНА КЛИСУРА",
-        "transliterated": "momina-klisura"
-    },
-    {
-        "id": 479,
-        "name": "МОМИНА СКАЛА",
-        "transliterated": "momina-skala"
-    },
-    {
-        "id": 230,
-        "name": "МОМИН БРОД",
-        "transliterated": "momin-brod"
-    },
-    {
-        "id": 274,
-        "name": "МОМИН ПРОХОД",
-        "transliterated": "momin-prohod"
-    },
-    {
-        "id": 135,
-        "name": "МОМЧИЛГРАД",
-        "transliterated": "momchilgrad"
-    },
-    {
-        "id": 27,
-        "name": "МОНТАНА",
-        "transliterated": "montana"
-    },
-    {
-        "id": 131,
-        "name": "МОРАВА",
-        "transliterated": "morava"
-    },
-    {
-        "id": 468,
-        "name": "МОРАВИЦА",
-        "transliterated": "moravica"
-    },
-    {
-        "id": 681,
-        "name": "МОРУНИЦА",
-        "transliterated": "morunica"
-    },
-    {
-        "id": 579,
-        "name": "МОРЯК",
-        "transliterated": "morjak"
-    },
-    {
-        "id": 590,
-        "name": "МОСТ",
-        "transliterated": "most"
-    },
-    {
-        "id": 556,
-        "name": "МУЛЕТАРОВО",
-        "transliterated": "muletarovo"
-    },
-    {
-        "id": 364,
-        "name": "МУРСАЛЕВО",
-        "transliterated": "mursalevo"
-    },
-    {
-        "id": 683,
-        "name": "МУСАЧЕВО",
-        "transliterated": "musachevo"
-    },
-    {
-        "id": 634,
-        "name": "МЪДРЕЦ",
-        "transliterated": "madrec"
-    },
-    {
-        "id": 220,
-        "name": "МЪРЧЕВО",
-        "transliterated": "marchevo"
-    },
-    {
-        "id": 557,
-        "name": "МЪТНИЦА",
-        "transliterated": "matnica"
-    },
-    {
-        "id": 260,
-        "name": "НАДАРЕВО",
-        "transliterated": "nadarevo"
-    },
-    {
-        "id": 180,
-        "name": "НАДЕЖДА - СП.",
-        "transliterated": "nadezhda"
-    },
-    {
-        "id": 570,
-        "name": "НЕВЕСТИНО",
-        "transliterated": "nevestino"
-    },
-    {
-        "id": 335,
-        "name": "НЕВША",
-        "transliterated": "nevsha"
-    },
-    {
-        "id": 641,
-        "name": "НЕГОВАН",
-        "transliterated": "negovan"
-    },
-    {
-        "id": 561,
-        "name": "НЕГУШЕВО",
-        "transliterated": "negushevo"
-    },
-    {
-        "id": 498,
-        "name": "НЕМИРОВО",
-        "transliterated": "nemirovo"
-    },
-    {
-        "id": 268,
-        "name": "НИКОЛАЕВО",
-        "transliterated": "nikolaevo"
-    },
-    {
-        "id": 59,
-        "name": "НОВА ЗАГОРА",
-        "transliterated": "nova-zagora"
-    },
-    {
-        "id": 209,
-        "name": "НОВА НАДЕЖДА",
-        "transliterated": "nova-nadezhda"
-    },
-    {
-        "id": 123,
-        "name": "НОВА ШИПКА",
-        "transliterated": "nova-shipka"
-    },
-    {
-        "id": 560,
-        "name": "ОБЕДИНЕНА",
-        "transliterated": "obedinena"
-    },
-    {
-        "id": 239,
-        "name": "ОБЕЛЯ",
-        "transliterated": "obelja"
-    },
-    {
-        "id": 258,
-        "name": "ОБОРИЩЕ",
-        "transliterated": "oborishte"
-    },
-    {
-        "id": 509,
-        "name": "ОБРАЗЦОВ ЧИФЛИК",
-        "transliterated": "obrazcov-chiflik"
-    },
-    {
-        "id": 13,
-        "name": "ОВЧЕПОЛЦИ",
-        "transliterated": "ovchepolci"
-    },
-    {
-        "id": 287,
-        "name": "ОГНЯНОВО",
-        "transliterated": "ognjanovo"
-    },
-    {
-        "id": 451,
-        "name": "ОДЪРНЕ",
-        "transliterated": "odarne"
-    },
-    {
-        "id": 485,
-        "name": "ОПЛЕТНЯ",
-        "transliterated": "opletnja"
-    },
-    {
-        "id": 237,
-        "name": "ОПЪЛЧЕНЕЦ",
-        "transliterated": "opalchenec"
-    },
-    {
-        "id": 374,
-        "name": "ОРЕШ",
-        "transliterated": "oresh"
-    },
-    {
-        "id": 618,
-        "name": "ОРЕШАК",
-        "transliterated": "oreshak"
-    },
-    {
-        "id": 116,
-        "name": "ОРЕШЕЦ",
-        "transliterated": "oreshec"
-    },
-    {
-        "id": 122,
-        "name": "ОРИЗОВО",
-        "transliterated": "orizovo"
-    },
-    {
-        "id": 100,
-        "name": "ОРЛИН",
-        "transliterated": "orlin"
-    },
-    {
-        "id": 464,
-        "name": "ОСЕЛНА",
-        "transliterated": "oselna"
-    },
-    {
-        "id": 370,
-        "name": "ОСЕТЕНОВО",
-        "transliterated": "osetenovo"
-    },
-    {
-        "id": 603,
-        "name": "ОСЛЕН",
-        "transliterated": "oslen"
-    },
-    {
-        "id": 650,
-        "name": "ОСТРЕЦ",
-        "transliterated": "ostrec"
-    },
-    {
-        "id": 193,
-        "name": "ОТДИХ",
-        "transliterated": "otdih"
-    },
-    {
-        "id": 290,
-        "name": "ОХРИД",
-        "transliterated": "ohrid"
-    },
-    {
-        "id": 342,
-        "name": "ПАВЕЛ БАНЯ",
-        "transliterated": "pavel-banja"
-    },
-    {
-        "id": 42,
-        "name": "ПАВЛИКЕНИ",
-        "transliterated": "pavlikeni"
-    },
-    {
-        "id": 16,
-        "name": "ПАЗАРДЖИК",
-        "transliterated": "pazardzhik"
-    },
-    {
-        "id": 490,
-        "name": "ПАЛИ ЛУЛА",
-        "transliterated": "pali-lula"
-    },
-    {
-        "id": 684,
-        "name": "ПАНАГЮРИЩЕ",
-        "transliterated": "panagjurishte"
-    },
-    {
-        "id": 310,
-        "name": "ПАРТИЗАНИ",
-        "transliterated": "partizani"
-    },
-    {
-        "id": 630,
-        "name": "ПЕЙО ЯВОРОВ",
-        "transliterated": "pejo-javorov"
-    },
-    {
-        "id": 7,
-        "name": "ПЕРНИК",
-        "transliterated": "pernik"
-    },
-    {
-        "id": 31,
-        "name": "ПЕРНИК РАЗПРЕДЕЛИТ.",
-        "transliterated": "pernik-razpredelit"
-    },
-    {
-        "id": 329,
-        "name": "ПЕРПЕРЕК",
-        "transliterated": "perperek"
-    },
-    {
-        "id": 439,
-        "name": "ПЕСНОПОЙ",
-        "transliterated": "pesnopoj"
-    },
-    {
-        "id": 177,
-        "name": "ПЕТКО КАРАВЕЛОВО",
-        "transliterated": "petko-karavelovo"
-    },
-    {
-        "id": 145,
-        "name": "ПЕТРИЧ",
-        "transliterated": "petrich"
-    },
-    {
-        "id": 469,
-        "name": "ПЕТЪРЧ",
-        "transliterated": "petarch"
-    },
-    {
-        "id": 106,
-        "name": "ПЕЩЕРА",
-        "transliterated": "peshtera"
-    },
-    {
-        "id": 205,
-        "name": "ПИРДОП",
-        "transliterated": "pirdop"
-    },
-    {
-        "id": 150,
-        "name": "ПЛАЧКОВЦИ",
-        "transliterated": "plachkovci"
-    },
-    {
-        "id": 6,
-        "name": "ПЛЕВЕН",
-        "transliterated": "pleven"
-    },
-    {
-        "id": 213,
-        "name": "ПЛЕВЕН ЗАПАД",
-        "transliterated": "pleven-zapad"
-    },
-    {
-        "id": 649,
-        "name": "ПЛИСКА",
-        "transliterated": "pliska"
-    },
-    {
-        "id": 3,
-        "name": "ПЛОВДИВ",
-        "transliterated": "plovdiv"
-    },
-    {
-        "id": 691,
-        "name": "ПЛОСКА МОГИЛА",
-        "transliterated": "ploska-mogila"
-    },
-    {
-        "id": 238,
-        "name": "ПОБИТ КАМЪК",
-        "transliterated": "pobit-kamak"
-    },
-    {
-        "id": 47,
-        "name": "ПОВЕЛЯНОВО",
-        "transliterated": "poveljanovo"
-    },
-    {
-        "id": 559,
-        "name": "ПОДВИС",
-        "transliterated": "podvis"
-    },
-    {
-        "id": 391,
-        "name": "ПОДГОРИЦА",
-        "transliterated": "podgorica"
-    },
-    {
-        "id": 224,
-        "name": "ПОДЕМ",
-        "transliterated": "podem"
-    },
-    {
-        "id": 286,
-        "name": "ПОДКОВА",
-        "transliterated": "podkova"
-    },
-    {
-        "id": 35,
-        "name": "ПОДУЯНЕ",
-        "transliterated": "podujane-passenger"
-    },
-    {
-        "id": 516,
-        "name": "ПОДУЯНЕ РАЗПР.СР.Р.",
-        "transliterated": "podujane-razprsrr"
-    },
-    {
-        "id": 394,
-        "name": "ПОЛИКРАИЩЕ",
-        "transliterated": "polikraishte"
-    },
-    {
-        "id": 605,
-        "name": "ПОЛСКИ СЕНОВЕЦ",
-        "transliterated": "polski-senovec"
-    },
-    {
-        "id": 70,
-        "name": "ПОЛСКИ ТРЪМБЕШ",
-        "transliterated": "polski-trambesh"
-    },
-    {
-        "id": 204,
-        "name": "ПОЛСКО КОСОВО",
-        "transliterated": "polsko-kosovo"
-    },
-    {
-        "id": 120,
-        "name": "ПОПОВИЦА",
-        "transliterated": "popovica"
-    },
-    {
-        "id": 75,
-        "name": "ПОПОВО",
-        "transliterated": "popovo"
-    },
-    {
-        "id": 198,
-        "name": "ПОРДИМ",
-        "transliterated": "pordim"
-    },
-    {
-        "id": 433,
-        "name": "ПРАВДА",
-        "transliterated": "pravda"
-    },
-    {
-        "id": 666,
-        "name": "ПРЕКОЛНИЦА",
-        "transliterated": "prekolnica"
-    },
-    {
-        "id": 550,
-        "name": "ПРЕСЛАВЕЦ",
-        "transliterated": "preslavec"
-    },
-    {
-        "id": 357,
-        "name": "ПРИБОЙ",
-        "transliterated": "priboj"
-    },
-    {
-        "id": 584,
-        "name": "ПРИЛЕП",
-        "transliterated": "prilep"
-    },
-    {
-        "id": 63,
-        "name": "ПРОВАДИЯ",
-        "transliterated": "provadija"
-    },
-    {
-        "id": 403,
-        "name": "ПРОЛЕТ",
-        "transliterated": "prolet"
-    },
-    {
-        "id": 181,
-        "name": "ПРОСЛАВ",
-        "transliterated": "proslav"
-    },
-    {
-        "id": 308,
-        "name": "ПРОСТОРНО",
-        "transliterated": "prostorno"
-    },
-    {
-        "id": 216,
-        "name": "ПТИЧАР",
-        "transliterated": "ptichar"
-    },
-    {
-        "id": 45,
-        "name": "ПЪРВОМАЙ",
-        "transliterated": "parvomaj"
-    },
-    {
-        "id": 639,
-        "name": "РАВНА",
-        "transliterated": "ravna"
-    },
-    {
-        "id": 482,
-        "name": "РАВНЕЦ",
-        "transliterated": "ravnec"
-    },
-    {
-        "id": 577,
-        "name": "РАВНО ПОЛЕ",
-        "transliterated": "ravno-pole"
-    },
-    {
-        "id": 214,
-        "name": "РАДАНОВО",
-        "transliterated": "radanovo"
-    },
-    {
-        "id": 583,
-        "name": "РАДЕВЦИ",
-        "transliterated": "radevci"
-    },
-    {
-        "id": 388,
-        "name": "РАДКО ДИМИТРИЕВО",
-        "transliterated": "radko-dimitrievo"
-    },
-    {
-        "id": 466,
-        "name": "РАДОВЕНЕ",
-        "transliterated": "radovene"
-    },
-    {
-        "id": 44,
-        "name": "РАДОМИР",
-        "transliterated": "radomir"
-    },
-    {
-        "id": 496,
-        "name": "РАДУЙ",
-        "transliterated": "raduj"
-    },
-    {
-        "id": 454,
-        "name": "РАДУНЦИ",
-        "transliterated": "radunci"
-    },
-    {
-        "id": 164,
-        "name": "РАЖДАВИЦА",
-        "transliterated": "razhdavica"
-    },
-    {
-        "id": 159,
-        "name": "РАЗГРАД",
-        "transliterated": "razgrad"
-    },
-    {
-        "id": 194,
-        "name": "РАЗДЕЛНА",
-        "transliterated": "razdelna"
-    },
-    {
-        "id": 262,
-        "name": "РАЗЛОГ",
-        "transliterated": "razlog"
-    },
-    {
-        "id": 596,
-        "name": "РАЗМЕННА",
-        "transliterated": "razmenna"
-    },
-    {
-        "id": 674,
-        "name": "РАЗМЕННА - СП.",
-        "transliterated": "razmenna-sp"
-    },
-    {
-        "id": 85,
-        "name": "РАКЕВО",
-        "transliterated": "rakevo"
-    },
-    {
-        "id": 635,
-        "name": "РАКОВСКИ",
-        "transliterated": "rakovski"
-    },
-    {
-        "id": 105,
-        "name": "РЕБРОВО",
-        "transliterated": "rebrovo"
-    },
-    {
-        "id": 323,
-        "name": "РЕБЪРКОВО",
-        "transliterated": "rebarkovo"
-    },
-    {
-        "id": 595,
-        "name": "РЕСЕЛЕЦ - СП.",
-        "transliterated": "reselec-sp"
-    },
-    {
-        "id": 337,
-        "name": "РЕСЕН",
-        "transliterated": "resen"
-    },
-    {
-        "id": 408,
-        "name": "РОГОЗЧЕ",
-        "transliterated": "rogozche"
-    },
-    {
-        "id": 289,
-        "name": "РОЗИНО",
-        "transliterated": "rozino"
-    },
-    {
-        "id": 65,
-        "name": "РОМАН",
-        "transliterated": "roman"
-    },
-    {
-        "id": 86,
-        "name": "РОМЧА",
-        "transliterated": "romcha"
-    },
-    {
-        "id": 519,
-        "name": "РУЙНО",
-        "transliterated": "rujno"
-    },
-    {
-        "id": 458,
-        "name": "РУПИТЕ",
-        "transliterated": "rupite"
-    },
-    {
-        "id": 664,
-        "name": "РУПЦИ - СЕВЕР",
-        "transliterated": "rupci-sever"
-    },
-    {
-        "id": 587,
-        "name": "РУСАЛЯ - ДИЧИН",
-        "transliterated": "rusalja-dichin"
-    },
-    {
-        "id": 30,
-        "name": "РУСЕ",
-        "transliterated": "ruse"
-    },
-    {
-        "id": 128,
-        "name": "РУСЕ РАЗПРЕДЕЛИТЕЛНА",
-        "transliterated": "ruse-razpredelitelna"
-    },
-    {
-        "id": 146,
-        "name": "РУСЕ ТОВАРНА-СП.",
-        "transliterated": "ruse-tovarna-sp"
-    },
-    {
-        "id": 312,
-        "name": "РУСКА БЯЛА",
-        "transliterated": "ruska-bjala"
-    },
-    {
-        "id": 69,
-        "name": "САДОВО",
-        "transliterated": "sadovo"
-    },
-    {
-        "id": 386,
-        "name": "САМОВОДЕНЕ",
-        "transliterated": "samovodene"
-    },
-    {
-        "id": 92,
-        "name": "САМУИЛ",
-        "transliterated": "samuil"
-    },
-    {
-        "id": 261,
-        "name": "САМУИЛОВО",
-        "transliterated": "samuilovo"
-    },
-    {
-        "id": 206,
-        "name": "САНДАНСКИ",
-        "transliterated": "sandanski"
-    },
-    {
-        "id": 655,
-        "name": "САРАНЦИ",
-        "transliterated": "saranci"
-    },
-    {
-        "id": 424,
-        "name": "САХРАНЕ",
-        "transliterated": "sahrane"
-    },
-    {
-        "id": 332,
-        "name": "СБОРИЩЕ",
-        "transliterated": "sborishte"
-    },
-    {
-        "id": 533,
-        "name": "СВЕЖЕН",
-        "transliterated": "svezhen"
-    },
-    {
-        "id": 511,
-        "name": "СВЕТА ПЕТКА",
-        "transliterated": "sveta-petka"
-    },
-    {
-        "id": 692,
-        "name": "СВЕТИ ГЕОРГИ",
-        "transliterated": "sveti-georgi"
-    },
-    {
-        "id": 562,
-        "name": "СВЕТЛЕН",
-        "transliterated": "svetlen"
-    },
-    {
-        "id": 521,
-        "name": "СВЕТЛИНА - СП.",
-        "transliterated": "svetlina-sp"
-    },
-    {
-        "id": 624,
-        "name": "СВЕТОВРАЧАНЕ",
-        "transliterated": "svetovrachane"
-    },
-    {
-        "id": 153,
-        "name": "СВИЛЕНГРАД",
-        "transliterated": "svilengrad"
-    },
-    {
-        "id": 64,
-        "name": "СВИЩОВ",
-        "transliterated": "svishtov"
-    },
-    {
-        "id": 369,
-        "name": "СВОБОДА",
-        "transliterated": "svoboda"
-    },
-    {
-        "id": 18,
-        "name": "СВОГЕ",
-        "transliterated": "svoge"
-    },
-    {
-        "id": 551,
-        "name": "СЕЛИМИНОВО",
-        "transliterated": "seliminovo"
-    },
-    {
-        "id": 226,
-        "name": "СЕНОВО",
-        "transliterated": "senovo"
-    },
-    {
-        "id": 24,
-        "name": "СЕПТЕМВРИ",
-        "transliterated": "septemvri"
-    },
-    {
-        "id": 354,
-        "name": "СЕСТРИМО",
-        "transliterated": "sestrimo"
-    },
-    {
-        "id": 210,
-        "name": "СИЛИСТРА",
-        "transliterated": "silistra"
-    },
-    {
-        "id": 200,
-        "name": "СИМЕОНОВГРАД",
-        "transliterated": "simeonovgrad"
-    },
-    {
-        "id": 317,
-        "name": "СИМИТЛИ",
-        "transliterated": "simitli"
-    },
-    {
-        "id": 659,
-        "name": "СИНАГОВЦИ-ГУРКОВО",
-        "transliterated": "sinagovci-gurkovo"
-    },
-    {
-        "id": 88,
-        "name": "СИНДЕЛ",
-        "transliterated": "sindel"
-    },
-    {
-        "id": 284,
-        "name": "СИНИТОВО",
-        "transliterated": "sinitovo"
-    },
-    {
-        "id": 336,
-        "name": "СИНЬО БЪРДО",
-        "transliterated": "sinjo-bardo"
-    },
-    {
-        "id": 552,
-        "name": "СКАКАВИЦА",
-        "transliterated": "skakavica"
-    },
-    {
-        "id": 169,
-        "name": "СКОБЕЛЕВО",
-        "transliterated": "skobelevo"
-    },
-    {
-        "id": 604,
-        "name": "СКОМЛЯ (КАНТОН-43)",
-        "transliterated": "skomlja-kanton-43"
-    },
-    {
-        "id": 95,
-        "name": "СКУТАРЕ",
-        "transliterated": "skutare"
-    },
-    {
-        "id": 203,
-        "name": "СЛАВЯНОВО",
-        "transliterated": "slavjanovo"
-    },
-    {
-        "id": 673,
-        "name": "СЛАНА БАРА",
-        "transliterated": "slana-bara"
-    },
-    {
-        "id": 43,
-        "name": "СЛИВЕН",
-        "transliterated": "sliven"
-    },
-    {
-        "id": 234,
-        "name": "СЛИВНИЦА",
-        "transliterated": "slivnica"
-    },
-    {
-        "id": 147,
-        "name": "СЛИВНИЦА - СП.",
-        "transliterated": "slivnica-sp"
-    },
-    {
-        "id": 687,
-        "name": "СМИЛЕЦ",
-        "transliterated": "smilec"
-    },
-    {
-        "id": 157,
-        "name": "СМИРНЕНСКИ",
-        "transliterated": "smirnenski"
-    },
-    {
-        "id": 573,
-        "name": "СМОЛЕВО",
-        "transliterated": "smolevo"
-    },
-    {
-        "id": 334,
-        "name": "СМЯДОВО",
-        "transliterated": "smjadovo"
-    },
-    {
-        "id": 612,
-        "name": "СОВОЛЯНО",
-        "transliterated": "sovoljano"
-    },
-    {
-        "id": 292,
-        "name": "СОКОЛОВО",
-        "transliterated": "sokolovo"
-    },
-    {
-        "id": 422,
-        "name": "СОЛНА МИНА",
-        "transliterated": "solna-mina"
-    },
-    {
-        "id": 418,
-        "name": "СОМОВИТ",
-        "transliterated": "somovit"
-    },
-    {
-        "id": 546,
-        "name": "СОПОТ",
-        "transliterated": "sopot"
-    },
-    {
-        "id": 2,
-        "name": "СОФИЯ",
-        "transliterated": "sofia"
-    },
-    {
-        "id": 54,
-        "name": "СОФИЯ СЕВЕР",
-        "transliterated": "sofia-sever"
-    },
-    {
-        "id": 529,
-        "name": "СПАСОВО",
-        "transliterated": "spasovo"
-    },
-    {
-        "id": 497,
-        "name": "СРАЦИМИР",
-        "transliterated": "sracimir"
-    },
-    {
-        "id": 568,
-        "name": "СРЕДНА АРДА",
-        "transliterated": "sredna-arda"
-    },
-    {
-        "id": 484,
-        "name": "СТАЙНОВЦИ",
-        "transliterated": "stajnovci"
-    },
-    {
-        "id": 340,
-        "name": "СТАЛЕВО",
-        "transliterated": "stalevo"
-    },
-    {
-        "id": 108,
-        "name": "СТАЛИЙСКА МАХАЛА",
-        "transliterated": "stalijska-mahala"
-    },
-    {
-        "id": 14,
-        "name": "СТАМБОЛИЙСКИ",
-        "transliterated": "stambolijski"
-    },
-    {
-        "id": 349,
-        "name": "СТАМБОЛОВО",
-        "transliterated": "stambolovo"
-    },
-    {
-        "id": 638,
-        "name": "СТАМО КОСТОВ",
-        "transliterated": "stamo-kostov"
-    },
-    {
-        "id": 11,
-        "name": "СТАРА ЗАГОРА",
-        "transliterated": "stara-zagora"
-    },
-    {
-        "id": 675,
-        "name": "СТАРА КРЕСНА",
-        "transliterated": "stara-kresna"
-    },
-    {
-        "id": 543,
-        "name": "СТОЙЧЕВЦИ",
-        "transliterated": "stojchevci"
-    },
-    {
-        "id": 431,
-        "name": "СТОЛНИК",
-        "transliterated": "stolnik"
-    },
-    {
-        "id": 699,
-        "name": "СТОЯН МИТОВ",
-        "transliterated": "stojan-mitov"
-    },
-    {
-        "id": 81,
-        "name": "СТРАЖИЦА",
-        "transliterated": "strazhica"
-    },
-    {
-        "id": 121,
-        "name": "СТРАЛДЖА",
-        "transliterated": "straldzha"
-    },
-    {
-        "id": 179,
-        "name": "СТРАШИМИРОВО",
-        "transliterated": "strashimirovo"
-    },
-    {
-        "id": 685,
-        "name": "СТРЕЛЧА",
-        "transliterated": "strelcha"
-    },
-    {
-        "id": 646,
-        "name": "СТРОИТЕЛ",
-        "transliterated": "stroitel"
-    },
-    {
-        "id": 339,
-        "name": "СТРУМЯНИ",
-        "transliterated": "strumjani"
-    },
-    {
-        "id": 373,
-        "name": "СТРУПЕЦ",
-        "transliterated": "strupec"
-    },
-    {
-        "id": 130,
-        "name": "СТРУЯ",
-        "transliterated": "struja"
-    },
-    {
-        "id": 499,
-        "name": "СТРЯМА",
-        "transliterated": "strjama"
-    },
-    {
-        "id": 473,
-        "name": "СТЪРМЕН",
-        "transliterated": "starmen"
-    },
-    {
-        "id": 170,
-        "name": "СУВОРОВО",
-        "transliterated": "suvorovo"
-    },
-    {
-        "id": 306,
-        "name": "СЪБОТКОВЦИ",
-        "transliterated": "sabotkovci"
-    },
-    {
-        "id": 463,
-        "name": "СЪЕДИНЕНИЕ",
-        "transliterated": "saedinenie"
-    },
-    {
-        "id": 670,
-        "name": "ТАБАЧКА",
-        "transliterated": "tabachka"
-    },
-    {
-        "id": 476,
-        "name": "ТАНЮ ВОЙВОДА",
-        "transliterated": "tanju-vojvoda"
-    },
-    {
-        "id": 158,
-        "name": "ТВЪРДИЦА",
-        "transliterated": "tvardica"
-    },
-    {
-        "id": 118,
-        "name": "ТЕЛИШ",
-        "transliterated": "telish"
-    },
-    {
-        "id": 96,
-        "name": "ТОДОР КАБЛЕШКОВ",
-        "transliterated": "todor-kableshkov"
-    },
-    {
-        "id": 530,
-        "name": "ТОДОРОВО",
-        "transliterated": "todorovo"
-    },
-    {
-        "id": 125,
-        "name": "ТОМПСЪН",
-        "transliterated": "tompsan"
-    },
-    {
-        "id": 341,
-        "name": "ТОПОЛИТЕ",
-        "transliterated": "topolite"
-    },
-    {
-        "id": 267,
-        "name": "ТОПОЛИЦА",
-        "transliterated": "topolica"
-    },
-    {
-        "id": 152,
-        "name": "ТОПОЛОВ ДОЛ",
-        "transliterated": "topolov-dol"
-    },
-    {
-        "id": 288,
-        "name": "ТРАЙКОВО",
-        "transliterated": "trajkovo"
-    },
-    {
-        "id": 110,
-        "name": "ТРАКИЯ",
-        "transliterated": "trakija"
-    },
-    {
-        "id": 352,
-        "name": "ТРАКИЯ (ШУМЕН)",
-        "transliterated": "trakija-shumen"
-    },
-    {
-        "id": 541,
-        "name": "ТРАПЕЗИЦА",
-        "transliterated": "trapezica"
-    },
-    {
-        "id": 266,
-        "name": "ТРОЯН",
-        "transliterated": "trojan"
-    },
-    {
-        "id": 207,
-        "name": "ТРУД",
-        "transliterated": "trud"
-    },
-    {
-        "id": 149,
-        "name": "ТРЪСТИКОВО",
-        "transliterated": "trastikovo"
-    },
-    {
-        "id": 55,
-        "name": "ТРЯВНА",
-        "transliterated": "trjavna"
-    },
-    {
-        "id": 72,
-        "name": "ТУЛОВО",
-        "transliterated": "tulovo"
-    },
-    {
-        "id": 236,
-        "name": "ТЪЖА",
-        "transliterated": "tazha"
-    },
-    {
-        "id": 36,
-        "name": "ТЪРГОВИЩЕ",
-        "transliterated": "targovishte"
-    },
-    {
-        "id": 93,
-        "name": "ТЪРНАК",
-        "transliterated": "tarnak"
-    },
-    {
-        "id": 351,
-        "name": "ТЪРНИЧЕНИ",
-        "transliterated": "tarnicheni"
-    },
-    {
-        "id": 547,
-        "name": "УЗУНДЖОВО",
-        "transliterated": "uzundzhovo"
-    },
-    {
-        "id": 366,
-        "name": "УМАРЕВЦИ",
-        "transliterated": "umarevci"
-    },
-    {
-        "id": 488,
-        "name": "УСОЙКА",
-        "transliterated": "usojka"
-    },
-    {
-        "id": 82,
-        "name": "ФИЛИПОВО",
-        "transliterated": "filipovo"
-    },
-    {
-        "id": 208,
-        "name": "ХАДЖИЕВО",
-        "transliterated": "hadzhievo"
-    },
-    {
-        "id": 161,
-        "name": "ХАН АСПАРУХ",
-        "transliterated": "han-asparuh"
-    },
-    {
-        "id": 280,
-        "name": "ХАН КРУМ",
-        "transliterated": "han-krum"
-    },
-    {
-        "id": 196,
-        "name": "ХАРМАНЛИ",
-        "transliterated": "harmanli"
-    },
-    {
-        "id": 698,
-        "name": "ХАРМАНЛИ ЦЕНТЪР",
-        "transliterated": "harmanli-central"
-    },
-    {
-        "id": 318,
-        "name": "ХАСКОВО",
-        "transliterated": "haskovo"
-    },
-    {
-        "id": 576,
-        "name": "ХЕРАКОВО",
-        "transliterated": "herakovo"
-    },
-    {
-        "id": 114,
-        "name": "ХИСАР",
-        "transliterated": "hisar"
-    },
-    {
-        "id": 378,
-        "name": "ХИТРИНО",
-        "transliterated": "hitrino"
-    },
-    {
-        "id": 679,
-        "name": "ХЛЕВЕНЕ",
-        "transliterated": "hlevene"
-    },
-    {
-        "id": 420,
-        "name": "ХРАБЪРСКО",
-        "transliterated": "hrabarsko"
-    },
-    {
-        "id": 338,
-        "name": "ХРИСТИЯНОВО",
-        "transliterated": "hristijanovo"
-    },
-    {
-        "id": 427,
-        "name": "ХРИСТО ДАНОВО",
-        "transliterated": "hristo-danovo"
-    },
-    {
-        "id": 668,
-        "name": "ХУМАТА",
-        "transliterated": "humata"
-    },
-    {
-        "id": 532,
-        "name": "ХЪРСОВО",
-        "transliterated": "harsovo"
-    },
-    {
-        "id": 686,
-        "name": "ЦАР АСЕН",
-        "transliterated": "car-asen"
-    },
-    {
-        "id": 677,
-        "name": "ЦАРАЦОВО",
-        "transliterated": "caracovo"
-    },
-    {
-        "id": 48,
-        "name": "ЦАРЕВА ЛИВАДА",
-        "transliterated": "careva-livada"
-    },
-    {
-        "id": 565,
-        "name": "ЦАРЕВА ПОЛЯНА",
-        "transliterated": "careva-poljana"
-    },
-    {
-        "id": 218,
-        "name": "ЦАРЕВЦИ",
-        "transliterated": "carevci"
-    },
-    {
-        "id": 291,
-        "name": "ЦВЕТИНО",
-        "transliterated": "cvetino"
-    },
-    {
-        "id": 626,
-        "name": "ЦЕПИНА",
-        "transliterated": "cepina"
-    },
-    {
-        "id": 265,
-        "name": "ЦЕРКОВСКИ",
-        "transliterated": "cerkovski"
-    },
-    {
-        "id": 410,
-        "name": "ЦЕРОВИЦА",
-        "transliterated": "cerovica"
-    },
-    {
-        "id": 68,
-        "name": "ЦЕРОВО",
-        "transliterated": "cerovo"
-    },
-    {
-        "id": 628,
-        "name": "ЧАВДАРЦИ",
-        "transliterated": "chavdarci"
-    },
-    {
-        "id": 430,
-        "name": "ЧЕКАНЧЕВО",
-        "transliterated": "chekanchevo"
-    },
-    {
-        "id": 434,
-        "name": "ЧЕЛОПЕЧ",
-        "transliterated": "chelopech"
-    },
-    {
-        "id": 631,
-        "name": "ЧЕРВЕНА",
-        "transliterated": "chervena"
-    },
-    {
-        "id": 415,
-        "name": "ЧЕРВЕНА ВОДА",
-        "transliterated": "chervena-voda"
-    },
-    {
-        "id": 29,
-        "name": "ЧЕРВЕН БРЯГ",
-        "transliterated": "cherven-brjag"
-    },
-    {
-        "id": 381,
-        "name": "ЧЕРГАНОВО",
-        "transliterated": "cherganovo"
-    },
-    {
-        "id": 663,
-        "name": "ЧЕРЕПИШ",
-        "transliterated": "cherepish"
-    },
-    {
-        "id": 387,
-        "name": "ЧЕРКВИЦА",
-        "transliterated": "cherkvica"
-    },
-    {
-        "id": 168,
-        "name": "ЧЕРНА ГОРА",
-        "transliterated": "cherna-gora"
-    },
-    {
-        "id": 501,
-        "name": "ЧЕРНА МЕСТА",
-        "transliterated": "cherna-mesta"
-    },
-    {
-        "id": 272,
-        "name": "ЧЕРНЕВО",
-        "transliterated": "chernevo"
-    },
-    {
-        "id": 594,
-        "name": "ЧЕРНИК",
-        "transliterated": "chernik"
-    },
-    {
-        "id": 441,
-        "name": "ЧЕРНИЧЕ",
-        "transliterated": "cherniche"
-    },
-    {
-        "id": 217,
-        "name": "ЧЕРНИЧЕВО",
-        "transliterated": "chernichevo"
-    },
-    {
-        "id": 629,
-        "name": "ЧЕРНОГОРОВО",
-        "transliterated": "chernogorovo"
-    },
-    {
-        "id": 347,
-        "name": "ЧЕРНОГРАД",
-        "transliterated": "chernograd"
-    },
-    {
-        "id": 263,
-        "name": "ЧЕРНОЗЕМ",
-        "transliterated": "chernozem"
-    },
-    {
-        "id": 526,
-        "name": "ЧЕСТОВО-СП.",
-        "transliterated": "chestovo-sp"
-    },
-    {
-        "id": 140,
-        "name": "ЧЕШНЕГИРОВО",
-        "transliterated": "cheshnegirovo"
-    },
-    {
-        "id": 537,
-        "name": "ЧИНТУЛОВО",
-        "transliterated": "chintulovo"
-    },
-    {
-        "id": 84,
-        "name": "ЧИРПАН",
-        "transliterated": "chirpan"
-    },
-    {
-        "id": 493,
-        "name": "ЧИФЛИК",
-        "transliterated": "chiflik"
-    },
-    {
-        "id": 610,
-        "name": "ЧУКОВЕЦ",
-        "transliterated": "chukovec"
-    },
-    {
-        "id": 592,
-        "name": "ЧУМЕРНА",
-        "transliterated": "chumerna"
-    },
-    {
-        "id": 215,
-        "name": "ШИВАЧЕВО",
-        "transliterated": "shivachevo"
-    },
-    {
-        "id": 313,
-        "name": "ШИРОКО ПОЛЕ",
-        "transliterated": "shiroko-pole"
-    },
-    {
-        "id": 160,
-        "name": "ШИШКОВЦИ",
-        "transliterated": "shishkovci"
-    },
-    {
-        "id": 15,
-        "name": "ШУМЕН",
-        "transliterated": "shumen"
-    },
-    {
-        "id": 221,
-        "name": "ЮНАК",
-        "transliterated": "junak"
-    },
-    {
-        "id": 360,
-        "name": "ЮРУКОВО",
-        "transliterated": "jurukovo"
-    },
-    {
-        "id": 99,
-        "name": "ЯБЪЛКОВО",
-        "transliterated": "jabalkovo"
-    },
-    {
-        "id": 654,
-        "name": "ЯВОРОВЕЦ",
-        "transliterated": "javorovec"
-    },
-    {
-        "id": 645,
-        "name": "ЯГОДА",
-        "transliterated": "jagoda"
-    },
-    {
-        "id": 375,
-        "name": "ЯГОДОВО",
-        "transliterated": "jagodovo"
-    },
-    {
-        "id": 242,
-        "name": "ЯКОРУДА",
-        "transliterated": "jakoruda"
-    },
-    {
-        "id": 700,
-        "name": "ЯКОРУДСКА МИНЕРАЛА БАНЯ",
-        "transliterated": "jakorudska-minerala-banja"
-    },
-    {
-        "id": 25,
-        "name": "ЯМБОЛ",
-        "transliterated": "jambol"
-    },
-    {
-        "id": 586,
-        "name": "ЯНА",
-        "transliterated": "jana"
-    },
-    {
-        "id": 325,
-        "name": "ЯНТРА",
-        "transliterated": "jantra"
-    },
-    {
-        "id": 363,
-        "name": "ЯСЕН",
-        "transliterated": "jasen"
-    },
-    {
-        "id": 633,
-        "name": "ЯСЕНОВЕЦ",
-        "transliterated": "jasenovec"
-    },
-    {
-        "id": 564,
-        "name": "ЯСТРЕБОВО",
-        "transliterated": "jastrebovo"
-    },
-    {
-        "id": 598,
-        "name": "ЯХИНОВО",
-        "transliterated": "jahinovo"
-    }
+  {
+    "id": 611,
+    "name": "АБЛАНИЦА",
+    "romanizedName": "ablanica"
+  },
+  {
+    "id": 417,
+    "name": "АВРАМОВО",
+    "romanizedName": "avramovo"
+  },
+  {
+    "id": 61,
+    "name": "АЙТОС",
+    "romanizedName": "ajtos"
+  },
+  {
+    "id": 599,
+    "name": "АЛДОМИРОВЦИ",
+    "romanizedName": "aldomirovci"
+  },
+  {
+    "id": 173,
+    "name": "АЛЕКСАНДРОВО",
+    "romanizedName": "aleksandrovo"
+  },
+  {
+    "id": 453,
+    "name": "АЛЕКСАНДЪР ДИМИТРОВ",
+    "romanizedName": "aleksandar-dimitrov"
+  },
+  {
+    "id": 513,
+    "name": "АЛФАТАР",
+    "romanizedName": "alfatar"
+  },
+  {
+    "id": 538,
+    "name": "АНЕВО",
+    "romanizedName": "anevo"
+  },
+  {
+    "id": 440,
+    "name": "АНТОН",
+    "romanizedName": "anton"
+  },
+  {
+    "id": 472,
+    "name": "АРКОВНА",
+    "romanizedName": "arkovna"
+  },
+  {
+    "id": 12,
+    "name": "АСЕНОВГРАД",
+    "romanizedName": "asenovgrad"
+  },
+  {
+    "id": 367,
+    "name": "АСЕНОВО",
+    "romanizedName": "asenovo"
+  },
+  {
+    "id": 278,
+    "name": "АСЕНОВЦИ",
+    "romanizedName": "asenovci"
+  },
+  {
+    "id": 166,
+    "name": "АСПАРУХОВО",
+    "romanizedName": "asparuhovo"
+  },
+  {
+    "id": 345,
+    "name": "АТОЛОВО",
+    "romanizedName": "atolovo"
+  },
+  {
+    "id": 627,
+    "name": "БАЙКОВО",
+    "romanizedName": "bajkovo"
+  },
+  {
+    "id": 380,
+    "name": "БАЛКАН",
+    "romanizedName": "balkan"
+  },
+  {
+    "id": 384,
+    "name": "БАНКОВИЦА",
+    "romanizedName": "bankovica"
+  },
+  {
+    "id": 77,
+    "name": "БАНКЯ",
+    "romanizedName": "bankja"
+  },
+  {
+    "id": 255,
+    "name": "БАНСКО",
+    "romanizedName": "bansko"
+  },
+  {
+    "id": 124,
+    "name": "БАНЯ",
+    "romanizedName": "banja"
+  },
+  {
+    "id": 62,
+    "name": "БАТАНОВЦИ",
+    "romanizedName": "batanovci"
+  },
+  {
+    "id": 495,
+    "name": "БАТИШНИЦА",
+    "romanizedName": "batishnica"
+  },
+  {
+    "id": 571,
+    "name": "БАЧО КИРО",
+    "romanizedName": "bacho-kiro"
+  },
+  {
+    "id": 407,
+    "name": "БЕЗИМЕННА",
+    "romanizedName": "bezimenna"
+  },
+  {
+    "id": 491,
+    "name": "БЕЗМЕР",
+    "romanizedName": "bezmer"
+  },
+  {
+    "id": 694,
+    "name": "БЕЛА ВОДА",
+    "romanizedName": "bela-voda"
+  },
+  {
+    "id": 126,
+    "name": "БЕЛИ ИЗВОР",
+    "romanizedName": "beli-izvor"
+  },
+  {
+    "id": 322,
+    "name": "БЕЛИЦА",
+    "romanizedName": "belica"
+  },
+  {
+    "id": 50,
+    "name": "БЕЛОВО",
+    "romanizedName": "belovo"
+  },
+  {
+    "id": 58,
+    "name": "БЕЛОЗЕМ",
+    "romanizedName": "belozem"
+  },
+  {
+    "id": 588,
+    "name": "БЕЛО ПОЛЕ",
+    "romanizedName": "belo-pole"
+  },
+  {
+    "id": 56,
+    "name": "БЕЛОСЛАВ",
+    "romanizedName": "beloslav"
+  },
+  {
+    "id": 449,
+    "name": "БЕЛЩИЦА",
+    "romanizedName": "belshtica"
+  },
+  {
+    "id": 589,
+    "name": "БЕНКОВСКИ",
+    "romanizedName": "benkovski"
+  },
+  {
+    "id": 185,
+    "name": "БЕРКОВИЦА",
+    "romanizedName": "berkovica"
+  },
+  {
+    "id": 400,
+    "name": "БИСЕР",
+    "romanizedName": "biser"
+  },
+  {
+    "id": 426,
+    "name": "БЛАГОВО",
+    "romanizedName": "blagovo"
+  },
+  {
+    "id": 51,
+    "name": "БЛАГОЕВГРАД",
+    "romanizedName": "blagoevgrad"
+  },
+  {
+    "id": 396,
+    "name": "БЛАГОЕВГРАД - СП.",
+    "romanizedName": "blagoevgrad-st"
+  },
+  {
+    "id": 324,
+    "name": "БЛАГОЙ ЗАХАРИЕВ",
+    "romanizedName": "blagoj-zahariev"
+  },
+  {
+    "id": 298,
+    "name": "БОБОВ ДОЛ",
+    "romanizedName": "bobov-dol"
+  },
+  {
+    "id": 489,
+    "name": "БОБОШЕВО",
+    "romanizedName": "boboshevo"
+  },
+  {
+    "id": 89,
+    "name": "БОВ",
+    "romanizedName": "bov"
+  },
+  {
+    "id": 330,
+    "name": "БОГДАНЦИ",
+    "romanizedName": "bogdanci"
+  },
+  {
+    "id": 609,
+    "name": "БОЖИЧЕН",
+    "romanizedName": "bozhichen"
+  },
+  {
+    "id": 421,
+    "name": "БОЖКОВЦИ",
+    "romanizedName": "bozhkovci"
+  },
+  {
+    "id": 398,
+    "name": "БОЖУРИЦА",
+    "romanizedName": "bozhurica"
+  },
+  {
+    "id": 256,
+    "name": "БОЖУРИЩЕ",
+    "romanizedName": "bozhurishte"
+  },
+  {
+    "id": 549,
+    "name": "БОЗАДЖИИ",
+    "romanizedName": "bozadzhii"
+  },
+  {
+    "id": 231,
+    "name": "БОЙКА",
+    "romanizedName": "bojka"
+  },
+  {
+    "id": 19,
+    "name": "БОЙЧИНОВЦИ",
+    "romanizedName": "bojchinovci"
+  },
+  {
+    "id": 606,
+    "name": "БОКИЛОВЦИ",
+    "romanizedName": "bokilovci"
+  },
+  {
+    "id": 102,
+    "name": "БОРОВО",
+    "romanizedName": "borovo"
+  },
+  {
+    "id": 253,
+    "name": "БОРОВЦИ",
+    "romanizedName": "borovci"
+  },
+  {
+    "id": 395,
+    "name": "БОРУЩИЦА",
+    "romanizedName": "borushtica"
+  },
+  {
+    "id": 235,
+    "name": "БОРЯНА",
+    "romanizedName": "borjana"
+  },
+  {
+    "id": 444,
+    "name": "БОТЕВ",
+    "romanizedName": "botev"
+  },
+  {
+    "id": 416,
+    "name": "БОТЕВО",
+    "romanizedName": "botevo"
+  },
+  {
+    "id": 536,
+    "name": "БОТУНЕЦ",
+    "romanizedName": "botunec"
+  },
+  {
+    "id": 245,
+    "name": "БРАЦИГОВО",
+    "romanizedName": "bracigovo"
+  },
+  {
+    "id": 591,
+    "name": "БРИГАДИР",
+    "romanizedName": "brigadir"
+  },
+  {
+    "id": 640,
+    "name": "БРИГАДИРСКА СЛАВА",
+    "romanizedName": "brigadirska-slava"
+  },
+  {
+    "id": 33,
+    "name": "БРУСАРЦИ",
+    "romanizedName": "brusarci"
+  },
+  {
+    "id": 471,
+    "name": "БРУСЕН",
+    "romanizedName": "brusen"
+  },
+  {
+    "id": 658,
+    "name": "БРЪЧМА",
+    "romanizedName": "brachma"
+  },
+  {
+    "id": 667,
+    "name": "БРЯСТ",
+    "romanizedName": "brjast"
+  },
+  {
+    "id": 377,
+    "name": "БУНОВО",
+    "romanizedName": "bunovo"
+  },
+  {
+    "id": 9,
+    "name": "БУРГАС",
+    "romanizedName": "burgas"
+  },
+  {
+    "id": 689,
+    "name": "БУРГАС-РАЗПРЕДЕЛИТЕЛНА-СПИРКА",
+    "romanizedName": "burgas-razpredelitelna-spirka"
+  },
+  {
+    "id": 137,
+    "name": "БУРГАС-ТОВАРНА",
+    "romanizedName": "burgas-tovarna"
+  },
+  {
+    "id": 176,
+    "name": "БУТОВО",
+    "romanizedName": "butovo"
+  },
+  {
+    "id": 535,
+    "name": "БЪЗОВЕЦ",
+    "romanizedName": "bazovec"
+  },
+  {
+    "id": 461,
+    "name": "БЪЛГАРОВО",
+    "romanizedName": "balgarovo"
+  },
+  {
+    "id": 553,
+    "name": "БЪРДОКВА",
+    "romanizedName": "bardokva"
+  },
+  {
+    "id": 186,
+    "name": "БЯГА",
+    "romanizedName": "bjaga"
+  },
+  {
+    "id": 111,
+    "name": "БЯЛА",
+    "romanizedName": "bjala"
+  },
+  {
+    "id": 399,
+    "name": "БЯЛ БРЯГ",
+    "romanizedName": "bjal-brjag"
+  },
+  {
+    "id": 115,
+    "name": "ВАГОНО-РЕМОНТНО ДЕПО ПЛОВДИВ",
+    "romanizedName": "vagono-remontno-depo-plovdiv"
+  },
+  {
+    "id": 53,
+    "name": "ВАКАРЕЛ",
+    "romanizedName": "vakarel"
+  },
+  {
+    "id": 503,
+    "name": "ВАКАРЕЛ - СП.",
+    "romanizedName": "vakarel-sp"
+  },
+  {
+    "id": 412,
+    "name": "ВАРВАРА",
+    "romanizedName": "varvara"
+  },
+  {
+    "id": 4,
+    "name": "ВАРНА",
+    "romanizedName": "varna"
+  },
+  {
+    "id": 133,
+    "name": "ВАРНА - СП.",
+    "romanizedName": "varna-sp"
+  },
+  {
+    "id": 379,
+    "name": "ВАСИЛ ЛЕВСКИ",
+    "romanizedName": "vasil-levski"
+  },
+  {
+    "id": 107,
+    "name": "ВАСИЛОВЦИ",
+    "romanizedName": "vasilovci"
+  },
+  {
+    "id": 443,
+    "name": "ВЕДРОВО",
+    "romanizedName": "vedrovo"
+  },
+  {
+    "id": 37,
+    "name": "ВЕЛИКО ТЪРНОВО",
+    "romanizedName": "veliko-tarnovo"
+  },
+  {
+    "id": 113,
+    "name": "ВЕЛИНГРАД",
+    "romanizedName": "velingrad"
+  },
+  {
+    "id": 467,
+    "name": "ВЕЛИНГРАД ЮГ",
+    "romanizedName": "velingrad-jug"
+  },
+  {
+    "id": 636,
+    "name": "ВЕЛИНО",
+    "romanizedName": "velino"
+  },
+  {
+    "id": 134,
+    "name": "ВЕЛИЧКОВО",
+    "romanizedName": "velichkovo"
+  },
+  {
+    "id": 302,
+    "name": "ВЕНЧАН",
+    "romanizedName": "venchan"
+  },
+  {
+    "id": 112,
+    "name": "ВЕРИЛА",
+    "romanizedName": "verila"
+  },
+  {
+    "id": 362,
+    "name": "ВЕРИНСКО",
+    "romanizedName": "verinsko"
+  },
+  {
+    "id": 202,
+    "name": "ВЕТОВО",
+    "romanizedName": "vetovo"
+  },
+  {
+    "id": 438,
+    "name": "ВЕТРЕН",
+    "romanizedName": "vetren"
+  },
+  {
+    "id": 623,
+    "name": "ВИДБОЛ",
+    "romanizedName": "vidbol"
+  },
+  {
+    "id": 49,
+    "name": "ВИДИН ПЪТНИЧЕСКА",
+    "romanizedName": "vidin"
+  },
+  {
+    "id": 191,
+    "name": "ВИНИЦА",
+    "romanizedName": "vinica"
+  },
+  {
+    "id": 459,
+    "name": "ВИСОКА ПОЛЯНА",
+    "romanizedName": "visoka-poljana"
+  },
+  {
+    "id": 192,
+    "name": "ВЛАДАЯ",
+    "romanizedName": "vladaja"
+  },
+  {
+    "id": 165,
+    "name": "ВЛАДИМИР ПАВЛОВ",
+    "romanizedName": "vladimir-pavlov"
+  },
+  {
+    "id": 117,
+    "name": "ВЛАДО ТРИЧКОВ",
+    "romanizedName": "vlado-trichkov"
+  },
+  {
+    "id": 229,
+    "name": "ВЛАСАТИЦА",
+    "romanizedName": "vlasatica"
+  },
+  {
+    "id": 409,
+    "name": "ВОДНЯНЦИ",
+    "romanizedName": "vodnjanci"
+  },
+  {
+    "id": 184,
+    "name": "ВОЛУЯК",
+    "romanizedName": "volujak"
+  },
+  {
+    "id": 10,
+    "name": "ВРАЦА",
+    "romanizedName": "vraca"
+  },
+  {
+    "id": 91,
+    "name": "ВРАЦА - СПИРКА",
+    "romanizedName": "vraca-st"
+  },
+  {
+    "id": 219,
+    "name": "ВРЪБНИЦА",
+    "romanizedName": "vrabnica"
+  },
+  {
+    "id": 514,
+    "name": "ВЪБЕЛ",
+    "romanizedName": "vabel"
+  },
+  {
+    "id": 136,
+    "name": "ВЪЛЧИ ДОЛ",
+    "romanizedName": "valchi-dol"
+  },
+  {
+    "id": 447,
+    "name": "ВЪЛЧИН",
+    "romanizedName": "valchin"
+  },
+  {
+    "id": 307,
+    "name": "ГАБАРЕВО",
+    "romanizedName": "gabarevo"
+  },
+  {
+    "id": 295,
+    "name": "ГАБРОВНИЦА",
+    "romanizedName": "gabrovnica"
+  },
+  {
+    "id": 76,
+    "name": "ГАБРОВО",
+    "romanizedName": "gabrovo"
+  },
+  {
+    "id": 500,
+    "name": "ГАВРАИЛОВО",
+    "romanizedName": "gavrailovo"
+  },
+  {
+    "id": 385,
+    "name": "ГАНЧОВЕЦ",
+    "romanizedName": "ganchovec"
+  },
+  {
+    "id": 294,
+    "name": "ГЕНЕРАЛ КИСЕЛОВО",
+    "romanizedName": "general-kiselovo"
+  },
+  {
+    "id": 411,
+    "name": "ГЕНЕРАЛ КОВАЧЕВ",
+    "romanizedName": "general-kovachev"
+  },
+  {
+    "id": 647,
+    "name": "ГЕНЕРАЛ КОЛЕВО",
+    "romanizedName": "general-kolevo"
+  },
+  {
+    "id": 142,
+    "name": "ГЕНЕРАЛ ТОДОРОВ",
+    "romanizedName": "general-todorov"
+  },
+  {
+    "id": 175,
+    "name": "ГЕНЕРАЛ ТОШЕВО",
+    "romanizedName": "general-toshevo"
+  },
+  {
+    "id": 402,
+    "name": "ГЛУМЧЕ",
+    "romanizedName": "glumche"
+  },
+  {
+    "id": 566,
+    "name": "ГЛУХАР",
+    "romanizedName": "gluhar"
+  },
+  {
+    "id": 477,
+    "name": "ГОЛЯМА ВОДА",
+    "romanizedName": "goljama-voda"
+  },
+  {
+    "id": 390,
+    "name": "ГОЛЯМО ДРЯНОВО",
+    "romanizedName": "goljamo-drjanovo"
+  },
+  {
+    "id": 507,
+    "name": "ГОЛЯМО НОВО",
+    "romanizedName": "goljamo-novo"
+  },
+  {
+    "id": 406,
+    "name": "ГОЛЯМО СЕЛО",
+    "romanizedName": "goljamo-selo"
+  },
+  {
+    "id": 563,
+    "name": "ГОЛЯМ ПОРОВЕЦ",
+    "romanizedName": "goljam-porovec"
+  },
+  {
+    "id": 569,
+    "name": "ГОРИЦА",
+    "romanizedName": "gorica"
+  },
+  {
+    "id": 28,
+    "name": "ГОРНА БАНЯ",
+    "romanizedName": "gorna-banja"
+  },
+  {
+    "id": 701,
+    "name": "ГОРНА БАНЯ СП",
+    "romanizedName": "stop-gorna-banja-metro"
+  },
+  {
+    "id": 487,
+    "name": "ГОРНА КРЕТА",
+    "romanizedName": "gorna-kreta"
+  },
+  {
+    "id": 545,
+    "name": "ГОРНА МАЛИНА",
+    "romanizedName": "gorna-malina"
+  },
+  {
+    "id": 275,
+    "name": "ГОРНА МАХАЛА",
+    "romanizedName": "gorna-mahala"
+  },
+  {
+    "id": 5,
+    "name": "ГОРНА ОРЯХОВИЦА",
+    "romanizedName": "gorna-orjahovica"
+  },
+  {
+    "id": 141,
+    "name": "ГОРНИ ДЪБНИК",
+    "romanizedName": "gorni-dabnik"
+  },
+  {
+    "id": 445,
+    "name": "ГОРНО БОТЕВО",
+    "romanizedName": "gorno-botevo"
+  },
+  {
+    "id": 301,
+    "name": "ГОРСКО ДЮЛЕВО",
+    "romanizedName": "gorsko-djulevo"
+  },
+  {
+    "id": 662,
+    "name": "Г.ОРЯХОВИЦА-ПР.ПАРК",
+    "romanizedName": "gorjahovica-prpark"
+  },
+  {
+    "id": 671,
+    "name": "Г.ОРЯХОВИЦА РАЗПР.П.",
+    "romanizedName": "gorna-orjahovica-razprp"
+  },
+  {
+    "id": 522,
+    "name": "ГРАДЕШНИЦА",
+    "romanizedName": "gradeshnica"
+  },
+  {
+    "id": 155,
+    "name": "ГРАДИЩЕ",
+    "romanizedName": "gradishte"
+  },
+  {
+    "id": 139,
+    "name": "ГРАФ ИГНАТИЕВО",
+    "romanizedName": "graf-ignatievo"
+  },
+  {
+    "id": 270,
+    "name": "ГРИВИЦА",
+    "romanizedName": "grivica"
+  },
+  {
+    "id": 279,
+    "name": "ГУЛИЙНА БАНЯ",
+    "romanizedName": "gulijna-banja"
+  },
+  {
+    "id": 478,
+    "name": "ГУРКОВО",
+    "romanizedName": "gurkovo"
+  },
+  {
+    "id": 246,
+    "name": "ГЪЛЪБНИК",
+    "romanizedName": "galabnik"
+  },
+  {
+    "id": 676,
+    "name": "ГЮЕШЕВО",
+    "romanizedName": "gjueshevo"
+  },
+  {
+    "id": 365,
+    "name": "ДАГОНОВО",
+    "romanizedName": "dagonovo"
+  },
+  {
+    "id": 328,
+    "name": "ДАМЯНИЦА",
+    "romanizedName": "damjanica"
+  },
+  {
+    "id": 57,
+    "name": "ДАСКАЛОВО",
+    "romanizedName": "daskalovo"
+  },
+  {
+    "id": 80,
+    "name": "ДВЕ МОГИЛИ",
+    "romanizedName": "dve-mogili"
+  },
+  {
+    "id": 483,
+    "name": "ДЕБЕЛЕЦ",
+    "romanizedName": "debelec"
+  },
+  {
+    "id": 515,
+    "name": "ДЕБЕЛИ ЛАК",
+    "romanizedName": "debeli-lak"
+  },
+  {
+    "id": 383,
+    "name": "ДЕВНЯ",
+    "romanizedName": "devnja"
+  },
+  {
+    "id": 389,
+    "name": "ДЕЛЯН",
+    "romanizedName": "deljan"
+  },
+  {
+    "id": 582,
+    "name": "ДЖЕБЕЛ",
+    "romanizedName": "dzhebel"
+  },
+  {
+    "id": 602,
+    "name": "ДЖЕРМАН",
+    "romanizedName": "dzherman"
+  },
+  {
+    "id": 355,
+    "name": "ДЖУЛЮНИЦА",
+    "romanizedName": "dzhuljunica"
+  },
+  {
+    "id": 244,
+    "name": "ДИБИЧ",
+    "romanizedName": "dibich"
+  },
+  {
+    "id": 502,
+    "name": "ДИВДЯДОВО",
+    "romanizedName": "divdjadovo"
+  },
+  {
+    "id": 359,
+    "name": "ДИМИТРИЕВО",
+    "romanizedName": "dimitrievo"
+  },
+  {
+    "id": 23,
+    "name": "ДИМИТРОВГРАД",
+    "romanizedName": "dimitrovgrad"
+  },
+  {
+    "id": 637,
+    "name": "ДИМИТРОВГРАД СЕВЕР",
+    "romanizedName": "dimitrovgrad-sever"
+  },
+  {
+    "id": 617,
+    "name": "ДИМИТРОВГРАД ЮГ СП.",
+    "romanizedName": "dimitrovgrad-jug-sp"
+  },
+  {
+    "id": 197,
+    "name": "ДИМОВО",
+    "romanizedName": "dimovo"
+  },
+  {
+    "id": 151,
+    "name": "ДОБРИНА",
+    "romanizedName": "dobrina"
+  },
+  {
+    "id": 303,
+    "name": "ДОБРИНИЩЕ",
+    "romanizedName": "dobrinishte"
+  },
+  {
+    "id": 652,
+    "name": "ДОБРИНОВО",
+    "romanizedName": "dobrinovo"
+  },
+  {
+    "id": 46,
+    "name": "ДОБРИЧ",
+    "romanizedName": "dobrich"
+  },
+  {
+    "id": 448,
+    "name": "ДОБРИЧ - СЕВЕР",
+    "romanizedName": "dobrich-sever"
+  },
+  {
+    "id": 615,
+    "name": "ДОБРОДАН",
+    "romanizedName": "dobrodan"
+  },
+  {
+    "id": 613,
+    "name": "ДОЖДЕВИЦА",
+    "romanizedName": "dozhdevica"
+  },
+  {
+    "id": 343,
+    "name": "ДОЙРЕНЦИ",
+    "romanizedName": "dojrenci"
+  },
+  {
+    "id": 601,
+    "name": "ДОЛАПИТЕ",
+    "romanizedName": "dolapite"
+  },
+  {
+    "id": 542,
+    "name": "ДОЛЕНЕ",
+    "romanizedName": "dolene"
+  },
+  {
+    "id": 172,
+    "name": "ДОЛНА МАХАЛА",
+    "romanizedName": "dolna-mahala"
+  },
+  {
+    "id": 505,
+    "name": "ДОЛНА МИТРОПОЛИЯ",
+    "romanizedName": "dolna-mitropolija"
+  },
+  {
+    "id": 465,
+    "name": "ДОЛНИ ВИТ",
+    "romanizedName": "dolni-vit"
+  },
+  {
+    "id": 277,
+    "name": "ДОЛНИ ДЪБНИК",
+    "romanizedName": "dolni-dabnik"
+  },
+  {
+    "id": 283,
+    "name": "ДОЛНИ РАКОВЕЦ",
+    "romanizedName": "dolni-rakovec"
+  },
+  {
+    "id": 243,
+    "name": "ДОЛНО ЕЗЕРОВО",
+    "romanizedName": "dolno-ezerovo"
+  },
+  {
+    "id": 413,
+    "name": "ДОЛНО КАМАРЦИ",
+    "romanizedName": "dolno-kamarci"
+  },
+  {
+    "id": 585,
+    "name": "ДОЛНО СЕЛО",
+    "romanizedName": "dolno-selo"
+  },
+  {
+    "id": 311,
+    "name": "ДОЛНО ЦЕРОВЕНЕ",
+    "romanizedName": "dolno-cerovene"
+  },
+  {
+    "id": 162,
+    "name": "ДОНЧЕВО",
+    "romanizedName": "donchevo"
+  },
+  {
+    "id": 171,
+    "name": "ДРАГИЧЕВО",
+    "romanizedName": "dragichevo"
+  },
+  {
+    "id": 212,
+    "name": "ДРАГОМАН",
+    "romanizedName": "dragoman"
+  },
+  {
+    "id": 455,
+    "name": "ДРАГОМАН - СП.",
+    "romanizedName": "dragoman-sp"
+  },
+  {
+    "id": 188,
+    "name": "ДРАГОМИРОВО",
+    "romanizedName": "dragomirovo"
+  },
+  {
+    "id": 314,
+    "name": "ДРАЛФА",
+    "romanizedName": "dralfa"
+  },
+  {
+    "id": 672,
+    "name": "ДРАСОВ",
+    "romanizedName": "drasov"
+  },
+  {
+    "id": 195,
+    "name": "ДРЕНОВЕЦ",
+    "romanizedName": "drenovec"
+  },
+  {
+    "id": 657,
+    "name": "ДРОПЛА",
+    "romanizedName": "dropla"
+  },
+  {
+    "id": 528,
+    "name": "ДРУЖБА",
+    "romanizedName": "druzhba"
+  },
+  {
+    "id": 66,
+    "name": "ДРЯНОВО",
+    "romanizedName": "drjanovo"
+  },
+  {
+    "id": 344,
+    "name": "ДРЯНОВО - СП.",
+    "romanizedName": "drjanovo-st"
+  },
+  {
+    "id": 429,
+    "name": "ДУЛОВО",
+    "romanizedName": "dulovo"
+  },
+  {
+    "id": 296,
+    "name": "ДУНАВЦИ",
+    "romanizedName": "dunavci"
+  },
+  {
+    "id": 71,
+    "name": "ДУПНИЦА",
+    "romanizedName": "dupnica"
+  },
+  {
+    "id": 486,
+    "name": "ДУПНИЦА - СП.",
+    "romanizedName": "dupnica-st"
+  },
+  {
+    "id": 316,
+    "name": "ДЪБЕНЕ",
+    "romanizedName": "dabene"
+  },
+  {
+    "id": 419,
+    "name": "ДЪБОВА МАХАЛА",
+    "romanizedName": "dabova-mahala"
+  },
+  {
+    "id": 87,
+    "name": "ДЪБОВО",
+    "romanizedName": "dabovo"
+  },
+  {
+    "id": 643,
+    "name": "ДЪЛГА ЛЪКА",
+    "romanizedName": "dalga-laka"
+  },
+  {
+    "id": 78,
+    "name": "ДЪЛГОПОЛ",
+    "romanizedName": "dalgopol"
+  },
+  {
+    "id": 331,
+    "name": "ДЪСКОТНА",
+    "romanizedName": "daskotna"
+  },
+  {
+    "id": 688,
+    "name": "ДЮЛЕВО",
+    "romanizedName": "djulevo"
+  },
+  {
+    "id": 614,
+    "name": "ДЯКОВО",
+    "romanizedName": "djakovo"
+  },
+  {
+    "id": 327,
+    "name": "ЕГЪЛНИЦА",
+    "romanizedName": "egalnica"
+  },
+  {
+    "id": 143,
+    "name": "ЕЗЕРОВО",
+    "romanizedName": "ezerovo"
+  },
+  {
+    "id": 621,
+    "name": "ЕЗЕРОВО-СПИРКА",
+    "romanizedName": "ezerovo-spirka"
+  },
+  {
+    "id": 392,
+    "name": "ЕЛЕНИНО",
+    "romanizedName": "elenino"
+  },
+  {
+    "id": 32,
+    "name": "ЕЛИН ПЕЛИН",
+    "romanizedName": "elin-pelin"
+  },
+  {
+    "id": 233,
+    "name": "ЕЛИСЕЙНА",
+    "romanizedName": "elisejna"
+  },
+  {
+    "id": 572,
+    "name": "ЕЛИТ",
+    "romanizedName": "elit"
+  },
+  {
+    "id": 167,
+    "name": "ЕРДЕН",
+    "romanizedName": "erden"
+  },
+  {
+    "id": 353,
+    "name": "ЖАБЛЯНО",
+    "romanizedName": "zhabljano"
+  },
+  {
+    "id": 376,
+    "name": "ЖЕГЛИЦА",
+    "romanizedName": "zheglica"
+  },
+  {
+    "id": 648,
+    "name": "ЖЕЛЕЗНИЦА",
+    "romanizedName": "zheleznica"
+  },
+  {
+    "id": 247,
+    "name": "ЖЕЛЕН",
+    "romanizedName": "zhelen"
+  },
+  {
+    "id": 446,
+    "name": "ЖЕЛЪД",
+    "romanizedName": "zhelad"
+  },
+  {
+    "id": 299,
+    "name": "ЖЕЛЮ ВОЙВОДА",
+    "romanizedName": "zhelju-vojvoda"
+  },
+  {
+    "id": 544,
+    "name": "ЖЕЛЯЗНА ВРАТА",
+    "romanizedName": "zheljazna-vrata"
+  },
+  {
+    "id": 315,
+    "name": "ЖИВКОВО",
+    "romanizedName": "zhivkovo"
+  },
+  {
+    "id": 285,
+    "name": "ЖИТНИЦА",
+    "romanizedName": "zhitnica"
+  },
+  {
+    "id": 436,
+    "name": "ЖП.ШКОЛА - ЛАКАТНИК",
+    "romanizedName": "zhp-shkola-lakatnik"
+  },
+  {
+    "id": 333,
+    "name": "ЗАВЕТ",
+    "romanizedName": "zavet"
+  },
+  {
+    "id": 527,
+    "name": "ЗАВЕТ - СП.",
+    "romanizedName": "zavet-sp"
+  },
+  {
+    "id": 492,
+    "name": "ЗАВОЙ",
+    "romanizedName": "zavoj"
+  },
+  {
+    "id": 21,
+    "name": "ЗАХАРНА ФАБРИКА",
+    "romanizedName": "zaharna-fabrika"
+  },
+  {
+    "id": 442,
+    "name": "ЗВЕЗДЕЛИНА",
+    "romanizedName": "zvezdelina"
+  },
+  {
+    "id": 94,
+    "name": "ЗВЕРИНО",
+    "romanizedName": "zverino"
+  },
+  {
+    "id": 293,
+    "name": "ЗВЪНИЧЕВО",
+    "romanizedName": "zvanichevo"
+  },
+  {
+    "id": 435,
+    "name": "ЗДРАВЕЦ",
+    "romanizedName": "zdravec"
+  },
+  {
+    "id": 79,
+    "name": "ЗЕМЕН",
+    "romanizedName": "zemen"
+  },
+  {
+    "id": 127,
+    "name": "ЗИМНИЦА",
+    "romanizedName": "zimnica"
+  },
+  {
+    "id": 304,
+    "name": "ЗЛАТИЦА",
+    "romanizedName": "zlatica"
+  },
+  {
+    "id": 665,
+    "name": "ЗЛАТНА НИВА",
+    "romanizedName": "zlatna-niva"
+  },
+  {
+    "id": 644,
+    "name": "ЗЛАТУША",
+    "romanizedName": "zlatusha"
+  },
+  {
+    "id": 656,
+    "name": "ЗМЕЙОВО",
+    "romanizedName": "zmejovo"
+  },
+  {
+    "id": 372,
+    "name": "ИВАН ВАЗОВО",
+    "romanizedName": "ivan-vazovo"
+  },
+  {
+    "id": 393,
+    "name": "ИВАНКОВЦИ",
+    "romanizedName": "ivankovci"
+  },
+  {
+    "id": 97,
+    "name": "ИВАНОВО",
+    "romanizedName": "ivanovo"
+  },
+  {
+    "id": 510,
+    "name": "ИВАНСКИ",
+    "romanizedName": "ivanski"
+  },
+  {
+    "id": 321,
+    "name": "ИВАНЯНЕ",
+    "romanizedName": "ivanjane"
+  },
+  {
+    "id": 597,
+    "name": "ИГАНОВО",
+    "romanizedName": "iganovo"
+  },
+  {
+    "id": 103,
+    "name": "ИЛИЯНЦИ",
+    "romanizedName": "ilijanci"
+  },
+  {
+    "id": 26,
+    "name": "ИСКЪР",
+    "romanizedName": "iskar"
+  },
+  {
+    "id": 696,
+    "name": "ИСКЪРСКО ШОСЕ",
+    "romanizedName": "iskarsko-shose"
+  },
+  {
+    "id": 190,
+    "name": "ИСПЕРИХ",
+    "romanizedName": "isperih"
+  },
+  {
+    "id": 74,
+    "name": "ИХТИМАН",
+    "romanizedName": "ihtiman"
+  },
+  {
+    "id": 508,
+    "name": "ЙОГЛАВ",
+    "romanizedName": "joglav"
+  },
+  {
+    "id": 138,
+    "name": "КАДИЕВО",
+    "romanizedName": "kadievo"
+  },
+  {
+    "id": 40,
+    "name": "КАЗАНЛЪК",
+    "romanizedName": "kazanlak"
+  },
+  {
+    "id": 620,
+    "name": "КАЗАЧЕВО",
+    "romanizedName": "kazachevo"
+  },
+  {
+    "id": 187,
+    "name": "КАЗИЧЕНЕ",
+    "romanizedName": "kazichene"
+  },
+  {
+    "id": 554,
+    "name": "КАЛЕЙЦА",
+    "romanizedName": "kalejca"
+  },
+  {
+    "id": 581,
+    "name": "КАЛИПЕТРОВО",
+    "romanizedName": "kalipetrovo"
+  },
+  {
+    "id": 227,
+    "name": "КАЛИТИНОВО",
+    "romanizedName": "kalitinovo"
+  },
+  {
+    "id": 163,
+    "name": "КАЛИЩА",
+    "romanizedName": "kalishta"
+  },
+  {
+    "id": 678,
+    "name": "КАЛОТИНА-ЗАПАД",
+    "romanizedName": "kalotina-zapad"
+  },
+  {
+    "id": 305,
+    "name": "КАЛОФЕР",
+    "romanizedName": "kalofer"
+  },
+  {
+    "id": 129,
+    "name": "КАЛОЯНОВЕЦ",
+    "romanizedName": "kalojanovec"
+  },
+  {
+    "id": 271,
+    "name": "КАЛОЯНОВО",
+    "romanizedName": "kalojanovo"
+  },
+  {
+    "id": 320,
+    "name": "КАЛОЯНЦИ",
+    "romanizedName": "kalojanci"
+  },
+  {
+    "id": 432,
+    "name": "КАЛУГЕРИЦА",
+    "romanizedName": "kalugerica"
+  },
+  {
+    "id": 346,
+    "name": "КАМЕНЕЦ",
+    "romanizedName": "kamenec"
+  },
+  {
+    "id": 358,
+    "name": "КАМЕННИ КАРИЕРИ",
+    "romanizedName": "kamenni-karieri"
+  },
+  {
+    "id": 104,
+    "name": "КАМЕНО",
+    "romanizedName": "kameno"
+  },
+  {
+    "id": 518,
+    "name": "КАМЕНЯК",
+    "romanizedName": "kamenjak"
+  },
+  {
+    "id": 523,
+    "name": "КАРАВЕЛЬОВО",
+    "romanizedName": "karaveljovo"
+  },
+  {
+    "id": 183,
+    "name": "КАРАГЕОРГИЕВО",
+    "romanizedName": "karageorgievo"
+  },
+  {
+    "id": 211,
+    "name": "КАРАДЖАЛОВО",
+    "romanizedName": "karadzhalovo"
+  },
+  {
+    "id": 600,
+    "name": "КАРАДЖАТА",
+    "romanizedName": "karadzhata"
+  },
+  {
+    "id": 653,
+    "name": "КАРБИНЦИ",
+    "romanizedName": "karbinci"
+  },
+  {
+    "id": 222,
+    "name": "КАРДАМ",
+    "romanizedName": "kardam"
+  },
+  {
+    "id": 693,
+    "name": "КАРИЕРА-СКАКАВИЦА",
+    "romanizedName": "kariera-skakavica"
+  },
+  {
+    "id": 38,
+    "name": "КАРЛОВО",
+    "romanizedName": "karlovo"
+  },
+  {
+    "id": 282,
+    "name": "КАРЛУКОВО",
+    "romanizedName": "karlukovo"
+  },
+  {
+    "id": 41,
+    "name": "КАРНОБАТ",
+    "romanizedName": "karnobat"
+  },
+  {
+    "id": 67,
+    "name": "КАСПИЧАН",
+    "romanizedName": "kaspichan"
+  },
+  {
+    "id": 156,
+    "name": "КАТУНИЦА",
+    "romanizedName": "katunica"
+  },
+  {
+    "id": 225,
+    "name": "КЕРМЕН",
+    "romanizedName": "kermen"
+  },
+  {
+    "id": 555,
+    "name": "КЕСАРЕВО",
+    "romanizedName": "kesarevo"
+  },
+  {
+    "id": 548,
+    "name": "КИПРА",
+    "romanizedName": "kipra"
+  },
+  {
+    "id": 567,
+    "name": "КИТАНЧЕВО",
+    "romanizedName": "kitanchevo"
+  },
+  {
+    "id": 276,
+    "name": "КЛИКАЧ",
+    "romanizedName": "klikach"
+  },
+  {
+    "id": 632,
+    "name": "КЛИМАТ.УЧИЛИЩЕ",
+    "romanizedName": "klimat-uchilishte"
+  },
+  {
+    "id": 356,
+    "name": "КЛИМАШ",
+    "romanizedName": "klimash"
+  },
+  {
+    "id": 350,
+    "name": "КЛИСУРА",
+    "romanizedName": "klisura"
+  },
+  {
+    "id": 481,
+    "name": "КНИЖОВНИК",
+    "romanizedName": "knizhovnik"
+  },
+  {
+    "id": 182,
+    "name": "КОВАЧЕВО",
+    "romanizedName": "kovachevo"
+  },
+  {
+    "id": 405,
+    "name": "КОЗАРЕВЕЦ",
+    "romanizedName": "kozarevec"
+  },
+  {
+    "id": 269,
+    "name": "КОЗАРСКО",
+    "romanizedName": "kozarsko"
+  },
+  {
+    "id": 264,
+    "name": "КОМАРЕВО",
+    "romanizedName": "komarevo"
+  },
+  {
+    "id": 109,
+    "name": "КОМУНАРИ",
+    "romanizedName": "komunari"
+  },
+  {
+    "id": 607,
+    "name": "КОНАРЕ",
+    "romanizedName": "konare"
+  },
+  {
+    "id": 616,
+    "name": "КОНДОФРЕЙ",
+    "romanizedName": "kondofrej"
+  },
+  {
+    "id": 575,
+    "name": "КОНСТАНТИНОВО",
+    "romanizedName": "konstantinovo"
+  },
+  {
+    "id": 252,
+    "name": "КОНЬОВО",
+    "romanizedName": "konjovo"
+  },
+  {
+    "id": 297,
+    "name": "КОПАНИЦА",
+    "romanizedName": "kopanica"
+  },
+  {
+    "id": 257,
+    "name": "КОПИЛОВЦИ",
+    "romanizedName": "kopilovci"
+  },
+  {
+    "id": 397,
+    "name": "КОПРИВЩИЦА",
+    "romanizedName": "koprivshtica"
+  },
+  {
+    "id": 462,
+    "name": "КОСТАНДОВО",
+    "romanizedName": "kostandovo"
+  },
+  {
+    "id": 669,
+    "name": "КОСТА ПЕТРОВ",
+    "romanizedName": "kosta-petrov"
+  },
+  {
+    "id": 39,
+    "name": "КОСТЕНЕЦ",
+    "romanizedName": "kostenec"
+  },
+  {
+    "id": 98,
+    "name": "КОСТИНБРОД",
+    "romanizedName": "kostinbrod"
+  },
+  {
+    "id": 228,
+    "name": "КОСТИНБРОД - СП.",
+    "romanizedName": "kostinbrod-sp"
+  },
+  {
+    "id": 695,
+    "name": "КОЧЕВО",
+    "romanizedName": "kochevo"
+  },
+  {
+    "id": 512,
+    "name": "КОЧЕРИНОВО",
+    "romanizedName": "kocherinovo"
+  },
+  {
+    "id": 259,
+    "name": "КОЧОВО",
+    "romanizedName": "kochovo"
+  },
+  {
+    "id": 470,
+    "name": "КОШАРИТЕ",
+    "romanizedName": "kosharite"
+  },
+  {
+    "id": 558,
+    "name": "КОШОВ",
+    "romanizedName": "koshov"
+  },
+  {
+    "id": 540,
+    "name": "КРАКРА",
+    "romanizedName": "krakra"
+  },
+  {
+    "id": 475,
+    "name": "КРЕМИКОВЦИ",
+    "romanizedName": "kremikovci"
+  },
+  {
+    "id": 680,
+    "name": "КРЕПОСТ",
+    "romanizedName": "krepost"
+  },
+  {
+    "id": 382,
+    "name": "КРЕСНА",
+    "romanizedName": "kresna"
+  },
+  {
+    "id": 460,
+    "name": "КРЕСНА - СП.",
+    "romanizedName": "kresna-sp"
+  },
+  {
+    "id": 437,
+    "name": "КРЕТА",
+    "romanizedName": "kreta"
+  },
+  {
+    "id": 240,
+    "name": "КРИВА БАРА",
+    "romanizedName": "kriva-bara"
+  },
+  {
+    "id": 506,
+    "name": "КРИВНЯ",
+    "romanizedName": "krivnja"
+  },
+  {
+    "id": 60,
+    "name": "КРИВОДОЛ",
+    "romanizedName": "krivodol"
+  },
+  {
+    "id": 361,
+    "name": "КРИЧИМ",
+    "romanizedName": "krichim"
+  },
+  {
+    "id": 148,
+    "name": "КРУМ",
+    "romanizedName": "krum"
+  },
+  {
+    "id": 20,
+    "name": "КРУМОВО",
+    "romanizedName": "krumovo"
+  },
+  {
+    "id": 154,
+    "name": "КРУШЕТО",
+    "romanizedName": "krusheto"
+  },
+  {
+    "id": 456,
+    "name": "КРЪСТЕЦ",
+    "romanizedName": "krastec"
+  },
+  {
+    "id": 580,
+    "name": "КУБРАТОВО",
+    "romanizedName": "kubratovo"
+  },
+  {
+    "id": 414,
+    "name": "КУЛАТА",
+    "romanizedName": "kulata"
+  },
+  {
+    "id": 174,
+    "name": "КУМАРИЦА",
+    "romanizedName": "kumarica"
+  },
+  {
+    "id": 189,
+    "name": "КУНИНО",
+    "romanizedName": "kunino"
+  },
+  {
+    "id": 101,
+    "name": "КУРИЛО",
+    "romanizedName": "kurilo"
+  },
+  {
+    "id": 178,
+    "name": "КУРТОВО КОНАРЕ",
+    "romanizedName": "kurtovo-konare"
+  },
+  {
+    "id": 578,
+    "name": "КУТУГЕРЦИ",
+    "romanizedName": "kutugerci"
+  },
+  {
+    "id": 248,
+    "name": "КУЦИНА",
+    "romanizedName": "kucina"
+  },
+  {
+    "id": 132,
+    "name": "КЪРДЖАЛИ",
+    "romanizedName": "kardzhali"
+  },
+  {
+    "id": 368,
+    "name": "КЪРНАРЕ",
+    "romanizedName": "karnare"
+  },
+  {
+    "id": 534,
+    "name": "КЪРШАЛЕВО",
+    "romanizedName": "karshalevo"
+  },
+  {
+    "id": 52,
+    "name": "КЮСТЕНДИЛ",
+    "romanizedName": "kjustendil"
+  },
+  {
+    "id": 404,
+    "name": "ЛАЗАР ПАМПОРОВ",
+    "romanizedName": "lazar-pamporov"
+  },
+  {
+    "id": 73,
+    "name": "ЛАКАТНИК",
+    "romanizedName": "lakatnik"
+  },
+  {
+    "id": 423,
+    "name": "ЛЕВИЩЕ",
+    "romanizedName": "levishte"
+  },
+  {
+    "id": 17,
+    "name": "ЛЕВСКИ",
+    "romanizedName": "levski"
+  },
+  {
+    "id": 319,
+    "name": "ЛЕСИЧЕРИ",
+    "romanizedName": "lesicheri"
+  },
+  {
+    "id": 428,
+    "name": "ЛЕСКА",
+    "romanizedName": "leska"
+  },
+  {
+    "id": 250,
+    "name": "ЛЕТНИЦА",
+    "romanizedName": "letnica"
+  },
+  {
+    "id": 539,
+    "name": "ЛЕШНИЦА",
+    "romanizedName": "leshnica"
+  },
+  {
+    "id": 480,
+    "name": "ЛИСТЕЦ",
+    "romanizedName": "listec"
+  },
+  {
+    "id": 249,
+    "name": "ЛОВЕЦ",
+    "romanizedName": "lovec"
+  },
+  {
+    "id": 83,
+    "name": "ЛОВЕЧ",
+    "romanizedName": "lovech"
+  },
+  {
+    "id": 682,
+    "name": "ЛОВЕЧ-СЕВЕР",
+    "romanizedName": "lovech-sever"
+  },
+  {
+    "id": 300,
+    "name": "ЛОВЕЧ - СП.",
+    "romanizedName": "lovech-sp"
+  },
+  {
+    "id": 651,
+    "name": "ЛОВЕЧ - ЮГ",
+    "romanizedName": "lovech-jug"
+  },
+  {
+    "id": 281,
+    "name": "ЛОЗАРЕВО",
+    "romanizedName": "lozarevo"
+  },
+  {
+    "id": 690,
+    "name": "ЛОЗОВО",
+    "romanizedName": "lozovo"
+  },
+  {
+    "id": 661,
+    "name": "ЛОКОРСКО",
+    "romanizedName": "lokorsko"
+  },
+  {
+    "id": 34,
+    "name": "ЛОМ",
+    "romanizedName": "lom"
+  },
+  {
+    "id": 625,
+    "name": "ЛОМЕЦ",
+    "romanizedName": "lomec"
+  },
+  {
+    "id": 90,
+    "name": "ЛУКОВО",
+    "romanizedName": "lukovo"
+  },
+  {
+    "id": 223,
+    "name": "ЛЮБИМЕЦ",
+    "romanizedName": "ljubimec"
+  },
+  {
+    "id": 474,
+    "name": "ЛЮЛЯКОВО",
+    "romanizedName": "ljuljakovo"
+  },
+  {
+    "id": 254,
+    "name": "ЛЮТИБРОД",
+    "romanizedName": "ljutibrod"
+  },
+  {
+    "id": 199,
+    "name": "МАВРУДОВО",
+    "romanizedName": "mavrudovo"
+  },
+  {
+    "id": 232,
+    "name": "МАДАРА",
+    "romanizedName": "madara"
+  },
+  {
+    "id": 525,
+    "name": "МАЗАРАЧЕВО",
+    "romanizedName": "mazarachevo"
+  },
+  {
+    "id": 450,
+    "name": "МАКОЦЕВО",
+    "romanizedName": "makocevo"
+  },
+  {
+    "id": 524,
+    "name": "МАКОЦЕВО - СП.",
+    "romanizedName": "makocevo-sp"
+  },
+  {
+    "id": 660,
+    "name": "МАКРЕШ",
+    "romanizedName": "makresh"
+  },
+  {
+    "id": 574,
+    "name": "МАЛЕВО",
+    "romanizedName": "malevo"
+  },
+  {
+    "id": 608,
+    "name": "МАЛО СЕЛО",
+    "romanizedName": "malo-selo"
+  },
+  {
+    "id": 241,
+    "name": "МАНОЛЕ",
+    "romanizedName": "manole"
+  },
+  {
+    "id": 309,
+    "name": "МАНОЛОВО",
+    "romanizedName": "manolovo"
+  },
+  {
+    "id": 520,
+    "name": "МАРЕК",
+    "romanizedName": "marek"
+  },
+  {
+    "id": 517,
+    "name": "МАРИКОСТИНО",
+    "romanizedName": "marikostino"
+  },
+  {
+    "id": 425,
+    "name": "МАРИНО ПОЛЕ",
+    "romanizedName": "marino-pole"
+  },
+  {
+    "id": 642,
+    "name": "МАРКО НИКОЛОВ",
+    "romanizedName": "marko-nikolov"
+  },
+  {
+    "id": 593,
+    "name": "МАСЛИНОВО",
+    "romanizedName": "maslinovo"
+  },
+  {
+    "id": 119,
+    "name": "МЕДКОВЕЦ",
+    "romanizedName": "medkovec"
+  },
+  {
+    "id": 401,
+    "name": "МЕДОВИНА",
+    "romanizedName": "medovina"
+  },
+  {
+    "id": 457,
+    "name": "МЕЖДЕН",
+    "romanizedName": "mezhden"
+  },
+  {
+    "id": 8,
+    "name": "МЕЗДРА",
+    "romanizedName": "mezdra"
+  },
+  {
+    "id": 348,
+    "name": "МЕЗДРА ЮГ",
+    "romanizedName": "mezdra-jug"
+  },
+  {
+    "id": 504,
+    "name": "МЕРИЧЛЕРИ",
+    "romanizedName": "merichleri"
+  },
+  {
+    "id": 273,
+    "name": "МЕРИЧЛЕРИ-СП.",
+    "romanizedName": "merichleri-sp"
+  },
+  {
+    "id": 22,
+    "name": "МЕТАЛ-СП.",
+    "romanizedName": "metal-stop"
+  },
+  {
+    "id": 531,
+    "name": "МИЛКОВИЦА",
+    "romanizedName": "milkovica"
+  },
+  {
+    "id": 494,
+    "name": "МИРКОВО",
+    "romanizedName": "mirkovo"
+  },
+  {
+    "id": 622,
+    "name": "МИРКОВО - СП.",
+    "romanizedName": "mirkovo-st"
+  },
+  {
+    "id": 144,
+    "name": "МИХАЙЛОВО",
+    "romanizedName": "mihajlovo"
+  },
+  {
+    "id": 251,
+    "name": "МИХАЛЦИ-СТАМБОЛОВО",
+    "romanizedName": "mihalci-stambolovo"
+  },
+  {
+    "id": 619,
+    "name": "МЛАМОЛОВО",
+    "romanizedName": "mlamolovo"
+  },
+  {
+    "id": 326,
+    "name": "МОКРИЩЕ",
+    "romanizedName": "mokrishte"
+  },
+  {
+    "id": 201,
+    "name": "МОМИНА КЛИСУРА",
+    "romanizedName": "momina-klisura"
+  },
+  {
+    "id": 479,
+    "name": "МОМИНА СКАЛА",
+    "romanizedName": "momina-skala"
+  },
+  {
+    "id": 230,
+    "name": "МОМИН БРОД",
+    "romanizedName": "momin-brod"
+  },
+  {
+    "id": 274,
+    "name": "МОМИН ПРОХОД",
+    "romanizedName": "momin-prohod"
+  },
+  {
+    "id": 135,
+    "name": "МОМЧИЛГРАД",
+    "romanizedName": "momchilgrad"
+  },
+  {
+    "id": 27,
+    "name": "МОНТАНА",
+    "romanizedName": "montana"
+  },
+  {
+    "id": 131,
+    "name": "МОРАВА",
+    "romanizedName": "morava"
+  },
+  {
+    "id": 468,
+    "name": "МОРАВИЦА",
+    "romanizedName": "moravica"
+  },
+  {
+    "id": 681,
+    "name": "МОРУНИЦА",
+    "romanizedName": "morunica"
+  },
+  {
+    "id": 579,
+    "name": "МОРЯК",
+    "romanizedName": "morjak"
+  },
+  {
+    "id": 590,
+    "name": "МОСТ",
+    "romanizedName": "most"
+  },
+  {
+    "id": 556,
+    "name": "МУЛЕТАРОВО",
+    "romanizedName": "muletarovo"
+  },
+  {
+    "id": 364,
+    "name": "МУРСАЛЕВО",
+    "romanizedName": "mursalevo"
+  },
+  {
+    "id": 683,
+    "name": "МУСАЧЕВО",
+    "romanizedName": "musachevo"
+  },
+  {
+    "id": 634,
+    "name": "МЪДРЕЦ",
+    "romanizedName": "madrec"
+  },
+  {
+    "id": 220,
+    "name": "МЪРЧЕВО",
+    "romanizedName": "marchevo"
+  },
+  {
+    "id": 557,
+    "name": "МЪТНИЦА",
+    "romanizedName": "matnica"
+  },
+  {
+    "id": 260,
+    "name": "НАДАРЕВО",
+    "romanizedName": "nadarevo"
+  },
+  {
+    "id": 180,
+    "name": "НАДЕЖДА - СП.",
+    "romanizedName": "nadezhda"
+  },
+  {
+    "id": 570,
+    "name": "НЕВЕСТИНО",
+    "romanizedName": "nevestino"
+  },
+  {
+    "id": 335,
+    "name": "НЕВША",
+    "romanizedName": "nevsha"
+  },
+  {
+    "id": 641,
+    "name": "НЕГОВАН",
+    "romanizedName": "negovan"
+  },
+  {
+    "id": 561,
+    "name": "НЕГУШЕВО",
+    "romanizedName": "negushevo"
+  },
+  {
+    "id": 498,
+    "name": "НЕМИРОВО",
+    "romanizedName": "nemirovo"
+  },
+  {
+    "id": 268,
+    "name": "НИКОЛАЕВО",
+    "romanizedName": "nikolaevo"
+  },
+  {
+    "id": 59,
+    "name": "НОВА ЗАГОРА",
+    "romanizedName": "nova-zagora"
+  },
+  {
+    "id": 209,
+    "name": "НОВА НАДЕЖДА",
+    "romanizedName": "nova-nadezhda"
+  },
+  {
+    "id": 123,
+    "name": "НОВА ШИПКА",
+    "romanizedName": "nova-shipka"
+  },
+  {
+    "id": 560,
+    "name": "ОБЕДИНЕНА",
+    "romanizedName": "obedinena"
+  },
+  {
+    "id": 239,
+    "name": "ОБЕЛЯ",
+    "romanizedName": "obelja"
+  },
+  {
+    "id": 258,
+    "name": "ОБОРИЩЕ",
+    "romanizedName": "oborishte"
+  },
+  {
+    "id": 509,
+    "name": "ОБРАЗЦОВ ЧИФЛИК",
+    "romanizedName": "obrazcov-chiflik"
+  },
+  {
+    "id": 13,
+    "name": "ОВЧЕПОЛЦИ",
+    "romanizedName": "ovchepolci"
+  },
+  {
+    "id": 287,
+    "name": "ОГНЯНОВО",
+    "romanizedName": "ognjanovo"
+  },
+  {
+    "id": 451,
+    "name": "ОДЪРНЕ",
+    "romanizedName": "odarne"
+  },
+  {
+    "id": 485,
+    "name": "ОПЛЕТНЯ",
+    "romanizedName": "opletnja"
+  },
+  {
+    "id": 237,
+    "name": "ОПЪЛЧЕНЕЦ",
+    "romanizedName": "opalchenec"
+  },
+  {
+    "id": 374,
+    "name": "ОРЕШ",
+    "romanizedName": "oresh"
+  },
+  {
+    "id": 618,
+    "name": "ОРЕШАК",
+    "romanizedName": "oreshak"
+  },
+  {
+    "id": 116,
+    "name": "ОРЕШЕЦ",
+    "romanizedName": "oreshec"
+  },
+  {
+    "id": 122,
+    "name": "ОРИЗОВО",
+    "romanizedName": "orizovo"
+  },
+  {
+    "id": 100,
+    "name": "ОРЛИН",
+    "romanizedName": "orlin"
+  },
+  {
+    "id": 464,
+    "name": "ОСЕЛНА",
+    "romanizedName": "oselna"
+  },
+  {
+    "id": 370,
+    "name": "ОСЕТЕНОВО",
+    "romanizedName": "osetenovo"
+  },
+  {
+    "id": 603,
+    "name": "ОСЛЕН",
+    "romanizedName": "oslen"
+  },
+  {
+    "id": 650,
+    "name": "ОСТРЕЦ",
+    "romanizedName": "ostrec"
+  },
+  {
+    "id": 193,
+    "name": "ОТДИХ",
+    "romanizedName": "otdih"
+  },
+  {
+    "id": 290,
+    "name": "ОХРИД",
+    "romanizedName": "ohrid"
+  },
+  {
+    "id": 342,
+    "name": "ПАВЕЛ БАНЯ",
+    "romanizedName": "pavel-banja"
+  },
+  {
+    "id": 42,
+    "name": "ПАВЛИКЕНИ",
+    "romanizedName": "pavlikeni"
+  },
+  {
+    "id": 16,
+    "name": "ПАЗАРДЖИК",
+    "romanizedName": "pazardzhik"
+  },
+  {
+    "id": 490,
+    "name": "ПАЛИ ЛУЛА",
+    "romanizedName": "pali-lula"
+  },
+  {
+    "id": 684,
+    "name": "ПАНАГЮРИЩЕ",
+    "romanizedName": "panagjurishte"
+  },
+  {
+    "id": 310,
+    "name": "ПАРТИЗАНИ",
+    "romanizedName": "partizani"
+  },
+  {
+    "id": 630,
+    "name": "ПЕЙО ЯВОРОВ",
+    "romanizedName": "pejo-javorov"
+  },
+  {
+    "id": 7,
+    "name": "ПЕРНИК",
+    "romanizedName": "pernik"
+  },
+  {
+    "id": 31,
+    "name": "ПЕРНИК РАЗПРЕДЕЛИТ.",
+    "romanizedName": "pernik-razpredelit"
+  },
+  {
+    "id": 329,
+    "name": "ПЕРПЕРЕК",
+    "romanizedName": "perperek"
+  },
+  {
+    "id": 439,
+    "name": "ПЕСНОПОЙ",
+    "romanizedName": "pesnopoj"
+  },
+  {
+    "id": 177,
+    "name": "ПЕТКО КАРАВЕЛОВО",
+    "romanizedName": "petko-karavelovo"
+  },
+  {
+    "id": 145,
+    "name": "ПЕТРИЧ",
+    "romanizedName": "petrich"
+  },
+  {
+    "id": 469,
+    "name": "ПЕТЪРЧ",
+    "romanizedName": "petarch"
+  },
+  {
+    "id": 106,
+    "name": "ПЕЩЕРА",
+    "romanizedName": "peshtera"
+  },
+  {
+    "id": 205,
+    "name": "ПИРДОП",
+    "romanizedName": "pirdop"
+  },
+  {
+    "id": 150,
+    "name": "ПЛАЧКОВЦИ",
+    "romanizedName": "plachkovci"
+  },
+  {
+    "id": 6,
+    "name": "ПЛЕВЕН",
+    "romanizedName": "pleven"
+  },
+  {
+    "id": 213,
+    "name": "ПЛЕВЕН ЗАПАД",
+    "romanizedName": "pleven-zapad"
+  },
+  {
+    "id": 649,
+    "name": "ПЛИСКА",
+    "romanizedName": "pliska"
+  },
+  {
+    "id": 3,
+    "name": "ПЛОВДИВ",
+    "romanizedName": "plovdiv"
+  },
+  {
+    "id": 691,
+    "name": "ПЛОСКА МОГИЛА",
+    "romanizedName": "ploska-mogila"
+  },
+  {
+    "id": 238,
+    "name": "ПОБИТ КАМЪК",
+    "romanizedName": "pobit-kamak"
+  },
+  {
+    "id": 47,
+    "name": "ПОВЕЛЯНОВО",
+    "romanizedName": "poveljanovo"
+  },
+  {
+    "id": 559,
+    "name": "ПОДВИС",
+    "romanizedName": "podvis"
+  },
+  {
+    "id": 391,
+    "name": "ПОДГОРИЦА",
+    "romanizedName": "podgorica"
+  },
+  {
+    "id": 224,
+    "name": "ПОДЕМ",
+    "romanizedName": "podem"
+  },
+  {
+    "id": 286,
+    "name": "ПОДКОВА",
+    "romanizedName": "podkova"
+  },
+  {
+    "id": 35,
+    "name": "ПОДУЯНЕ",
+    "romanizedName": "podujane-passenger"
+  },
+  {
+    "id": 516,
+    "name": "ПОДУЯНЕ РАЗПР.СР.Р.",
+    "romanizedName": "podujane-razprsrr"
+  },
+  {
+    "id": 394,
+    "name": "ПОЛИКРАИЩЕ",
+    "romanizedName": "polikraishte"
+  },
+  {
+    "id": 605,
+    "name": "ПОЛСКИ СЕНОВЕЦ",
+    "romanizedName": "polski-senovec"
+  },
+  {
+    "id": 70,
+    "name": "ПОЛСКИ ТРЪМБЕШ",
+    "romanizedName": "polski-trambesh"
+  },
+  {
+    "id": 204,
+    "name": "ПОЛСКО КОСОВО",
+    "romanizedName": "polsko-kosovo"
+  },
+  {
+    "id": 120,
+    "name": "ПОПОВИЦА",
+    "romanizedName": "popovica"
+  },
+  {
+    "id": 75,
+    "name": "ПОПОВО",
+    "romanizedName": "popovo"
+  },
+  {
+    "id": 198,
+    "name": "ПОРДИМ",
+    "romanizedName": "pordim"
+  },
+  {
+    "id": 433,
+    "name": "ПРАВДА",
+    "romanizedName": "pravda"
+  },
+  {
+    "id": 666,
+    "name": "ПРЕКОЛНИЦА",
+    "romanizedName": "prekolnica"
+  },
+  {
+    "id": 550,
+    "name": "ПРЕСЛАВЕЦ",
+    "romanizedName": "preslavec"
+  },
+  {
+    "id": 357,
+    "name": "ПРИБОЙ",
+    "romanizedName": "priboj"
+  },
+  {
+    "id": 584,
+    "name": "ПРИЛЕП",
+    "romanizedName": "prilep"
+  },
+  {
+    "id": 63,
+    "name": "ПРОВАДИЯ",
+    "romanizedName": "provadija"
+  },
+  {
+    "id": 403,
+    "name": "ПРОЛЕТ",
+    "romanizedName": "prolet"
+  },
+  {
+    "id": 181,
+    "name": "ПРОСЛАВ",
+    "romanizedName": "proslav"
+  },
+  {
+    "id": 308,
+    "name": "ПРОСТОРНО",
+    "romanizedName": "prostorno"
+  },
+  {
+    "id": 216,
+    "name": "ПТИЧАР",
+    "romanizedName": "ptichar"
+  },
+  {
+    "id": 45,
+    "name": "ПЪРВОМАЙ",
+    "romanizedName": "parvomaj"
+  },
+  {
+    "id": 639,
+    "name": "РАВНА",
+    "romanizedName": "ravna"
+  },
+  {
+    "id": 482,
+    "name": "РАВНЕЦ",
+    "romanizedName": "ravnec"
+  },
+  {
+    "id": 577,
+    "name": "РАВНО ПОЛЕ",
+    "romanizedName": "ravno-pole"
+  },
+  {
+    "id": 214,
+    "name": "РАДАНОВО",
+    "romanizedName": "radanovo"
+  },
+  {
+    "id": 583,
+    "name": "РАДЕВЦИ",
+    "romanizedName": "radevci"
+  },
+  {
+    "id": 388,
+    "name": "РАДКО ДИМИТРИЕВО",
+    "romanizedName": "radko-dimitrievo"
+  },
+  {
+    "id": 466,
+    "name": "РАДОВЕНЕ",
+    "romanizedName": "radovene"
+  },
+  {
+    "id": 44,
+    "name": "РАДОМИР",
+    "romanizedName": "radomir"
+  },
+  {
+    "id": 496,
+    "name": "РАДУЙ",
+    "romanizedName": "raduj"
+  },
+  {
+    "id": 454,
+    "name": "РАДУНЦИ",
+    "romanizedName": "radunci"
+  },
+  {
+    "id": 164,
+    "name": "РАЖДАВИЦА",
+    "romanizedName": "razhdavica"
+  },
+  {
+    "id": 159,
+    "name": "РАЗГРАД",
+    "romanizedName": "razgrad"
+  },
+  {
+    "id": 194,
+    "name": "РАЗДЕЛНА",
+    "romanizedName": "razdelna"
+  },
+  {
+    "id": 262,
+    "name": "РАЗЛОГ",
+    "romanizedName": "razlog"
+  },
+  {
+    "id": 596,
+    "name": "РАЗМЕННА",
+    "romanizedName": "razmenna"
+  },
+  {
+    "id": 674,
+    "name": "РАЗМЕННА - СП.",
+    "romanizedName": "razmenna-sp"
+  },
+  {
+    "id": 85,
+    "name": "РАКЕВО",
+    "romanizedName": "rakevo"
+  },
+  {
+    "id": 635,
+    "name": "РАКОВСКИ",
+    "romanizedName": "rakovski"
+  },
+  {
+    "id": 105,
+    "name": "РЕБРОВО",
+    "romanizedName": "rebrovo"
+  },
+  {
+    "id": 323,
+    "name": "РЕБЪРКОВО",
+    "romanizedName": "rebarkovo"
+  },
+  {
+    "id": 595,
+    "name": "РЕСЕЛЕЦ - СП.",
+    "romanizedName": "reselec-sp"
+  },
+  {
+    "id": 337,
+    "name": "РЕСЕН",
+    "romanizedName": "resen"
+  },
+  {
+    "id": 408,
+    "name": "РОГОЗЧЕ",
+    "romanizedName": "rogozche"
+  },
+  {
+    "id": 289,
+    "name": "РОЗИНО",
+    "romanizedName": "rozino"
+  },
+  {
+    "id": 65,
+    "name": "РОМАН",
+    "romanizedName": "roman"
+  },
+  {
+    "id": 86,
+    "name": "РОМЧА",
+    "romanizedName": "romcha"
+  },
+  {
+    "id": 519,
+    "name": "РУЙНО",
+    "romanizedName": "rujno"
+  },
+  {
+    "id": 458,
+    "name": "РУПИТЕ",
+    "romanizedName": "rupite"
+  },
+  {
+    "id": 664,
+    "name": "РУПЦИ - СЕВЕР",
+    "romanizedName": "rupci-sever"
+  },
+  {
+    "id": 587,
+    "name": "РУСАЛЯ - ДИЧИН",
+    "romanizedName": "rusalja-dichin"
+  },
+  {
+    "id": 30,
+    "name": "РУСЕ",
+    "romanizedName": "ruse"
+  },
+  {
+    "id": 128,
+    "name": "РУСЕ РАЗПРЕДЕЛИТЕЛНА",
+    "romanizedName": "ruse-razpredelitelna"
+  },
+  {
+    "id": 146,
+    "name": "РУСЕ ТОВАРНА-СП.",
+    "romanizedName": "ruse-tovarna-sp"
+  },
+  {
+    "id": 312,
+    "name": "РУСКА БЯЛА",
+    "romanizedName": "ruska-bjala"
+  },
+  {
+    "id": 69,
+    "name": "САДОВО",
+    "romanizedName": "sadovo"
+  },
+  {
+    "id": 386,
+    "name": "САМОВОДЕНЕ",
+    "romanizedName": "samovodene"
+  },
+  {
+    "id": 92,
+    "name": "САМУИЛ",
+    "romanizedName": "samuil"
+  },
+  {
+    "id": 261,
+    "name": "САМУИЛОВО",
+    "romanizedName": "samuilovo"
+  },
+  {
+    "id": 206,
+    "name": "САНДАНСКИ",
+    "romanizedName": "sandanski"
+  },
+  {
+    "id": 655,
+    "name": "САРАНЦИ",
+    "romanizedName": "saranci"
+  },
+  {
+    "id": 424,
+    "name": "САХРАНЕ",
+    "romanizedName": "sahrane"
+  },
+  {
+    "id": 332,
+    "name": "СБОРИЩЕ",
+    "romanizedName": "sborishte"
+  },
+  {
+    "id": 533,
+    "name": "СВЕЖЕН",
+    "romanizedName": "svezhen"
+  },
+  {
+    "id": 511,
+    "name": "СВЕТА ПЕТКА",
+    "romanizedName": "sveta-petka"
+  },
+  {
+    "id": 692,
+    "name": "СВЕТИ ГЕОРГИ",
+    "romanizedName": "sveti-georgi"
+  },
+  {
+    "id": 562,
+    "name": "СВЕТЛЕН",
+    "romanizedName": "svetlen"
+  },
+  {
+    "id": 521,
+    "name": "СВЕТЛИНА - СП.",
+    "romanizedName": "svetlina-sp"
+  },
+  {
+    "id": 624,
+    "name": "СВЕТОВРАЧАНЕ",
+    "romanizedName": "svetovrachane"
+  },
+  {
+    "id": 153,
+    "name": "СВИЛЕНГРАД",
+    "romanizedName": "svilengrad"
+  },
+  {
+    "id": 64,
+    "name": "СВИЩОВ",
+    "romanizedName": "svishtov"
+  },
+  {
+    "id": 369,
+    "name": "СВОБОДА",
+    "romanizedName": "svoboda"
+  },
+  {
+    "id": 18,
+    "name": "СВОГЕ",
+    "romanizedName": "svoge"
+  },
+  {
+    "id": 551,
+    "name": "СЕЛИМИНОВО",
+    "romanizedName": "seliminovo"
+  },
+  {
+    "id": 226,
+    "name": "СЕНОВО",
+    "romanizedName": "senovo"
+  },
+  {
+    "id": 24,
+    "name": "СЕПТЕМВРИ",
+    "romanizedName": "septemvri"
+  },
+  {
+    "id": 354,
+    "name": "СЕСТРИМО",
+    "romanizedName": "sestrimo"
+  },
+  {
+    "id": 210,
+    "name": "СИЛИСТРА",
+    "romanizedName": "silistra"
+  },
+  {
+    "id": 200,
+    "name": "СИМЕОНОВГРАД",
+    "romanizedName": "simeonovgrad"
+  },
+  {
+    "id": 317,
+    "name": "СИМИТЛИ",
+    "romanizedName": "simitli"
+  },
+  {
+    "id": 659,
+    "name": "СИНАГОВЦИ-ГУРКОВО",
+    "romanizedName": "sinagovci-gurkovo"
+  },
+  {
+    "id": 88,
+    "name": "СИНДЕЛ",
+    "romanizedName": "sindel"
+  },
+  {
+    "id": 284,
+    "name": "СИНИТОВО",
+    "romanizedName": "sinitovo"
+  },
+  {
+    "id": 336,
+    "name": "СИНЬО БЪРДО",
+    "romanizedName": "sinjo-bardo"
+  },
+  {
+    "id": 552,
+    "name": "СКАКАВИЦА",
+    "romanizedName": "skakavica"
+  },
+  {
+    "id": 169,
+    "name": "СКОБЕЛЕВО",
+    "romanizedName": "skobelevo"
+  },
+  {
+    "id": 604,
+    "name": "СКОМЛЯ (КАНТОН-43)",
+    "romanizedName": "skomlja-kanton-43"
+  },
+  {
+    "id": 95,
+    "name": "СКУТАРЕ",
+    "romanizedName": "skutare"
+  },
+  {
+    "id": 203,
+    "name": "СЛАВЯНОВО",
+    "romanizedName": "slavjanovo"
+  },
+  {
+    "id": 673,
+    "name": "СЛАНА БАРА",
+    "romanizedName": "slana-bara"
+  },
+  {
+    "id": 43,
+    "name": "СЛИВЕН",
+    "romanizedName": "sliven"
+  },
+  {
+    "id": 234,
+    "name": "СЛИВНИЦА",
+    "romanizedName": "slivnica"
+  },
+  {
+    "id": 147,
+    "name": "СЛИВНИЦА - СП.",
+    "romanizedName": "slivnica-sp"
+  },
+  {
+    "id": 687,
+    "name": "СМИЛЕЦ",
+    "romanizedName": "smilec"
+  },
+  {
+    "id": 157,
+    "name": "СМИРНЕНСКИ",
+    "romanizedName": "smirnenski"
+  },
+  {
+    "id": 573,
+    "name": "СМОЛЕВО",
+    "romanizedName": "smolevo"
+  },
+  {
+    "id": 334,
+    "name": "СМЯДОВО",
+    "romanizedName": "smjadovo"
+  },
+  {
+    "id": 612,
+    "name": "СОВОЛЯНО",
+    "romanizedName": "sovoljano"
+  },
+  {
+    "id": 292,
+    "name": "СОКОЛОВО",
+    "romanizedName": "sokolovo"
+  },
+  {
+    "id": 422,
+    "name": "СОЛНА МИНА",
+    "romanizedName": "solna-mina"
+  },
+  {
+    "id": 418,
+    "name": "СОМОВИТ",
+    "romanizedName": "somovit"
+  },
+  {
+    "id": 546,
+    "name": "СОПОТ",
+    "romanizedName": "sopot"
+  },
+  {
+    "id": 2,
+    "name": "СОФИЯ",
+    "romanizedName": "sofia"
+  },
+  {
+    "id": 54,
+    "name": "СОФИЯ СЕВЕР",
+    "romanizedName": "sofia-sever"
+  },
+  {
+    "id": 529,
+    "name": "СПАСОВО",
+    "romanizedName": "spasovo"
+  },
+  {
+    "id": 497,
+    "name": "СРАЦИМИР",
+    "romanizedName": "sracimir"
+  },
+  {
+    "id": 568,
+    "name": "СРЕДНА АРДА",
+    "romanizedName": "sredna-arda"
+  },
+  {
+    "id": 484,
+    "name": "СТАЙНОВЦИ",
+    "romanizedName": "stajnovci"
+  },
+  {
+    "id": 340,
+    "name": "СТАЛЕВО",
+    "romanizedName": "stalevo"
+  },
+  {
+    "id": 108,
+    "name": "СТАЛИЙСКА МАХАЛА",
+    "romanizedName": "stalijska-mahala"
+  },
+  {
+    "id": 14,
+    "name": "СТАМБОЛИЙСКИ",
+    "romanizedName": "stambolijski"
+  },
+  {
+    "id": 349,
+    "name": "СТАМБОЛОВО",
+    "romanizedName": "stambolovo"
+  },
+  {
+    "id": 638,
+    "name": "СТАМО КОСТОВ",
+    "romanizedName": "stamo-kostov"
+  },
+  {
+    "id": 11,
+    "name": "СТАРА ЗАГОРА",
+    "romanizedName": "stara-zagora"
+  },
+  {
+    "id": 675,
+    "name": "СТАРА КРЕСНА",
+    "romanizedName": "stara-kresna"
+  },
+  {
+    "id": 543,
+    "name": "СТОЙЧЕВЦИ",
+    "romanizedName": "stojchevci"
+  },
+  {
+    "id": 431,
+    "name": "СТОЛНИК",
+    "romanizedName": "stolnik"
+  },
+  {
+    "id": 699,
+    "name": "СТОЯН МИТОВ",
+    "romanizedName": "stojan-mitov"
+  },
+  {
+    "id": 81,
+    "name": "СТРАЖИЦА",
+    "romanizedName": "strazhica"
+  },
+  {
+    "id": 121,
+    "name": "СТРАЛДЖА",
+    "romanizedName": "straldzha"
+  },
+  {
+    "id": 179,
+    "name": "СТРАШИМИРОВО",
+    "romanizedName": "strashimirovo"
+  },
+  {
+    "id": 685,
+    "name": "СТРЕЛЧА",
+    "romanizedName": "strelcha"
+  },
+  {
+    "id": 646,
+    "name": "СТРОИТЕЛ",
+    "romanizedName": "stroitel"
+  },
+  {
+    "id": 339,
+    "name": "СТРУМЯНИ",
+    "romanizedName": "strumjani"
+  },
+  {
+    "id": 373,
+    "name": "СТРУПЕЦ",
+    "romanizedName": "strupec"
+  },
+  {
+    "id": 130,
+    "name": "СТРУЯ",
+    "romanizedName": "struja"
+  },
+  {
+    "id": 499,
+    "name": "СТРЯМА",
+    "romanizedName": "strjama"
+  },
+  {
+    "id": 473,
+    "name": "СТЪРМЕН",
+    "romanizedName": "starmen"
+  },
+  {
+    "id": 170,
+    "name": "СУВОРОВО",
+    "romanizedName": "suvorovo"
+  },
+  {
+    "id": 306,
+    "name": "СЪБОТКОВЦИ",
+    "romanizedName": "sabotkovci"
+  },
+  {
+    "id": 463,
+    "name": "СЪЕДИНЕНИЕ",
+    "romanizedName": "saedinenie"
+  },
+  {
+    "id": 670,
+    "name": "ТАБАЧКА",
+    "romanizedName": "tabachka"
+  },
+  {
+    "id": 476,
+    "name": "ТАНЮ ВОЙВОДА",
+    "romanizedName": "tanju-vojvoda"
+  },
+  {
+    "id": 158,
+    "name": "ТВЪРДИЦА",
+    "romanizedName": "tvardica"
+  },
+  {
+    "id": 118,
+    "name": "ТЕЛИШ",
+    "romanizedName": "telish"
+  },
+  {
+    "id": 96,
+    "name": "ТОДОР КАБЛЕШКОВ",
+    "romanizedName": "todor-kableshkov"
+  },
+  {
+    "id": 530,
+    "name": "ТОДОРОВО",
+    "romanizedName": "todorovo"
+  },
+  {
+    "id": 125,
+    "name": "ТОМПСЪН",
+    "romanizedName": "tompsan"
+  },
+  {
+    "id": 341,
+    "name": "ТОПОЛИТЕ",
+    "romanizedName": "topolite"
+  },
+  {
+    "id": 267,
+    "name": "ТОПОЛИЦА",
+    "romanizedName": "topolica"
+  },
+  {
+    "id": 152,
+    "name": "ТОПОЛОВ ДОЛ",
+    "romanizedName": "topolov-dol"
+  },
+  {
+    "id": 288,
+    "name": "ТРАЙКОВО",
+    "romanizedName": "trajkovo"
+  },
+  {
+    "id": 110,
+    "name": "ТРАКИЯ",
+    "romanizedName": "trakija"
+  },
+  {
+    "id": 352,
+    "name": "ТРАКИЯ (ШУМЕН)",
+    "romanizedName": "trakija-shumen"
+  },
+  {
+    "id": 541,
+    "name": "ТРАПЕЗИЦА",
+    "romanizedName": "trapezica"
+  },
+  {
+    "id": 266,
+    "name": "ТРОЯН",
+    "romanizedName": "trojan"
+  },
+  {
+    "id": 207,
+    "name": "ТРУД",
+    "romanizedName": "trud"
+  },
+  {
+    "id": 149,
+    "name": "ТРЪСТИКОВО",
+    "romanizedName": "trastikovo"
+  },
+  {
+    "id": 55,
+    "name": "ТРЯВНА",
+    "romanizedName": "trjavna"
+  },
+  {
+    "id": 72,
+    "name": "ТУЛОВО",
+    "romanizedName": "tulovo"
+  },
+  {
+    "id": 236,
+    "name": "ТЪЖА",
+    "romanizedName": "tazha"
+  },
+  {
+    "id": 36,
+    "name": "ТЪРГОВИЩЕ",
+    "romanizedName": "targovishte"
+  },
+  {
+    "id": 93,
+    "name": "ТЪРНАК",
+    "romanizedName": "tarnak"
+  },
+  {
+    "id": 351,
+    "name": "ТЪРНИЧЕНИ",
+    "romanizedName": "tarnicheni"
+  },
+  {
+    "id": 547,
+    "name": "УЗУНДЖОВО",
+    "romanizedName": "uzundzhovo"
+  },
+  {
+    "id": 366,
+    "name": "УМАРЕВЦИ",
+    "romanizedName": "umarevci"
+  },
+  {
+    "id": 488,
+    "name": "УСОЙКА",
+    "romanizedName": "usojka"
+  },
+  {
+    "id": 82,
+    "name": "ФИЛИПОВО",
+    "romanizedName": "filipovo"
+  },
+  {
+    "id": 208,
+    "name": "ХАДЖИЕВО",
+    "romanizedName": "hadzhievo"
+  },
+  {
+    "id": 161,
+    "name": "ХАН АСПАРУХ",
+    "romanizedName": "han-asparuh"
+  },
+  {
+    "id": 280,
+    "name": "ХАН КРУМ",
+    "romanizedName": "han-krum"
+  },
+  {
+    "id": 196,
+    "name": "ХАРМАНЛИ",
+    "romanizedName": "harmanli"
+  },
+  {
+    "id": 698,
+    "name": "ХАРМАНЛИ ЦЕНТЪР",
+    "romanizedName": "harmanli-central"
+  },
+  {
+    "id": 318,
+    "name": "ХАСКОВО",
+    "romanizedName": "haskovo"
+  },
+  {
+    "id": 576,
+    "name": "ХЕРАКОВО",
+    "romanizedName": "herakovo"
+  },
+  {
+    "id": 114,
+    "name": "ХИСАР",
+    "romanizedName": "hisar"
+  },
+  {
+    "id": 378,
+    "name": "ХИТРИНО",
+    "romanizedName": "hitrino"
+  },
+  {
+    "id": 679,
+    "name": "ХЛЕВЕНЕ",
+    "romanizedName": "hlevene"
+  },
+  {
+    "id": 420,
+    "name": "ХРАБЪРСКО",
+    "romanizedName": "hrabarsko"
+  },
+  {
+    "id": 338,
+    "name": "ХРИСТИЯНОВО",
+    "romanizedName": "hristijanovo"
+  },
+  {
+    "id": 427,
+    "name": "ХРИСТО ДАНОВО",
+    "romanizedName": "hristo-danovo"
+  },
+  {
+    "id": 668,
+    "name": "ХУМАТА",
+    "romanizedName": "humata"
+  },
+  {
+    "id": 532,
+    "name": "ХЪРСОВО",
+    "romanizedName": "harsovo"
+  },
+  {
+    "id": 686,
+    "name": "ЦАР АСЕН",
+    "romanizedName": "car-asen"
+  },
+  {
+    "id": 677,
+    "name": "ЦАРАЦОВО",
+    "romanizedName": "caracovo"
+  },
+  {
+    "id": 48,
+    "name": "ЦАРЕВА ЛИВАДА",
+    "romanizedName": "careva-livada"
+  },
+  {
+    "id": 565,
+    "name": "ЦАРЕВА ПОЛЯНА",
+    "romanizedName": "careva-poljana"
+  },
+  {
+    "id": 218,
+    "name": "ЦАРЕВЦИ",
+    "romanizedName": "carevci"
+  },
+  {
+    "id": 291,
+    "name": "ЦВЕТИНО",
+    "romanizedName": "cvetino"
+  },
+  {
+    "id": 626,
+    "name": "ЦЕПИНА",
+    "romanizedName": "cepina"
+  },
+  {
+    "id": 265,
+    "name": "ЦЕРКОВСКИ",
+    "romanizedName": "cerkovski"
+  },
+  {
+    "id": 410,
+    "name": "ЦЕРОВИЦА",
+    "romanizedName": "cerovica"
+  },
+  {
+    "id": 68,
+    "name": "ЦЕРОВО",
+    "romanizedName": "cerovo"
+  },
+  {
+    "id": 628,
+    "name": "ЧАВДАРЦИ",
+    "romanizedName": "chavdarci"
+  },
+  {
+    "id": 430,
+    "name": "ЧЕКАНЧЕВО",
+    "romanizedName": "chekanchevo"
+  },
+  {
+    "id": 434,
+    "name": "ЧЕЛОПЕЧ",
+    "romanizedName": "chelopech"
+  },
+  {
+    "id": 631,
+    "name": "ЧЕРВЕНА",
+    "romanizedName": "chervena"
+  },
+  {
+    "id": 415,
+    "name": "ЧЕРВЕНА ВОДА",
+    "romanizedName": "chervena-voda"
+  },
+  {
+    "id": 29,
+    "name": "ЧЕРВЕН БРЯГ",
+    "romanizedName": "cherven-brjag"
+  },
+  {
+    "id": 381,
+    "name": "ЧЕРГАНОВО",
+    "romanizedName": "cherganovo"
+  },
+  {
+    "id": 663,
+    "name": "ЧЕРЕПИШ",
+    "romanizedName": "cherepish"
+  },
+  {
+    "id": 387,
+    "name": "ЧЕРКВИЦА",
+    "romanizedName": "cherkvica"
+  },
+  {
+    "id": 168,
+    "name": "ЧЕРНА ГОРА",
+    "romanizedName": "cherna-gora"
+  },
+  {
+    "id": 501,
+    "name": "ЧЕРНА МЕСТА",
+    "romanizedName": "cherna-mesta"
+  },
+  {
+    "id": 272,
+    "name": "ЧЕРНЕВО",
+    "romanizedName": "chernevo"
+  },
+  {
+    "id": 594,
+    "name": "ЧЕРНИК",
+    "romanizedName": "chernik"
+  },
+  {
+    "id": 441,
+    "name": "ЧЕРНИЧЕ",
+    "romanizedName": "cherniche"
+  },
+  {
+    "id": 217,
+    "name": "ЧЕРНИЧЕВО",
+    "romanizedName": "chernichevo"
+  },
+  {
+    "id": 629,
+    "name": "ЧЕРНОГОРОВО",
+    "romanizedName": "chernogorovo"
+  },
+  {
+    "id": 347,
+    "name": "ЧЕРНОГРАД",
+    "romanizedName": "chernograd"
+  },
+  {
+    "id": 263,
+    "name": "ЧЕРНОЗЕМ",
+    "romanizedName": "chernozem"
+  },
+  {
+    "id": 526,
+    "name": "ЧЕСТОВО-СП.",
+    "romanizedName": "chestovo-sp"
+  },
+  {
+    "id": 140,
+    "name": "ЧЕШНЕГИРОВО",
+    "romanizedName": "cheshnegirovo"
+  },
+  {
+    "id": 537,
+    "name": "ЧИНТУЛОВО",
+    "romanizedName": "chintulovo"
+  },
+  {
+    "id": 84,
+    "name": "ЧИРПАН",
+    "romanizedName": "chirpan"
+  },
+  {
+    "id": 493,
+    "name": "ЧИФЛИК",
+    "romanizedName": "chiflik"
+  },
+  {
+    "id": 610,
+    "name": "ЧУКОВЕЦ",
+    "romanizedName": "chukovec"
+  },
+  {
+    "id": 592,
+    "name": "ЧУМЕРНА",
+    "romanizedName": "chumerna"
+  },
+  {
+    "id": 215,
+    "name": "ШИВАЧЕВО",
+    "romanizedName": "shivachevo"
+  },
+  {
+    "id": 313,
+    "name": "ШИРОКО ПОЛЕ",
+    "romanizedName": "shiroko-pole"
+  },
+  {
+    "id": 160,
+    "name": "ШИШКОВЦИ",
+    "romanizedName": "shishkovci"
+  },
+  {
+    "id": 15,
+    "name": "ШУМЕН",
+    "romanizedName": "shumen"
+  },
+  {
+    "id": 221,
+    "name": "ЮНАК",
+    "romanizedName": "junak"
+  },
+  {
+    "id": 360,
+    "name": "ЮРУКОВО",
+    "romanizedName": "jurukovo"
+  },
+  {
+    "id": 99,
+    "name": "ЯБЪЛКОВО",
+    "romanizedName": "jabalkovo"
+  },
+  {
+    "id": 654,
+    "name": "ЯВОРОВЕЦ",
+    "romanizedName": "javorovec"
+  },
+  {
+    "id": 645,
+    "name": "ЯГОДА",
+    "romanizedName": "jagoda"
+  },
+  {
+    "id": 375,
+    "name": "ЯГОДОВО",
+    "romanizedName": "jagodovo"
+  },
+  {
+    "id": 242,
+    "name": "ЯКОРУДА",
+    "romanizedName": "jakoruda"
+  },
+  {
+    "id": 700,
+    "name": "ЯКОРУДСКА МИНЕРАЛА БАНЯ",
+    "romanizedName": "jakorudska-minerala-banja"
+  },
+  {
+    "id": 25,
+    "name": "ЯМБОЛ",
+    "romanizedName": "jambol"
+  },
+  {
+    "id": 586,
+    "name": "ЯНА",
+    "romanizedName": "jana"
+  },
+  {
+    "id": 325,
+    "name": "ЯНТРА",
+    "romanizedName": "jantra"
+  },
+  {
+    "id": 363,
+    "name": "ЯСЕН",
+    "romanizedName": "jasen"
+  },
+  {
+    "id": 633,
+    "name": "ЯСЕНОВЕЦ",
+    "romanizedName": "jasenovec"
+  },
+  {
+    "id": 564,
+    "name": "ЯСТРЕБОВО",
+    "romanizedName": "jastrebovo"
+  },
+  {
+    "id": 598,
+    "name": "ЯХИНОВО",
+    "romanizedName": "jahinovo"
+  }
 ]

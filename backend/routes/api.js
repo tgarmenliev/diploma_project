@@ -75,7 +75,7 @@ function translateStations(nomenclatures) {
     current = {
       id: st.id,
       name: st.name,
-      transliterated: romanizeBulgarian(st.name),
+      romanizedName: romanizeBulgarian(st.name),
     };
     result.push(current);
   });
