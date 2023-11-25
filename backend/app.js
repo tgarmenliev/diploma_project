@@ -2,7 +2,7 @@
 const express = require('express');
 var cors = require('cors')
 
-const apiRoutes = require('./routes/api');
+// const apiRoutes = require('./routes/api');
 const liveRoutes = require('./routes/live');
 const trainInfoRoutes = require('./routes/trainInfo');
 const scheduleRoutes = require('./routes/schedule');
@@ -13,7 +13,7 @@ const port = 3000;
 
 app.use(cors())
 
-app.use('/api', apiRoutes);
+// app.use('/api', apiRoutes);
 app.use('/api/live', liveRoutes);
 app.use('/api/trainInfo', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);
