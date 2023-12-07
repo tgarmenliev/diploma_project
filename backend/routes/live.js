@@ -143,11 +143,7 @@ router.get('/:stationName', async (req, res) => {
   try {
     let trains_info = await get_trains_info(stationName);
 
-    const data = {
-      trains_info: trains_info,
-    };
-
-    res.json(data);
+    res.json(trains_info);
   } catch (error) {
     // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);

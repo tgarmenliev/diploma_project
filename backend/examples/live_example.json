@@ -1,51 +1,63 @@
 {
-    "trains_info": {
-        "station": "Искър",
-        "trains": [
-            {
-                "direction": "София ",
-                "time": "21:44",
-                "isDelayed": true,
-                "delayedTime": "21:40",
-                "delayInfo": {
-                    "delayMinutes": 4,
-                    "delayString": "Закъснение 4 мин. ",
-                    "delayInfo": ""
-                },
-                "type": "БВ",
-                "trainNum": "1614"
+    "station": "Пирдоп",
+    "trains": [
+        {
+            "direction": "София ",
+            "time": "10:27",
+            "isDelayed": true,
+            "delayedTime": "10:12",
+            "delayInfo": {
+                "delayMinutes": 15,
+                "delayString": "Закъснение 15 мин. ",
+                "delayInfo": "× Закъснение на БВ 3602 , Чайка (Бургас 05:30 - София 11:32) Бърз влак №3602 , Чайка (Бургас 05:30 - София 11:32) се движи с 14 минути закъснение след ограничения на скоростта на движение в отделни участъци от железния път в гара Гурково. Актуална информация "
             },
-            {
-                "direction": "Варна ",
-                "time": "21:43",
-                "isDelayed": true,
-                "delayedTime": "21:39",
-                "delayInfo": {
-                    "delayMinutes": 4,
-                    "delayString": "Закъснение 4 мин. ",
-                    "delayInfo": ""
-                },
-                "type": "БВ",
-                "trainNum": "8657"
-            },
-            {
-                "direction": "Бургас ",
-                "time": "22:34",
-                "isDelayed": false,
-                "delayedTime": 0,
-                "delayInfo": [],
-                "type": "БВ",
-                "trainNum": "8627"
-            },
-            {
-                "direction": "Варна ",
-                "time": "23:15",
-                "isDelayed": false,
-                "delayedTime": 0,
-                "delayInfo": [],
-                "type": "БВ",
-                "trainNum": "3637"
-            }
-        ]
-    }
+            "type": "БВ",
+            "trainNum": "3602"
+        },
+        {
+            "direction": "Копривщица ",
+            "time": "10:46",
+            "isDelayed": false,
+            "delayedTime": 0,
+            "delayInfo": [],
+            "type": "ПВ",
+            "trainNum": "30121"
+        },
+        {
+            "direction": "София ",
+            "time": "11:29",
+            "isDelayed": false,
+            "delayedTime": 0,
+            "delayInfo": [],
+            "type": "ПВ",
+            "trainNum": "30122"
+        },
+        {
+            "direction": "София ",
+            "time": "13:27",
+            "isDelayed": false,
+            "delayedTime": 0,
+            "delayInfo": [],
+            "type": "БВ",
+            "trainNum": "3692"
+        },
+        {
+            "direction": "Бургас ",
+            "time": "15:04",
+            "isDelayed": false,
+            "delayedTime": 0,
+            "delayInfo": [],
+            "type": "БВ",
+            "trainNum": "3623"
+        },
+        {
+            "direction": "София ",
+            "time": "15:17",
+            "isDelayed": false,
+            "delayedTime": 0,
+            "delayInfo": [],
+            "type": "ПВ",
+            "trainNum": "30116"
+        }
+    ]
 }
