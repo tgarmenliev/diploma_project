@@ -56,13 +56,22 @@ function makeTrainJson(string, trainNum, delayInfo) {
     station += string[index];
     station += " ";
   }
+  
+  newDelayInfo = delayInfo;
+  if(delayInfo.length === 0) {
+    newDelayInfo = {
+      delayMinutes: 0,
+      delayString: "",
+      delayInfo: "",
+    };
+  }
 
   result = {
     direction: station,
     time: 0,
     isDelayed: prefix,
     delayedTime: 0,
-    delayInfo: delayInfo,
+    delayInfo: newDelayInfo,
     type: trainNum[0],
     trainNum: trainNum[1]
   };

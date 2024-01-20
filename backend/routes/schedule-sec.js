@@ -16,10 +16,10 @@ function makeMoreInfoTrainJSON(string) {
 
         curr_train = {
             station: string[i],
-            arrive_at: string[i+1],
-            depart_at: string[i+2],
-            train_type: string[i+3],
-            train_number: string[i+4]
+            arriveAt: string[i+1],
+            departAt: string[i+2],
+            trainType: string[i+3],
+            trainNumber: string[i+4]
         }
 
         i += 5;
@@ -47,22 +47,22 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         curr_train = {
             "from": fromStation,
             "to": toStation,
-            "depart": moreInfoJson[0]["depart_at"],
-            "arrive": moreInfoJson[1]["arrive_at"],
-            "depart_date": date,
-            "arrive_date": "",
-            "train_type": moreInfoJson[0]["train_type"],
-            "train_number": moreInfoJson[0]["train_number"],
+            "depart": moreInfoJson[0]["departAt"],
+            "arrive": moreInfoJson[1]["arriveAt"],
+            "departDate": date,
+            "arriveDate": "",
+            "trainType": moreInfoJson[0]["trainType"],
+            "trainNumber": moreInfoJson[0]["trainNumber"],
             "duration": duration,
-            "time_to_wait_next": 0,
+            "timeToWaitNext": 0,
         };
 
-        let arrayDep = moreInfoJson[0]["depart_at"].split(":");
-        let arrayArr = moreInfoJson[1]["arrive_at"].split(":");
+        let arrayDep = moreInfoJson[0]["departAt"].split(":");
+        let arrayArr = moreInfoJson[1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arrive_date"] = tommorow;
+            curr_train["arriveDate"] = tommorow;
         } else {
-            curr_train["arrive_date"] = date;
+            curr_train["arriveDate"] = date;
         }
 
         trains.push(curr_train);
@@ -76,27 +76,27 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         curr_train = {
             "from": i === 0 ? fromStation : transfer_stations[i - 1],
             "to": i === moreInfoJson.length - 2 ? toStation : transfer_stations[i],
-            "depart": moreInfoJson[i]["depart_at"],
-            "arrive": moreInfoJson[i + 1]["arrive_at"],
-            "depart_date": isTommorow ? tommorow : date,
-            "arrive_date": "",
-            "train_type": moreInfoJson[i]["train_type"],
-            "train_number": moreInfoJson[i]["train_number"],
+            "depart": moreInfoJson[i]["departAt"],
+            "arrive": moreInfoJson[i + 1]["arriveAt"],
+            "departDate": isTommorow ? tommorow : date,
+            "arriveDate": "",
+            "trainType": moreInfoJson[i]["trainType"],
+            "trainNumber": moreInfoJson[i]["trainNumber"],
             "duration": "",
-            "time_to_wait_next": "",
+            "timeToWaitNext": "",
         }
 
-        let arrayDep = moreInfoJson[i]["depart_at"].split(":");
-        let arrayArr = moreInfoJson[i + 1]["arrive_at"].split(":");
+        let arrayDep = moreInfoJson[i]["departAt"].split(":");
+        let arrayArr = moreInfoJson[i + 1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arrive_date"] = tommorow;
+            curr_train["arriveDate"] = tommorow;
             isTommorow = true;
         } else {
-            curr_train["arrive_date"] = date;
+            curr_train["arriveDate"] = date;
         }
 
-        let dep = moreInfoJson[i]["depart_at"].split(":");
-        let arr = moreInfoJson[i + 1]["arrive_at"].split(":");
+        let dep = moreInfoJson[i]["departAt"].split(":");
+        let arr = moreInfoJson[i + 1]["arriveAt"].split(":");
         let depDate = new Date();
         let arrDate = new Date();
 
@@ -115,7 +115,7 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
 
         if(i !== moreInfoJson.length - 2) {
 
-            dep = moreInfoJson[i + 1]["depart_at"].split(":");
+            dep = moreInfoJson[i + 1]["departAt"].split(":");
 
             depDate.setHours(dep[0]);
             depDate.setMinutes(dep[1]);
@@ -126,10 +126,10 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
             //convert minutes to hours and minutes
             hours = Math.floor(minutes / 60);
             mins = minutes % 60;
-            curr_train["time_to_wait_next"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
+            curr_train["timeToWaitNext"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
             
         } else {
-            curr_train["time_to_wait_next"] = 0;
+            curr_train["timeToWaitNext"] = 0;
         }
 
         trains.push(curr_train);
@@ -155,11 +155,11 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
 
         curr_train = {
             "duration": "",
-            "departure_time": "",
-            "arrival_time": "",
-            "departure_date": date,
-            "arrival_date": "",
-            "num_of_transfers": 0,
+            "departureTime": "",
+            "arrivalTime": "",
+            "departureDate": date,
+            "arrivalDate": "",
+            "numOfTransfers": 0,
             "trains": [],
         }
         
@@ -170,23 +170,23 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
             index += 2;
         }
 
-        curr_train["num_of_transfers"] = transfer_stations.length;
+        curr_train["numOfTransfers"] = transfer_stations.length;
         toStation = string[index++];
-        curr_train["departure_time"] = string[index];
+        curr_train["departureTime"] = string[index];
 
         let arrayDep = string[index].split(":");
 
         // Skip dashes
         index += 2;
 
-        curr_train["arrival_time"] = string[index];
+        curr_train["arrivalTime"] = string[index];
 
         let arrayArr = string[index].split(":");
 
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arrival_date"] = tommorow;
+            curr_train["arrivalDate"] = tommorow;
         } else {
-            curr_train["arrival_date"] = date;
+            curr_train["arrivalDate"] = date;
         }
 
         // Skip useless info

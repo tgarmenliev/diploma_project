@@ -41,18 +41,18 @@ function makeTrainsToOption(trains) {
 
     currentTrain["depart"] = trains[index].depart;
     currentTrain["arrive"] = trains[index].arrive;
-    currentTrain["depart_date"] = trains[index].depart_date;
-    currentTrain["arrive_date"] = trains[index].arrive_date;
+    currentTrain["departDate"] = trains[index].depart_date;
+    currentTrain["arriveDate"] = trains[index].arrive_date;
 
-    currentTrain["train_type"] = nameWithoutSpaces[0];
-    currentTrain["train_number"] = nameWithoutSpaces[1];
+    currentTrain["trainType"] = nameWithoutSpaces[0];
+    currentTrain["trainNumber"] = nameWithoutSpaces[1];
 
     currentTrain["duration"] = trains[index].total_time;
 
     if(trains[index].time_to_wait === "00:00")
-      currentTrain["time_to_wait_next"] = 0;
+      currentTrain["timeToWaitNext"] = 0;
     else
-      currentTrain["time_to_wait_next"] = trains[index].time_to_wait;
+      currentTrain["timeToWaitNext"] = trains[index].time_to_wait;
 
     result.push(currentTrain);
   }
@@ -72,11 +72,11 @@ function makeOptionsTrains(options) {
     let currentOption = {};
 
     currentOption["duration"] = options[index].total_time;
-    currentOption["departure_time"] = options[index].departure_time;
-    currentOption["arrival_time"] = options[index].arrival_time;
-    currentOption["departure_date"] = options[index].departure_date;
-    currentOption["arrival_date"] = options[index].arrival_date;
-    currentOption["num_of_transfers"] = options[index].trains.length - 1;
+    currentOption["departureTime"] = options[index].departure_time;
+    currentOption["arrivalTime"] = options[index].arrival_time;
+    currentOption["departureDate"] = options[index].departure_date;
+    currentOption["arrivalDate"] = options[index].arrival_date;
+    currentOption["numOfTransfers"] = options[index].trains.length - 1;
 
     currentOption["trains"] = makeTrainsToOption(options[index].trains);
 
