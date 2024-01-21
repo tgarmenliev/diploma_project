@@ -103,8 +103,6 @@ async function getTrainNoInfo(trainNo) {
 // Define a route with a parameter
 router.get('/:trainNo', async (req, res) => {
     const trainNo = req.params.trainNo;
-    console.log("trainNo");
-    console.log(trainNo);
     try {
       let trains_info = await getTrainNoInfo(trainNo);
   
