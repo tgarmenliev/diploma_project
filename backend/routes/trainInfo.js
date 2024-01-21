@@ -18,7 +18,7 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
-function makeJsonTrainInfo(string, trainNumber) {
+function makeJsonTrainInfo(string, trainNumber, date) {
   let result = {};
 
   let type = "";
@@ -27,7 +27,7 @@ function makeJsonTrainInfo(string, trainNumber) {
   for(let index = 0; index < string.length; index++) {
     type += string[index];
 
-    if(string[index] === 'влак') {
+    if(string[index] === 'влак' || string[index] === 'Train') {
       fromIndex = index + 1;
       break;
     }
@@ -38,6 +38,7 @@ function makeJsonTrainInfo(string, trainNumber) {
   result = {
     trainType: type,
     trainNumber: trainNumber,
+    date: date,
     stations: [],
   };
 
@@ -71,49 +72,74 @@ function makeJsonTrainInfo(string, trainNumber) {
   return result;
 }
 
-async function getTrainNoInfo(trainNo) {
-    const url = 'https://razpisanie.bdz.bg/bg/train-info/' + trainNo;
+async function getTrainNoInfo(trainNo, language, date) {
+  const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo;
 
-    // Selector for the specific <div> you want to scrape
-    const divSelector = '.bg-white.p-4.mb-4'; // Replace with your actual selector
+  // Selector for the specific <div> you want to scrape
+  const divSelector = '.bg-white.p-4.mb-4'; // Replace with your actual selector
 
-    let trainInfo = {};
+  let trainInfo = {};
 
-    // Make a GET request to the webpage
-    try {
-        const response = await axios.get(url);
+  // Make a GET request to the webpage
+  try {
+      const response = await axios.get(url);
 
-        // Load the HTML content of the page into Cheerio
-        const $ = cheerio.load(response.data);
+      // Load the HTML content of the page into Cheerio
+      const $ = cheerio.load(response.data);
 
-        // Select the specific <div> and extract all the text
-        let divText = $(divSelector).text().trim();
+      // Select the specific <div> and extract all the text
+      let divText = $(divSelector).text().trim();
 
-        divText = splitWords(divText);
+      divText = splitWords(divText);
 
-        divText = makeJsonTrainInfo(divText, trainNo);
+      divText = makeJsonTrainInfo(divText, trainNo, date);
 
-        return divText;
-    }
-    catch(error) {
-        console.error('Error fetching the webpage:', error);
-    }
+      return divText;
+  }
+  catch(error) {
+      throw error;
+  }
 }
 
 // Define a route with a parameter
-router.get('/:trainNo', async (req, res) => {
-    const trainNo = req.params.trainNo;
-    try {
-      let trains_info = await getTrainNoInfo(trainNo);
-  
-      const data = trains_info;
-  
-      res.json(data);
-    } catch (error) {
-      // Handle the error appropriately, e.g., send an error response
-      console.error('Error:', error);
-      res.status(500).json({ error: 'Internal Server Error' });
+router.get('/:language/:trainNo/:date?', async (req, res) => {
+  const trainNo = req.params.trainNo;
+  const language = req.params.language;
+
+  let today = new Date();
+  // Format the date in the format DD.MM.YYYY
+  today = today.toLocaleDateString('bg-BG');
+  // Remove the last 3 characters from the date string
+  today = today.slice(0, -3);
+
+  const date = req.params.date || today;
+
+  if(trainNo.length < 3 || trainNo.length > 5) {
+    res.status(404).json({ error: 'Train info not found' });
+    return;
+  }
+
+  if(language !== 'bg' && language !== 'en') {
+    res.status(404).json({ error: 'Train info not found' });
+    return;
+  }
+
+  try {
+    let trains_info = await getTrainNoInfo(trainNo, language, date);
+
+    if (!trains_info) {
+      // If the train info is not found, throw an error
+      throw new Error('Train info not found');
     }
-  });
-  
-  module.exports = router;
+
+    const data = trains_info;
+
+    res.json(data);
+  } catch (error) {
+    // Handle the error appropriately, e.g., send an error response
+    console.error('Error:', error);
+    res.status(404).json({ error: 'Train info not found' });
+  }
+});
+
+module.exports = router;

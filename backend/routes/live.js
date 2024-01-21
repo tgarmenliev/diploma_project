@@ -75,6 +75,7 @@ function makeTrainJson(string, trainNum, delayInfo) {
     type: trainNum[0],
     trainNum: trainNum[1]
   };
+
   if(prefix) {
     result["time"] = string[1];
     result["delayedTime"] = string[0];
@@ -83,12 +84,28 @@ function makeTrainJson(string, trainNum, delayInfo) {
     result["time"] = string[0];
   }
 
+  let delayString = result["delayInfo"]["delayString"];
+  if (result["isDelayed"] && (delayString.includes("Трансбордиране с автобус") || delayString === "Bus undefined undefined ")) {
+    result["direction"] = result["time"]
+    result["time"] = result["delayedTime"]
+    result["delayedTime"] = 0
+    if(delayString.includes("Bus undefined undefined ")) {
+      delayString = "Bus"
+    }
+
+    result["delayInfo"] = {
+      delayMinutes: 0,
+      delayString: delayString,
+      delayInfo: "",
+    };
+  }
+
   return result;
 }
 
-async function get_trains_info(station) {
+async function get_trains_info(station, language, type) {
 
-  const url = 'https://live.bdz.bg/bg/' + station + '/departures';
+  const url = 'https://live.bdz.bg/' + language + '/' + station + '/' + type;
 
   try {
     // Make a GET request to the webpage
@@ -146,11 +163,23 @@ async function get_trains_info(station) {
 }
 
 // Define a route with a parameter
-router.get('/:stationName', async (req, res) => {
+router.get('/:language/:stationName/:type', async (req, res) => {
   const stationName = req.params.stationName;
+  const language = req.params.language;
+  const type = req.params.type;
+
+  if(language !== "bg" && language !== "en") {
+    res.status(400).json({ error: 'Bad Request' });
+    return;
+  }
+
+  if(type !== "departures" && type !== "arrivals") {
+    res.status(400).json({ error: 'Bad Request' });
+    return;
+  }
 
   try {
-    let trains_info = await get_trains_info(stationName);
+    let trains_info = await get_trains_info(stationName, language, type);
 
     res.json(trains_info);
   } catch (error) {

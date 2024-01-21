@@ -9,7 +9,7 @@ const scheduleRoutes = require('./routes/schedule');
 const scheduleSecRoutes = require('./routes/schedule-sec');
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(cors())
 
