@@ -138,6 +138,30 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
     return trains;
 }
 
+function checkHowManyTrainLseft(trains) {
+    let currDate = new Date();
+    let currTime = currDate.getHours() + ":" + currDate.getMinutes();
+
+    let arrayCurrTime = currTime.split(":");
+
+    let left = trains.length;
+
+    for(let i = 0; i < trains.length; i++) {
+        let dep = trains[i]["departureTime"].split(":");
+
+        if((parseInt(arrayCurrTime[0])) > (parseInt(dep[0]))) {
+            left--;
+        } else if((parseInt(arrayCurrTime[0])) === (parseInt(dep[0]))) {
+            if((parseInt(arrayCurrTime[1])) > (parseInt(dep[1]))) {
+                left--
+            }
+        }
+    }
+
+    return left;
+
+}
+
 function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) {
 
     let trains = [];
@@ -206,6 +230,13 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
         trains.push(curr_train);
         curr_train = {};
     }
+
+    const left = checkHowManyTrainLseft(trains);
+    if(left === 0) {
+        trains = [];
+    } else {
+        trains = trains.slice(trains.length - left, trains.length);
+    }
     
     return trains;
 }
@@ -219,7 +250,7 @@ function splitWords(inputString) {
   
     // Filter out any empty strings
     // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
-    textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване');
+    textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване' && word !== 'Fastest' && word !== 'trip');
 
     return textWithoutSpaces;
 }
@@ -244,8 +275,8 @@ function getRoute(string) {
     return route.toUpperCase();
 }
 
-async function get_trains_info(fromStation, toStation, date, tommorow) {
-    const url = "https://razpisanie.bdz.bg/bg/" + fromStation + "/" + toStation + "/" + date;
+async function get_trains_info(fromStation, toStation, date, tommorow, language) {
+    const url = "https://razpisanie.bdz.bg/" + language + "/" + fromStation + "/" + toStation + "/" + date;
 
     const divSelector = '.schedule-table';
 
@@ -285,6 +316,7 @@ async function get_trains_info(fromStation, toStation, date, tommorow) {
         let result = {
             "date": date,
             "route": getRoute(divText),
+            "totalTrains": trainsInfo.length,
             "options": trainsInfo,
         };
 
@@ -318,9 +350,15 @@ function formatDate(date) {
 }
 
   
-router.get('/:from/:to', async (req, res) => {
+router.get('/:language/:from/:to', async (req, res) => {
     const fromStation = req.params.from;
     const toStation = req.params.to;
+    const language = req.params.language;
+
+    if(language !== "bg" && language !== "en") {
+        res.status(400).json({ error: 'Bad Request' });
+        return;
+    }
 
     const currentDate = new Date(); // Get the current date
     const formattedDate = formatDate(currentDate); // Format the date as a string
@@ -330,7 +368,7 @@ router.get('/:from/:to', async (req, res) => {
     const formattedTommorow = formatDate(tommorow);
 
     try {
-        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTommorow);
+        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTommorow, language);
 
         res.json(trains_info);
     } catch (error) {

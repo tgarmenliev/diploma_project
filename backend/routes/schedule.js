@@ -165,9 +165,15 @@ function translateStation(station) {
   }
 }
 
-router.get('/:from/:to/:date', async (req, res) => {
+router.get('/:language/:from/:to/:date', async (req, res) => {
   const from = req.params.from;
   const to = req.params.to;
+  const language = req.params.language;
+
+  if (language !== 'bg' && language !== 'en') {
+    res.status(400).json({ error: 'Invalid language' });
+    return;
+  }
 
   const fromStationID = translateStation(from);
   const toStationID = translateStation(to);
