@@ -36,7 +36,7 @@ function makeJsonTrainInfo(string, trainNumber) {
   }
 
   result = {
-    type: type,
+    trainType: type,
     trainNumber: trainNumber,
     stations: [],
   };
@@ -103,13 +103,12 @@ async function getTrainNoInfo(trainNo) {
 // Define a route with a parameter
 router.get('/:trainNo', async (req, res) => {
     const trainNo = req.params.trainNo;
-  
+    console.log("trainNo");
+    console.log(trainNo);
     try {
       let trains_info = await getTrainNoInfo(trainNo);
   
-      const data = {
-        trains_info: trains_info,
-      };
+      const data = trains_info;
   
       res.json(data);
     } catch (error) {
