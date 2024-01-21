@@ -3,6 +3,25 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
+function transliterateBulgarianToEnglish(text) {
+  const cyrillicMap = {
+    'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ж': 'zh', 'з': 'z',
+    'и': 'i', 'й': 'y', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p',
+    'р': 'r', 'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'ts', 'ч': 'ch',
+    'ш': 'sh', 'щ': 'sht', 'ъ': 'a', 'ь': 'y', 'ю': 'yu', 'я': 'ya',
+    'А': 'A', 'Б': 'B', 'В': 'V', 'Г': 'G', 'Д': 'D', 'Е': 'E', 'Ж': 'Zh', 'З': 'Z',
+    'И': 'I', 'Й': 'Y', 'К': 'K', 'Л': 'L', 'М': 'M', 'Н': 'N', 'О': 'O', 'П': 'P',
+    'Р': 'R', 'С': 'S', 'Т': 'T', 'У': 'U', 'Ф': 'F', 'Х': 'H', 'Ц': 'Ts', 'Ч': 'Ch',
+    'Ш': 'Sh', 'Щ': 'Sht', 'Ъ': 'A', 'Ь': 'Y', 'Ю': 'Yu', 'Я': 'Ya'
+  };
+
+  return text.split('').map(char => cyrillicMap[char] || char).join('');
+}
+
+function capitalizeFirstLetterOfRoute(route) {
+  return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
+}
+
 // time format
 // "2023-11-15T14:29:39.3985234+02:00"
 
@@ -20,7 +39,7 @@ function splitWords(inputString) {
   return textWithoutSpaces;
 }
 
-function makeTrainsToOption(trains) {
+function makeTrainsToOption(trains, language = 'bg') {
   // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
   let result = [];
@@ -33,12 +52,17 @@ function makeTrainsToOption(trains) {
 
     let splitStations = trains[index].stations.split(" - ");
 
-    currentTrain["from"] = splitStations[0].toLowerCase();
-    currentTrain["to"] = splitStations[1].toLowerCase();
+    //currentTrain["from"] = splitStations[0].toLowerCase();
+    //currentTrain["to"] = splitStations[1].toLowerCase();
     
     currentTrain["from"] = splitStations[0].charAt(0).toUpperCase() + splitStations[0].slice(1).toLowerCase();
     currentTrain["to"] = splitStations[1].charAt(0).toUpperCase() + splitStations[1].slice(1).toLowerCase();
 
+    if (language === 'en') {
+      currentTrain["from"] = transliterateBulgarianToEnglish(currentTrain["from"]);
+      currentTrain["to"] = transliterateBulgarianToEnglish(currentTrain["to"]);
+    }
+    
     currentTrain["depart"] = trains[index].depart;
     currentTrain["arrive"] = trains[index].arrive;
     currentTrain["departDate"] = trains[index].depart_date;
@@ -61,7 +85,7 @@ function makeTrainsToOption(trains) {
 
 }
 
-function makeOptionsTrains(options) {
+function makeOptionsTrains(options, language = 'bg') {
   // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
   // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
@@ -78,7 +102,7 @@ function makeOptionsTrains(options) {
     currentOption["arrivalDate"] = options[index].arrival_date;
     currentOption["numOfTransfers"] = options[index].trains.length - 1;
 
-    currentOption["trains"] = makeTrainsToOption(options[index].trains);
+    currentOption["trains"] = makeTrainsToOption(options[index].trains, language);
 
     result.push(currentOption);
   }
@@ -86,7 +110,7 @@ function makeOptionsTrains(options) {
   return result;
 }
 
-const get_trains_info = async (fromStation, toStation, date) => {
+const get_trains_info = async (fromStation, toStation, date, language) => {
   // translate stations!!!
   //let from = fromStation.toUpperCase();
   //let to = toStation.toUpperCase();
@@ -117,9 +141,12 @@ const get_trains_info = async (fromStation, toStation, date) => {
 
   let result = {}
   result["date"] = response.data[0].date;
-  result["route"] = response.data[0].name;
+  result["route"] = capitalizeFirstLetterOfRoute(response.data[0].name);
+  if(language === 'en') {
+    result["route"] = transliterateBulgarianToEnglish(result["route"]);
+  }
 
-  result["options"] = makeOptionsTrains(response.data[0].options);
+  result["options"] = makeOptionsTrains(response.data[0].options, language);
 
   return result;
 };
@@ -182,7 +209,7 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
   const formattedDate = formatDate(new Date(date)); // Format the date as a string
 
   try {
-    let trains_info = await get_trains_info(fromStationID, toStationID, formattedDate);
+    let trains_info = await get_trains_info(fromStationID, toStationID, formattedDate, language);
 
     res.json(trains_info);
   } catch (error) {

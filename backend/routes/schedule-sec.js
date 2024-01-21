@@ -5,6 +5,9 @@ const router = express.Router();
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+function capitalizeFirstLetterOfRoute(route) {
+    return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
+}
 
 function makeMoreInfoTrainJSON(string) {
     let trains = [];
@@ -272,7 +275,7 @@ function getRoute(string) {
         }
     }
 
-    return route.toUpperCase();
+    return capitalizeFirstLetterOfRoute(route);
 }
 
 async function get_trains_info(fromStation, toStation, date, tommorow, language) {
