@@ -5,6 +5,8 @@ const router = express.Router();
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+const stations = require('../stations.json');
+
 function splitWords(inputString) {
 
   let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
@@ -103,9 +105,21 @@ function makeTrainJson(string, trainNum, delayInfo) {
   return result;
 }
 
-async function get_trains_info(station, language, type) {
+function translateNumberToStation(number) {
+  const foundStation = stations.find((s) => parseInt(s.id) === parseInt(number));
+  if (foundStation) {
+    return foundStation.romazinizedName;
+  } else {
+    return null; // Station not found
+  }
+}
+
+async function get_trains_info(number, language, type) {
+
+  const station = translateNumberToStation(number);
 
   const url = 'https://live.bdz.bg/' + language + '/' + station + '/' + type;
+  console.log("URL: " + url)
 
   try {
     // Make a GET request to the webpage
@@ -163,10 +177,12 @@ async function get_trains_info(station, language, type) {
 }
 
 // Define a route with a parameter
-router.get('/:language/:stationName/:type', async (req, res) => {
-  const stationName = req.params.stationName;
+router.get('/:language/:stationNumber/:type', async (req, res) => {
+  const stationNumber = parseInt(req.params.stationNumber);
   const language = req.params.language;
   const type = req.params.type;
+
+  console.log("stationNumber: " + stationNumber);
 
   if(language !== "bg" && language !== "en") {
     res.status(400).json({ error: 'Bad Request' });
@@ -179,7 +195,7 @@ router.get('/:language/:stationName/:type', async (req, res) => {
   }
 
   try {
-    let trains_info = await get_trains_info(stationName, language, type);
+    let trains_info = await get_trains_info(stationNumber, language, type);
 
     res.json(trains_info);
   } catch (error) {

@@ -5,6 +5,8 @@ const router = express.Router();
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+const stations = require('../stations.json');
+
 function capitalizeFirstLetterOfRoute(route) {
     return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
 }
@@ -278,7 +280,19 @@ function getRoute(string) {
     return capitalizeFirstLetterOfRoute(route);
 }
 
-async function get_trains_info(fromStation, toStation, date, tommorow, language) {
+function translateNumberToStation(number) {
+    const foundStation = stations.find((s) => s.id === number);
+    if (foundStation) {
+      return foundStation.romazinizedName;
+    } else {
+      return null; // Station not found
+    }
+}
+
+async function get_trains_info(fromStationNumber, toStationNumber, date, tommorow, language) {
+    const fromStation = translateNumberToStation(fromStationNumber);
+    const toStation = translateNumberToStation(toStationNumber);
+
     const url = "https://razpisanie.bdz.bg/" + language + "/" + fromStation + "/" + toStation + "/" + date;
 
     const divSelector = '.schedule-table';
@@ -352,7 +366,6 @@ function formatDate(date) {
     return string;
 }
 
-  
 router.get('/:language/:from/:to', async (req, res) => {
     const fromStation = req.params.from;
     const toStation = req.params.to;

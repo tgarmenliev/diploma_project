@@ -209,18 +209,18 @@ function formatDate(date) {
   return string;
 }
 
-function translateStation(station) {
-  const foundStation = stations.find((s) => s.romanizedName === station);
-  if (foundStation) {
-    return foundStation.id;
-  } else {
-    return null; // Station not found
-  }
-}
+// function translateStation(station) {
+//   const foundStation = stations.find((s) => s.romanizedName === station);
+//   if (foundStation) {
+//     return foundStation.id;
+//   } else {
+//     return null; // Station not found
+//   }
+// }
 
 router.get('/:language/:from/:to/:date', async (req, res) => {
-  const from = req.params.from;
-  const to = req.params.to;
+  const from = parseInt(req.params.from);
+  const to = parseInt(req.params.to);
   const language = req.params.language;
 
   if (language !== 'bg' && language !== 'en') {
@@ -228,14 +228,14 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
     return;
   }
 
-  const fromStationID = translateStation(from);
-  const toStationID = translateStation(to);
+  //const fromStationID = translateStation(from);
+  //const toStationID = translateStation(to);
 
   const date = req.params.date;
   const formattedDate = formatDate(new Date(date)); // Format the date as a string
 
   try {
-    let trains_info = await get_trains_info(fromStationID, toStationID, formattedDate, language);
+    let trains_info = await get_trains_info(from, to, formattedDate, language);
 
     res.json(trains_info);
   } catch (error) {
