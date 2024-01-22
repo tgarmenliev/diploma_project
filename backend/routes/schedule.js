@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const stations = require('../stations.json');
 
 function transliterateBulgarianToEnglish(text) {
   const cyrillicMap = {
@@ -18,8 +19,32 @@ function transliterateBulgarianToEnglish(text) {
   return text.split('').map(char => cyrillicMap[char] || char).join('');
 }
 
+function translateStationToEnglish(station) {
+  let foundStation = stations.find((s) => s.name === station.toUpperCase());
+  if (foundStation) {
+    foundStation = foundStation.romanizedName.replace(/-/g, ' ');
+    foundStation = foundStation.replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
+    return foundStation;
+  } else {
+    return null; // Station not found
+  }
+}
+
 function capitalizeFirstLetterOfRoute(route) {
   return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
+}
+
+function translateTrainType(trainType) {
+  switch(trainType) {
+    case "ПВ":
+      return "RT";
+    case "БВ":
+      return "ICF";
+    case "КПВ":
+      return "SCT";
+    case "МБВ":
+      return "CCI";
+  }
 }
 
 // time format
@@ -59,8 +84,8 @@ function makeTrainsToOption(trains, language = 'bg') {
     currentTrain["to"] = splitStations[1].charAt(0).toUpperCase() + splitStations[1].slice(1).toLowerCase();
 
     if (language === 'en') {
-      currentTrain["from"] = transliterateBulgarianToEnglish(currentTrain["from"]);
-      currentTrain["to"] = transliterateBulgarianToEnglish(currentTrain["to"]);
+      currentTrain["from"] = translateStationToEnglish(currentTrain["from"]);
+      currentTrain["to"] = translateStationToEnglish(currentTrain["to"]);
     }
     
     currentTrain["depart"] = trains[index].depart;
@@ -69,6 +94,9 @@ function makeTrainsToOption(trains, language = 'bg') {
     currentTrain["arriveDate"] = trains[index].arrive_date;
 
     currentTrain["trainType"] = nameWithoutSpaces[0];
+    if(language === 'en') {
+      currentTrain["trainType"] = translateTrainType(currentTrain["trainType"]);
+    }
     currentTrain["trainNumber"] = nameWithoutSpaces[1];
 
     currentTrain["duration"] = trains[index].total_time;
@@ -180,8 +208,6 @@ function formatDate(date) {
 
   return string;
 }
-
-const stations = require('../stations.json');
 
 function translateStation(station) {
   const foundStation = stations.find((s) => s.romanizedName === station);
