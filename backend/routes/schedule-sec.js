@@ -281,9 +281,9 @@ function getRoute(string) {
 }
 
 function translateNumberToStation(number) {
-    const foundStation = stations.find((s) => s.id === number);
+    const foundStation = stations.find((s) => parseInt(s.id) === parseInt(number));
     if (foundStation) {
-      return foundStation.romazinizedName;
+      return foundStation.romanizedName;
     } else {
       return null; // Station not found
     }
@@ -367,8 +367,19 @@ function formatDate(date) {
 }
 
 router.get('/:language/:from/:to', async (req, res) => {
-    const fromStation = req.params.from;
-    const toStation = req.params.to;
+    let fromStation = null;
+    let toStation = null;
+
+    try {
+        fromStation = parseInt(req.params.from);
+        toStation = parseInt(req.params.to);
+    } catch (error) {
+        // Handle the error appropriately, e.g., send an error response
+        console.error('Error:', error);
+        res.status(400).json({ error: 'Bad Request' });
+        return;
+    }
+    
     const language = req.params.language;
 
     if(language !== "bg" && language !== "en") {

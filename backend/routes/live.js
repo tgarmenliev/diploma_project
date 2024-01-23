@@ -106,12 +106,28 @@ function makeTrainJson(string, trainNum, delayInfo) {
 }
 
 function translateNumberToStation(number) {
-  const foundStation = stations.find((s) => parseInt(s.id) === parseInt(number));
+  const foundStation = stations.find((s) => s.id === number);
   if (foundStation) {
-    return foundStation.romazinizedName;
+    return foundStation.romanizedName;
   } else {
     return null; // Station not found
   }
+}
+
+getEverythingPastLoadingStation = (station) => {
+  let loadingStation = false;
+  let result = "";
+  for(let index = 0; index < station.length; index++) {
+    if(station[index] === "loading...") {
+      loadingStation = true;
+    }
+    else if(loadingStation) {
+      result += station[index];
+      result += " ";
+    }
+  }
+
+  return result;
 }
 
 async function get_trains_info(number, language, type) {
@@ -119,7 +135,6 @@ async function get_trains_info(number, language, type) {
   const station = translateNumberToStation(number);
 
   const url = 'https://live.bdz.bg/' + language + '/' + station + '/' + type;
-  console.log("URL: " + url)
 
   try {
     // Make a GET request to the webpage
@@ -139,7 +154,7 @@ async function get_trains_info(number, language, type) {
     content('#content').each((index, element) => {
       station = content(element).find('.mb-0').text();
       station = splitWords(station);
-      station = station[station.length - 1];
+      station = getEverythingPastLoadingStation(station);
     });
 
     let trainsInfo = [];
@@ -178,11 +193,17 @@ async function get_trains_info(number, language, type) {
 
 // Define a route with a parameter
 router.get('/:language/:stationNumber/:type', async (req, res) => {
-  const stationNumber = parseInt(req.params.stationNumber);
+  let stationNumber = null;
+  try {
+    stationNumber = parseInt(req.params.stationNumber);
+  } catch (error) {
+    // Handle the error appropriately, e.g., send an error response
+    console.error('Error:', error);
+    res.status(400).json({ error: 'Bad Request' });
+    return;
+  }
   const language = req.params.language;
   const type = req.params.type;
-
-  console.log("stationNumber: " + stationNumber);
 
   if(language !== "bg" && language !== "en") {
     res.status(400).json({ error: 'Bad Request' });
