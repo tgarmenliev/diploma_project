@@ -1,6 +1,7 @@
 // app.js
 const express = require('express');
-var cors = require('cors')
+var cors = require('cors');
+const path = require('path');
 
 // const apiRoutes = require('./routes/api');
 const liveRoutes = require('./routes/live');
@@ -13,6 +14,9 @@ const app = express();
 const port = 3000;
 
 app.use(cors())
+
+// Serve static images from the '/guide/images' directory
+app.use('/guide/images', express.static(path.join(__dirname, 'guide', 'images')));
 
 // app.use('/api', apiRoutes);
 app.use('/api/live', liveRoutes);
