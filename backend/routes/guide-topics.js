@@ -23,7 +23,7 @@ function makeAllTopicsJson() {
         currentResult = {
             "id": index,
             "title": allTopics[index].title,
-            "description": allTopics[index].description,
+            "subtitle": allTopics[index].subtitle,
             "image": allTopics[index].image
         }
         result.push(currentResult);
