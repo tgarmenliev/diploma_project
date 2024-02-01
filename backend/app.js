@@ -9,6 +9,7 @@ const trainInfoRoutes = require('./routes/trainInfo');
 const scheduleRoutes = require('./routes/schedule');
 const scheduleSecRoutes = require('./routes/schedule-sec');
 const guide = require('./routes/guide');
+const guideTopics = require('./routes/guide-topics');
 
 const app = express();
 const port = 3000;
@@ -24,6 +25,7 @@ app.use('/api/train-info', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);
 app.use('/api/schedule', scheduleSecRoutes);
 app.use('/api/guide', guide);
+app.use('/api/guide', guideTopics);
 
 // Start the server
 app.listen(port, () => {
