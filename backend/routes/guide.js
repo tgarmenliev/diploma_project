@@ -16,27 +16,27 @@ const topic11 = require('../guide/texts/topic11.json');
 
 const getTopic = (topic) => {
     switch (topic) {
-        case 1:
+        case 0:
             return topic1;
-        case 2:
+        case 1:
             return topic2;
-        case 3:
+        case 2:
             return topic3;
-        case 4:
+        case 3:
             return topic4;
-        case 5:
+        case 4:
             return topic5;
-        case 6:
+        case 5:
             return topic6;
-        case 7:
+        case 6:
             return topic7;
-        case 8:
+        case 7:
             return topic8;
-        case 9:
+        case 8:
             return topic9;
-        case 10:
+        case 9:
             return topic10;
-        case 11:
+        case 10:
             return topic11;
         default:
             return null;
@@ -61,7 +61,7 @@ router.get('/:language/:topic', async (req, res) => {
       return;
   }
 
-  if (topic < 1 || topic > 11) {
+  if (topic < 0 || topic > 10) {
     res.status(404).json({ error: 'Topic not found!' });
     return;
   }
