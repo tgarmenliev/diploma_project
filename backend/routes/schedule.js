@@ -174,7 +174,9 @@ const get_trains_info = async (fromStation, toStation, date, language) => {
     result["route"] = transliterateBulgarianToEnglish(result["route"]);
   }
 
+  result["totalTrains"] = 0;
   result["options"] = makeOptionsTrains(response.data[0].options, language);
+  result["totalTrains"] = result["options"].length;
 
   return result;
 };

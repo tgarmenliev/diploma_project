@@ -73,7 +73,7 @@ function makeJsonTrainInfo(string, trainNumber, date) {
 }
 
 async function getTrainNoInfo(trainNo, language, date) {
-  const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo;
+  const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo + '/' + date;
 
   // Selector for the specific <div> you want to scrape
   const divSelector = '.bg-white.p-4.mb-4'; // Replace with your actual selector
