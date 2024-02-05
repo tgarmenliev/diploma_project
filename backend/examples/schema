@@ -4,16 +4,16 @@ schedule example:
 {
 	date:
 	route:
+	totalTrains:
 	options:
 	[
 		{
 			duration:
-			num_of_transfers:
-			transfer_stations:
-			depart:
-			arrive:
-			depart_date:
-			arrive_date:
+			departureTime:
+			arrivalTime:
+			departureDate:
+			arrivalDate:
+			numOfTransfers:
 			trains:
 			[
 				{
@@ -21,8 +21,10 @@ schedule example:
 					to:
 					depart:
 					arrive:
-					train_number:
-					train_type:
+					departDate:
+					arriveDate:
+					trainType:
+					trainNumber:
 					duration:
 					time_to_wait_next:
 				}
@@ -32,3 +34,5 @@ schedule example:
 		... //more options for trains
 	]
 }
+
+
