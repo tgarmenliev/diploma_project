@@ -370,19 +370,18 @@ router.get('/:language/:from/:to', async (req, res) => {
     let fromStation = null;
     let toStation = null;
 
+    const language = req.params.language;
+
+    if(language !== "bg" && language !== "en") {
+        res.status(400).json({ error: 'Bad Request' });
+        return;
+    }
+
     try {
         fromStation = parseInt(req.params.from);
         toStation = parseInt(req.params.to);
     } catch (error) {
-        // Handle the error appropriately, e.g., send an error response
         console.error('Error:', error);
-        res.status(400).json({ error: 'Bad Request' });
-        return;
-    }
-    
-    const language = req.params.language;
-
-    if(language !== "bg" && language !== "en") {
         res.status(400).json({ error: 'Bad Request' });
         return;
     }

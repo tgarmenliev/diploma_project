@@ -221,12 +221,21 @@ function formatDate(date) {
 // }
 
 router.get('/:language/:from/:to/:date', async (req, res) => {
-  const from = parseInt(req.params.from);
-  const to = parseInt(req.params.to);
+  let fromStation = null;
+  let toStation = null;
   const language = req.params.language;
 
   if (language !== 'bg' && language !== 'en') {
     res.status(400).json({ error: 'Invalid language' });
+    return;
+  }
+
+  try {
+    fromStation = parseInt(req.params.from);
+    toStation = parseInt(req.params.to);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(400).json({ error: 'Bad Request' });
     return;
   }
 
@@ -237,7 +246,7 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
   const formattedDate = formatDate(new Date(date)); // Format the date as a string
 
   try {
-    let trains_info = await get_trains_info(from, to, formattedDate, language);
+    let trains_info = await get_trains_info(fromStation, toStation, formattedDate, language);
 
     res.json(trains_info);
   } catch (error) {

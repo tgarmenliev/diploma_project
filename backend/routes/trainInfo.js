@@ -101,10 +101,39 @@ async function getTrainNoInfo(trainNo, language, date) {
   }
 }
 
+function formatDate(inputDate) {
+  // Check if the input date is in "DD.MM.YYYY" format
+  const ddmmRegex = /^\d{2}.\d{2}.\d{4}$/;
+  if (ddmmRegex.test(inputDate)) {
+    return inputDate;
+  }
+
+  // Check if the input date is in "YYYY-MM-DD" format
+  const yyyymmddRegex = /^\d{4}-\d{2}-\d{2}$/;
+  if (yyyymmddRegex.test(inputDate)) {
+    // Convert "YYYY-MM-DD" to "DD.MM.YYYY"
+    const [year, month, day] = inputDate.split('-');
+    return `${day}.${month}.${year}`;
+  }
+
+  // If the date format is not recognized, throw an error
+  throw new Error('Invalid date format');
+}
+
 // Define a route with a parameter
 router.get('/:language/:trainNo/:date?', async (req, res) => {
   const trainNo = req.params.trainNo;
   const language = req.params.language;
+
+  if(language !== 'bg' && language !== 'en') {
+    res.status(404).json({ error: 'Invalid language' });
+    return;
+  }
+
+  if(trainNo.length < 3 || trainNo.length > 5) {
+    res.status(404).json({ error: 'Invalid train number' });
+    return;
+  }
 
   let today = new Date();
   // Format the date in the format DD.MM.YYYY
@@ -112,15 +141,11 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
   // Remove the last 3 characters from the date string
   today = today.slice(0, -3);
 
-  const date = req.params.date || today;
-
-  if(trainNo.length < 3 || trainNo.length > 5) {
-    res.status(404).json({ error: 'Train info not found' });
-    return;
-  }
-
-  if(language !== 'bg' && language !== 'en') {
-    res.status(404).json({ error: 'Train info not found' });
+  let date = null;
+  try {
+    date = formatDate(req.params.date || today);
+  } catch (error) {
+    res.status(400).json({ error: error.message }); // Invalid date format
     return;
   }
 
