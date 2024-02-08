@@ -25,6 +25,7 @@ const getTopic = (topic, language) => {
         "image": chosenTopic.image,
         "content": []
     }
+
     for(let index = 0; index < chosenTopic.content.length; index++) {
         let currentContent = {
             "text": language === "bg" ? chosenTopic.content[index].text : chosenTopic.content[index].englishText
@@ -36,6 +37,8 @@ const getTopic = (topic, language) => {
         }
         result.content.push(currentContent);
     }
+
+    return result;
 }
 
 router.get('/:language/:topic', async (req, res) => {
