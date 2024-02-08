@@ -27,13 +27,11 @@ const getTopic = (topic, language) => {
     }
 
     for(let index = 0; index < chosenTopic.content.length; index++) {
-        let currentContent = {
-            "text": language === "bg" ? chosenTopic.content[index].text : chosenTopic.content[index].englishText
+        currentContent = {
+            "text": language === "bg" ? chosenTopic.content[index].text : chosenTopic.content[index].englishText,
         };
         if(chosenTopic.content[index].image) {
-            currentContent = {
-                "image": chosenTopic.content[index].image
-            }
+            currentContent.image = chosenTopic.content[index].image;
         }
         result.content.push(currentContent);
     }
