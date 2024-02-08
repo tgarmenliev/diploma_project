@@ -13,33 +13,28 @@ const topic8 = require('../guide/texts/topic8.json');
 const topic9 = require('../guide/texts/topic9.json');
 const topic10 = require('../guide/texts/topic10.json');
 const topic11 = require('../guide/texts/topic11.json');
+const { all } = require('axios');
 
-const getTopic = (topic) => {
-    switch (topic) {
-        case 0:
-            return topic1;
-        case 1:
-            return topic2;
-        case 2:
-            return topic3;
-        case 3:
-            return topic4;
-        case 4:
-            return topic5;
-        case 5:
-            return topic6;
-        case 6:
-            return topic7;
-        case 7:
-            return topic8;
-        case 8:
-            return topic9;
-        case 9:
-            return topic10;
-        case 10:
-            return topic11;
-        default:
-            return null;
+const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11];
+
+const getTopic = (topic, language) => {
+    chosenTopic = allTopics[topic];
+    result = {
+        "title": language === "bg" ? chosenTopic.title : chosenTopic.englishTitle,
+        "subtitle": language === "bg" ? chosenTopic.subtitle : chosenTopic.englishSubtitle,
+        "image": chosenTopic.image,
+        "content": []
+    }
+    for(let index = 0; index < chosenTopic.content.length; index++) {
+        let currentContent = {
+            "text": language === "bg" ? chosenTopic.content[index].text : chosenTopic.content[index].englishText
+        };
+        if(chosenTopic.content[index].image) {
+            currentContent = {
+                "image": chosenTopic.content[index].image
+            }
+        }
+        result.content.push(currentContent);
     }
 }
 
@@ -61,13 +56,13 @@ router.get('/:language/:topic', async (req, res) => {
       return;
   }
 
-  if (topic < 0 || topic > 10) {
+  if (topic < 0 || topic > (allTopics.length - 1)) {
     res.status(404).json({ error: 'Topic not found!' });
     return;
   }
 
   try {
-    let result = getTopic(topic);
+    let result = getTopic(topic, language);
 
     res.json(result);
 

@@ -1,22 +1,28 @@
 {
     "title": "Как да разбера дали това е моят влак?",
-    "subtitle": "Лесно откриване на вашия влак",
+    "englishTitle": "How to know if this is my train?",
+    "subtitle": "Лесно откриване на вашия влак.",
+    "englishSubtitle": "Easy finding of your train.",
     "image": "topic2.jpg",
     "content": [
         {
             "text": "Всеки влак е различен и за различна посока. Ако искате да се уверите, че това е правилният влак, който търсите, то ето няколко съвета за неговото разпознаване.\n\nВ зависимост от типа подвижен състав са възможни 2 варианта за информация:\n\nНа мотрисите Сименс Дезиро (снимката можете да видите отдолу) информацията е електронна и може да бъде видяна на техните електронни табели.",
+            "englishText": "Every train is different and for a different direction. If you want to make sure that this is the right train you are looking for, here are a few tips for its recognition.\n\nDepending on the type of rolling stock, there are 2 possible options for information:\n\nOn the Siemens Desiro motor cars (you can see the picture below) the information is electronic and can be seen on their electronic boards.",
             "image": "desiro.jpg"
         },
         {
             "text": "Те са лесно забелязваеми и е трудно да бъдат пропуснати. На тях пише посоката на влака. На снимката се вижда и един такъв пример.",
+            "englishText": "They are easily noticeable and it is hard to miss them. They write the direction of the train. The picture shows an example of such a board.",
             "image": "tabela-desiro.jpg"
         },
         {
             "text": "На всички останали влакове, които са с обикновени вагони формулата за намиране на маршрута им е следната: на всеки един вагон има информация за това къде пътува и кой номер е. Тази информация може да бъде открита в началото или в края на вагона. (снимка отдолу) В началото или в края на всеки вагон (в зависимост от посоката, в която се движи влакът) има обособено място, където пише началната гара, крайната гара, както и номерът на вагона. Номерът на вагона е от изключителна важност, когато искате да си намерите мястото във влака, но повече по тази тема може да бъде видяно в друга статия, специално обособена за тази тема.\nКогато намерите това важно поле от вагона, директно можете да разберете дали това наистина е вашият влак.",
+            "englishText": "On all other trains, which are with ordinary wagons, the formula for finding their route is as follows: on each wagon there is information about where it travels and what number it is. This information can be found at the beginning or at the end of the wagon. (picture below) At the beginning or at the end of each wagon (depending on the direction in which the train is moving) there is a separate place where the initial station, the final station and the number of the wagon are written. The number of the wagon is of utmost importance when you want to find your place in the train, but more on this topic can be seen in another article, specially dedicated to this topic.\nWhen you find this important field of the wagon, you can directly understand if this is really your train.",
             "image": "vagon-info.jpg"
         },
         {
-            "text": "Вариант номер 3: отново методът на питането. Когато се качите или когато влакът пристигне, огледайте се. Ако видите обслужващ персонал за влака, просто питайте и ще разберете дали това е вашият влак."
+            "text": "Вариант номер 3: отново методът на питането. Когато се качите или когато влакът пристигне, огледайте се. Ако видите обслужващ персонал за влака, просто питайте и ще разберете дали това е вашият влак.",
+            "englishText": "Option number 3: again the method of asking. When you get on or when the train arrives, look around. If you see a train staff, just ask and you will find out if this is your train."
         }
     ]
 }

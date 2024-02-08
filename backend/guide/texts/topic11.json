@@ -1,10 +1,13 @@
 {
     "title": "Колко може да закъснее един влак и кога вече да не го чакам?",
+    "englishTitle": "How late can a train be and when should I stop waiting for it?",
     "subtitle": "Дали да го хващам?",
+    "englishSubtitle": "Should I catch it?",
     "image": "topic11.jpg",
     "content": [
         {
             "text": "Закъсненията в БДЖ са особена тема. По лични наблюдения най-често те са вследствие на невъзможността за разминаване между два влака. Ако един влак закъснее дори и с 10 минути, то следващият влак, с който прави връзка или трябва да се срещне, също ще закъснее. Става като една дълга опашка, която постоянно води до нови и нови закъснения.\nКакво става обаче, ако влакът ви закъснява с много време? Нещо от сорта на часове. В този случай е най-добре да проверите в сайта на БДЖ за актуална информация. Може да има проблем в контактната мрежа или да е станала авария. В такъв случай е по-добре да промените плановете си, ако има такава възможност.",
+            "englishText": "Delays in BDZ are a special topic. According to personal observations, they are most often due to the impossibility of passing between two trains. If one train is delayed even by 10 minutes, the next train with which it makes a connection or has to meet will also be delayed. It's like a long queue that constantly leads to new and new delays.\nWhat happens, however, if your train is delayed for a long time? Something like hours. In this case, it is best to check the BDZ website for current information. There may be a problem in the contact network or an accident may have occurred. In this case, it is better to change your plans, if there is such an opportunity.",
             "image": "vlak.jpg"
         }
     ]

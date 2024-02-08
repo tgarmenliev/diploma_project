@@ -16,14 +16,14 @@ const topic11 = require('../guide/texts/topic11.json');
 
 const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11];
 
-function makeAllTopicsJson() {
+function makeAllTopicsJson(language) {
     let result = [];
 
     for(let index = 0; index < allTopics.length; index++) {
         currentResult = {
             "id": index,
-            "title": allTopics[index].title,
-            "subtitle": allTopics[index].subtitle,
+            "title": language === "bg" ? allTopics[index].title : allTopics[index].englishTitle,
+            "subtitle": language === "bg" ? allTopics[index].subtitle : allTopics[index].englishSubtitle,
             "image": allTopics[index].image
         }
         result.push(currentResult);
@@ -41,7 +41,7 @@ router.get('/:language', async (req, res) => {
     }
   
     try {
-      res.json(makeAllTopicsJson());
+      res.json(makeAllTopicsJson(language));
   
     } catch (error) {
       console.error('Error:', error);

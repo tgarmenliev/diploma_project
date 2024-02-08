@@ -1,10 +1,13 @@
 {
     "title": "Има ли контакти, както и интернет?",
+    "englishTitle": "Are there any contacts and internet?",
     "subtitle": "Отговорите са тук!",
+    "englishSubtitle": "The answers are here!",
     "image": "topic8.jpg",
     "content": [
         {
             "text": "Отговорът на тези въпроси няма да бъде много удовлетворяващ. Накратко, интернет няма, а контакти има само в бързите влакове.\nКонтактите могат да бъдат открити най-вече по бързите влакове за дълги разстояния, тъй като там е по-важно да има такива. Ако видите контакт, но той не работи, то помолете обслужващия персонал да ги включи, а ако те вече са ги включили, то имаме лоши новини за вас - контактите не работят.",
+            "englishText": "The answer to these questions will not be very satisfying. In short, there is no internet, and there are contacts only in the fast trains.\nContacts can be found mainly in the fast long-distance trains, as it is more important to have them there. If you see a contact, but it does not work, ask the service staff to turn them on, and if they have already turned them on, then we have bad news for you - the contacts do not work.",
             "image": "kontakti.jpg"
         }
     ]

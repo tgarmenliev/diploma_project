@@ -1,10 +1,13 @@
 {
     "title": "Къде е тоалетната?",
+    "englishTitle": "Where is the toilet?",
     "subtitle": "Разположение във влака.",
+    "englishSubtitle": "Location in the train.",
     "image": "topic6.jpg",
     "content": [
         {
             "text": "Това е един от най-лесните въпроси в БДЖ. Тук отново има 2 варианта:\n\t - Във всеки вагон тоалетната се намира в неговия край. В някои вагони има тоалетна и в двата края на вагона, в някои има само в единия край.\n\t - В мотрисите Дезиро, тоалетните се намират до първата и последната врата. Изключение правят само дизеловите мотриси Дезиро, при които тоалетна има само при първата, или само при последната врата, в зависимост от посоката на движение на влака.",
+            "englishText": "This is one of the easiest questions in BDZ. Again, there are 2 options:\n\t - In every carriage the toilet is located at its end. In some carriages there is a toilet at both ends, in others there is only one.\n\t - In the Desiro motor coaches, the toilets are located next to the first and last door. The only exception are the diesel Desiro motor coaches, where the toilet is located only next to the first or only next to the last door, depending on the direction of the train.",
             "image": "toaletna-desiro.jpg"
         }
     ]

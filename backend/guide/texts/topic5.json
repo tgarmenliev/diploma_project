@@ -1,18 +1,23 @@
 {
     "title": "Как да си намеря мястото?",
+    "englishTitle": "How to find my seat?",
     "subtitle": "Най-сложният въпрос в БДЖ.",
+    "englishSubtitle": "The most difficult question in BDZ.",
     "image": "topic5.jpg",
     "content": [
         {
             "text": "Това е най-често задаваният въпрос в Българските Държавни Железници. Въпросът е и най-трудният за много хора. Нека започнем с разбиване на тази сложна задача на много по-малки и лесни такива.\n\n\t1. След като сте закупили вашия билет погледнете дали към него има втори. Тоест, ако на касата получите два билета, то единият от тях най-вероятно ще бъде за запазеното ви място. Погледнете втория билет, който трябва да бъде със стойност от 50 стотинки. На него трябва да откриете това:",
+            "englishText": "This is the most frequently asked question in the Bulgarian State Railways. The question is also the most difficult for many people. Let's start by breaking down this complex task into much smaller and easier ones.\n\n\t1. After you have purchased your ticket, check if there is a second one. That is, if you receive two tickets at the cash desk, then one of them is most likely for your reserved seat. Look at the second ticket, which should be worth 50 stotinki. You should find this on it:",
             "image": "bilet.jpg"
         },
         {
             "text": "Това е вашето място и вагонът, в който се намира то. Ако имате онлайн билет, схемата е същата. Отваряте билета и търсите полетата, които са за запазеното място, както на снимката:",
+            "englishText": "This is your place and the wagon in which it is located. If you have an online ticket, the scheme is the same. You open the ticket and look for the fields that are for the reserved place, as in the picture:",
             "image": "bilet-online.jpg"
         },
         {
-            "text": "\t2. След като вече намерите мястото, на което трябва да се намирате е време да намерите вагона. До мястото пише кой вагон сте. А как да намерите вашия вагон можете да видите в предишната статия.\n\n\t3. Ако вече сте сигурни, че това е вашият влак и вашият вагон, то можете да потърсите своето място. Над всяко място пише кое всъщност е. Когато го намерите, просто седнете там и никой няма да може да ви вдигне (освен, ако вие не сте в грешка с мястото). Ако не можете да откриете вашето място в този вагон, то обърнете се към обслужващия персонал във влака, който може да ви помогне с разрешаването на вашия казус."
+            "text": "\t2. След като вече намерите мястото, на което трябва да се намирате е време да намерите вагона. До мястото пише кой вагон сте. А как да намерите вашия вагон можете да видите в предишната статия.\n\n\t3. Ако вече сте сигурни, че това е вашият влак и вашият вагон, то можете да потърсите своето място. Над всяко място пише кое всъщност е. Когато го намерите, просто седнете там и никой няма да може да ви вдигне (освен, ако вие не сте в грешка с мястото). Ако не можете да откриете вашето място в този вагон, то обърнете се към обслужващия персонал във влака, който може да ви помогне с разрешаването на вашия казус.",
+            "englishText": "\t2. After you have found the place where you should be, it's time to find the wagon. The wagon you are in is written next to the place. And how to find your wagon you can see in the previous article.\n\n\t3. If you are already sure that this is your train and your wagon, then you can look for your place. Above each place is written what it actually is. When you find it, just sit there and no one will be able to lift you (unless you are mistaken with the place). If you can't find your place in this wagon, then turn to the train staff, who can help you resolve your case."
         }
     ]
 }

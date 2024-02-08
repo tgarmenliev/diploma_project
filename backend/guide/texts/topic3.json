@@ -1,30 +1,38 @@
 {
     "title": "Как да си отворя/затворя вратата?",
+    "englishTitle": "How to open or close the door?",
     "subtitle": "Трудна ли е тази задача?",
+    "englishSubtitle": "Is this task hard?",
     "image": "topic3.jpg",
     "content": [
         {
             "text": "Отварянето на врата във влака може да се окаже нелесна задача за някои хора. Отново, в зависимост от подвижния състав има 3 основни типа отваряне на вратите: автоматично, с натискане на електронен бутон, с ръчка.\n\n отваряне на вратите е налично само при съветските мотриси Серия 32 на БДЖ. Снимката отдолу показва как изглеждат. При тях, когато влакът спре, просто изчаквате и врата трябва да се отвори.",
+            "englishText": "Opening the door in the train can be a difficult task for some people. Again, depending on the rolling stock, there are 3 main types of door opening: automatic, with a push of an electronic button, with a handle.\n\nThe automatic door opening is available only in the Soviet-made BDZ Series 32. The picture below shows how they look. With them, when the train stops, you just wait and the door should open.",
             "image": "motrisa32.jpg"
         },
         {
             "text": "Отварянето чрез натискане на бутон се намира при мотрисите Сименс Дезиро, както и при някои вагони. Ще разгледаме отварянето чрез бутони и за двата вида.\n    При мотрисите на Сименс, бутоните изглеждат както на снимката отдолу:",
+            "englishText": "The opening by pressing a button is found in the Siemens Desiro motor units, as well as in some wagons. We will look at the opening through buttons for both types.\n    In the Siemens motor units, the buttons look like the picture below:",
             "image": "desiro-buton.jpg"
         },
         {
             "text": "При тях отварянето на вратите е изключително лесно. На всяка врата има бутон, който при натискането му, вратите на влака се отварят. Когато влакът спре на гарата, бутонът светва и, когато той свети, вратата може да бъде отворена чрез натискането на бутона. Вратата се отваря след натискането и след определено време започва да издава предупредителни звуци, че ще се затвори. Вратата няма да се отвори, ако влакът се движи или, ако пробвате да слезете от грешната страна. Внимание: врата, която може да бъде отворена задължително свети със зелена светлина, както на снимката отдолу.",
+            "englishText": "There, opening the doors is extremely easy. At each door there is a button that, when pressed, the train doors open. When the train stops at the station, the button lights up and, when it lights up, the door can be opened by pressing the button. The door opens after pressing and after a while it starts to make warning sounds that it will close. The door will not open if the train is moving or if you try to get off the wrong side. Attention: a door that can be opened must necessarily be lit with a green light, as in the picture below.",
             "image": "desiro-buton2.jpg"
         },
         {
             "text": "\tНякои вагони също имат възможността вратите им да се отворят автоматично. За да направите лесна проверка дали вратите могат да се отворят чрез натискане на бутон, можете да проверите дали има тези бутони около вратите. Бутоните вътре във вагона за отваряне на вратите се намират отляво или отдясно на тях и изглеждат както на първата снимка отдолу. Бутоните отвън се виждат на втората снимка отдолу.",
+            "englishText": "Some wagons also have the ability for their doors to open automatically. To make an easy check whether the doors can be opened by pressing a button, you can check if there are these buttons around the doors. The buttons inside the wagon for opening the doors are located to the left or right of them and look like the first picture below. The buttons outside are visible in the second picture below.",
             "image": "buton-vagon.jpg"
         },
         {
             "text": "При натискането на зеления бутон, когато той свети, вратата се отваря (дори и понякога да бъде леко бавно). При натискането на червения бутон, вратата се затваря. Важно: вратата се затваря автоматично, когато влакът тръгне, така че внимавайте с бързането, когато изпуснете гарата си.\n\nОтварянето на вратите “по стария метод” става чрез завъртането на дръжка. Снимката на този тип врати може да бъде видяна тук:",
+            "englishText": "When the green button is pressed, when it lights up, the door opens (even if it is sometimes a bit slow). When the red button is pressed, the door closes. Important: the door closes automatically when the train starts, so be careful when you miss your station.\n\nOpening the doors “the old way” is done by turning the handle. The picture of this type of door can be seen here:",
             "image": "vagon-drujka.jpg"
         },
         {
-            "text": "При този метод за отваряне трябва да завъртите дръжката наляво или надясно (в зависимост от разположението на вратата). Дръжката трябва да се върти в противоположната посока, в която се намира сега (ако сега тя “сочи” наляво, тя трябва да бъде завъртяна надясно и т.н.). Внимание: може да се наложи да вкарате малко повече сила, когато трябва да си отворите вратата по този начин. За затварянето тук вече трябва да се уверите, че вратата е затворена преди тръгването на влака. Тоест, ако вие сте последния пътник, който слиза и след вас няма други, затворете вратата.\n\n\tАко не искате да изпуснете гарата си и ви е страх, че можете да не успеете да се справите с отварянето, то най-добре е да идете при началник-влака или при кондуктора, които винаги отварят първата врата от вагона, за да подадат знак, че влакът може да замине безопасно. По този начин си гарантирате, че вратата ще бъде отворена, за да слезете, и след това не трябва да бъде затваряна."
+            "text": "При този метод за отваряне трябва да завъртите дръжката наляво или надясно (в зависимост от разположението на вратата). Дръжката трябва да се върти в противоположната посока, в която се намира сега (ако сега тя “сочи” наляво, тя трябва да бъде завъртяна надясно и т.н.). Внимание: може да се наложи да вкарате малко повече сила, когато трябва да си отворите вратата по този начин. За затварянето тук вече трябва да се уверите, че вратата е затворена преди тръгването на влака. Тоест, ако вие сте последния пътник, който слиза и след вас няма други, затворете вратата.\n\n\tАко не искате да изпуснете гарата си и ви е страх, че можете да не успеете да се справите с отварянето, то най-добре е да идете при началник-влака или при кондуктора, които винаги отварят първата врата от вагона, за да подадат знак, че влакът може да замине безопасно. По този начин си гарантирате, че вратата ще бъде отворена, за да слезете, и след това не трябва да бъде затваряна.",
+            "englishText": "With this method of opening, you have to turn the handle to the left or right (depending on the location of the door). The handle must be turned in the opposite direction to where it is now (if it “points” to the left, it must be turned to the right and so on). Attention: you may need to put a little more force when you need to open the door this way. For closing here, you already have to make sure that the door is closed before the train starts. That is, if you are the last passenger to get off and there are no others after you, close the door.\n\nIf you don't want to miss your station and you are afraid that you may not be able to handle the opening, it is best to go to the train chief or the conductor, who always open the first door of the wagon to signal that the train can leave safely. This way you guarantee that the door will be open for you to get off, and then it does not need to be closed."
         }
     ]
 }
