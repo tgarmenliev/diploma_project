@@ -315,6 +315,7 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tommoro
             viaText = splitWords(viaText);
 
             numOfTransfers[index] = ((viaText.length / 5) - 2).toFixed();
+            console.log(viaText);
 
             if(index !== 0) {
                 fullResponseInfo.push(makeMoreInfoTrainJSON(viaText));
