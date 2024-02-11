@@ -171,15 +171,17 @@ const get_trains_info = async (fromStation, toStation, date, language) => {
 };
 
 function isValidDateFormat(dateString) {
-	const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
-	return dateRegex.test(dateString);
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+  return dateRegex.test(dateString);
 }
 
-function formatDate(date) {
+function formatDate(dateString) {
     // check if the date is in format "YYYY-MM-DD"
-    if (!isValidDateFormat(date)) {
-		throw new Error('Invalid date format');
+    if (!isValidDateFormat(dateString)) {
+		  throw new Error('Invalid date format');
     }
+
+    date = new Date(dateString)
 
     let string = "";
 
@@ -234,9 +236,9 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
   const date = req.params.date;
   let formattedDate = null;
   try {
-	formattedDate = formatDate(new Date(date));
+	  formattedDate = formatDate(date);
   } catch (error) {
-	res.status(400).json({ error: 'Bad Request' });
+	  res.status(400).json({ error: 'Bad Request! Wrong date!' });
 	return;
   }
 
