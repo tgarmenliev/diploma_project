@@ -44,7 +44,7 @@ function makeMoreInfoTrainJSON(string) {
     return trains;
 }
 
-function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, date, tommorow, duration) {
+function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, date, tomorrow, duration) {
     let curr_train = {};
     let trains = [];
 
@@ -65,7 +65,7 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         let arrayDep = moreInfoJson[0]["departAt"].split(":");
         let arrayArr = moreInfoJson[1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arriveDate"] = tommorow;
+            curr_train["arriveDate"] = tomorrow;
         } else {
             curr_train["arriveDate"] = date;
         }
@@ -74,7 +74,7 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         return trains;
     }
     
-    let isTommorow = false;
+    let isTomorrow = false;
 
     for(let i = 0; i < moreInfoJson.length - 1; i++) {
         // combine the info from the two jsons
@@ -83,7 +83,7 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
             "to": i === moreInfoJson.length - 2 ? toStation : transfer_stations[i],
             "depart": moreInfoJson[i]["departAt"],
             "arrive": moreInfoJson[i + 1]["arriveAt"],
-            "departDate": isTommorow ? tommorow : date,
+            "departDate": isTomorrow ? tomorrow : date,
             "arriveDate": "",
             "trainType": moreInfoJson[i]["trainType"],
             "trainNumber": moreInfoJson[i]["trainNumber"],
@@ -94,8 +94,8 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         let arrayDep = moreInfoJson[i]["departAt"].split(":");
         let arrayArr = moreInfoJson[i + 1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arriveDate"] = tommorow;
-            isTommorow = true;
+            curr_train["arriveDate"] = tomorrow;
+            isTomorrow = true;
         } else {
             curr_train["arriveDate"] = date;
         }
@@ -143,7 +143,8 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
     return trains;
 }
 
-function checkHowManyTrainLseft(trains) {
+function checkHowManyTrainLseft(trains) 
+{
     let currDate = new Date();
     let currTime = currDate.getHours() + ":" + currDate.getMinutes();
 
@@ -167,16 +168,14 @@ function checkHowManyTrainLseft(trains) {
 
 }
 
-function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) {
-
+function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tomorrow) 
+{
     let trains = [];
     let curr_train = {};
 
     for(let index = 0, curr_cycle = 1; index < string.length; index++, curr_cycle++) {
 
         let transfer_stations = [];
-
-        //console.log(string);
 
         index++;
 
@@ -213,7 +212,7 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
         let arrayArr = string[index].split(":");
 
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arrivalDate"] = tommorow;
+            curr_train["arrivalDate"] = tomorrow;
         } else {
             curr_train["arrivalDate"] = date;
         }
@@ -227,7 +226,7 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tommorow) 
 
         //curr_train["trains"] = transfer_stations;
 
-        curr_train["trains"] = makeTrains(fromStation, toStation, moreInfoJson[curr_cycle - 1], transfer_stations, date, tommorow, curr_train["duration"]);
+        curr_train["trains"] = makeTrains(fromStation, toStation, moreInfoJson[curr_cycle - 1], transfer_stations, date, tomorrow, curr_train["duration"]);
 
         // Continue to the next train
         index++;
@@ -260,7 +259,8 @@ function splitWords(inputString) {
     return textWithoutSpaces;
 }
 
-function getRoute(string) {
+function getRoute(string)
+{
     let route = "";
     
     var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
@@ -280,7 +280,8 @@ function getRoute(string) {
     return capitalizeFirstLetterOfRoute(route);
 }
 
-function translateNumberToStation(number) {
+function translateNumberToStation(number)
+{
     const foundStation = stations.find((s) => parseInt(s.id) === parseInt(number));
     if (foundStation) {
       return foundStation.romanizedName;
@@ -289,7 +290,7 @@ function translateNumberToStation(number) {
     }
 }
 
-async function get_trains_info(fromStationNumber, toStationNumber, date, tommorow, language) {
+async function get_trains_info(fromStationNumber, toStationNumber, date, tomorrow, language) {
     const fromStation = translateNumberToStation(fromStationNumber);
     const toStation = translateNumberToStation(toStationNumber);
 
@@ -315,7 +316,6 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tommoro
             viaText = splitWords(viaText);
 
             numOfTransfers[index] = ((viaText.length / 5) - 2).toFixed();
-            console.log(viaText);
 
             if(index !== 0) {
                 fullResponseInfo.push(makeMoreInfoTrainJSON(viaText));
@@ -327,9 +327,7 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tommoro
 
         divText = splitWords(divText);
 
-        trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo, date, tommorow);
-
-        // translate from and to stations!!!!!
+        trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo, date, tomorrow);
 
         let result = {
             "date": date,
@@ -349,7 +347,6 @@ function formatDate(date) {
     let string = "";
 
     let day = date.getDate();
-    // let day = 19;
 
     string += day.toString().padStart(2, '0');
 
@@ -361,8 +358,6 @@ function formatDate(date) {
     string += ".";
 
     string += date.getFullYear();
-  
-    //console.log(string);
   
     return string;
 }
@@ -390,12 +385,12 @@ router.get('/:language/:from/:to', async (req, res) => {
     const currentDate = new Date(); // Get the current date
     const formattedDate = formatDate(currentDate); // Format the date as a string
 
-    let tommorow = new Date();
-    tommorow.setDate(currentDate.getDate() + 1);
-    const formattedTommorow = formatDate(tommorow);
+    let tomorrow = new Date();
+    tomorrow.setDate(currentDate.getDate() + 1);
+    const formattedTomorrow = formatDate(tomorrow);
 
     try {
-        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTommorow, language);
+        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTomorrow, language);
 
         res.json(trains_info);
     } catch (error) {

@@ -58,8 +58,7 @@ function splitWords(inputString) {
   textWithoutSpaces = textWithoutSpaces.split(/\s+/);
 
   // Filter out any empty strings
-  // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
-  textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване');
+  textWithoutSpaces = textWithoutSpaces.filter(word => word !== '');
 
   return textWithoutSpaces;
 }
@@ -76,9 +75,6 @@ function makeTrainsToOption(trains, language = 'bg') {
     let nameWithoutSpaces = splitWords(trains[index].name);
 
     let splitStations = trains[index].stations.split(" - ");
-
-    //currentTrain["from"] = splitStations[0].toLowerCase();
-    //currentTrain["to"] = splitStations[1].toLowerCase();
     
     currentTrain["from"] = splitStations[0].charAt(0).toUpperCase() + splitStations[0].slice(1).toLowerCase();
     currentTrain["to"] = splitStations[1].charAt(0).toUpperCase() + splitStations[1].slice(1).toLowerCase();
@@ -113,112 +109,108 @@ function makeTrainsToOption(trains, language = 'bg') {
 
 }
 
-function makeOptionsTrains(options, language = 'bg') {
-  // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
+
+// needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
   // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+function makeOptionsTrains(options, language = 'bg') {
+	let result = [];
 
-  let result = [];
+	for(let index = 0; index < options.length; index++)
+	{
+		let currentOption = {};
 
-  for(let index = 0; index < options.length; index++)
-  {
-    let currentOption = {};
+		currentOption["duration"] = options[index].total_time;
+		currentOption["departureTime"] = options[index].departure_time;
+		currentOption["arrivalTime"] = options[index].arrival_time;
+		currentOption["departureDate"] = options[index].departure_date;
+		currentOption["arrivalDate"] = options[index].arrival_date;
+		currentOption["numOfTransfers"] = options[index].trains.length - 1;
 
-    currentOption["duration"] = options[index].total_time;
-    currentOption["departureTime"] = options[index].departure_time;
-    currentOption["arrivalTime"] = options[index].arrival_time;
-    currentOption["departureDate"] = options[index].departure_date;
-    currentOption["arrivalDate"] = options[index].arrival_date;
-    currentOption["numOfTransfers"] = options[index].trains.length - 1;
+		currentOption["trains"] = makeTrainsToOption(options[index].trains, language);
 
-    currentOption["trains"] = makeTrainsToOption(options[index].trains, language);
+		result.push(currentOption);
+	}
 
-    result.push(currentOption);
-  }
-
-  return result;
+	return result;
 }
 
 const get_trains_info = async (fromStation, toStation, date, language) => {
-  // translate stations!!!
-  //let from = fromStation.toUpperCase();
-  //let to = toStation.toUpperCase();
 
-  //from = translateStation(from);
-  //to = translateStation(to);
+	const response = await axios.post('https://tickets.bdz.bg/portal/api/POSRoute/Trains', [
+	{
+		"station_from": fromStation,
+		"station_to": toStation,
+		"date": date
+	}
+	], {
+	headers: {
+		'Content-Type': 'application/json'
+	}
+	});
 
+	if (response.status !== 200) {
+	throw Error(response.message);
+	}
 
-  const response = await axios.post('https://tickets.bdz.bg/portal/api/POSRoute/Trains', [
-    {
-      "station_from": fromStation,
-      "station_to": toStation,
-      "date": date
-    }
-  ], {
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+	//needed: date, name, options
+	// needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
+	// needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
-  if (response.status !== 200) {
-    throw Error(response.message);
-  }
+	let result = {}
+	result["date"] = response.data[0].date;
+	result["route"] = capitalizeFirstLetterOfRoute(response.data[0].name);
+	if(language === 'en') {
+		result["route"] = transliterateBulgarianToEnglish(result["route"]);
+	}
 
-  //needed: date, name, options
-  // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
-  // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+	result["totalTrains"] = 0;
+	result["options"] = makeOptionsTrains(response.data[0].options, language);
+	result["totalTrains"] = result["options"].length;
 
-  let result = {}
-  result["date"] = response.data[0].date;
-  result["route"] = capitalizeFirstLetterOfRoute(response.data[0].name);
-  if(language === 'en') {
-    result["route"] = transliterateBulgarianToEnglish(result["route"]);
-  }
-
-  result["totalTrains"] = 0;
-  result["options"] = makeOptionsTrains(response.data[0].options, language);
-  result["totalTrains"] = result["options"].length;
-
-  return result;
+	return result;
 };
 
-function formatDate(date) {
-  let string = "";
-  string += date.getFullYear();
-  string += "-";
-  let month = date.getMonth() + 1;
-  string += month.toString().padStart(2, '0');
-  string += "-";
-
-  let day = date.getDate();
-  //let day = 19;
-
-  string += day.toString().padStart(2, '0');
-  string += "T";
-  let hours = date.getHours();
-  string += hours.toString().padStart(2, '0');
-  string += ":";
-  let minutes = date.getMinutes();
-  string += minutes.toString().padStart(2, '0');
-  string += ":";
-  let seconds = date.getSeconds();
-  string += seconds.toString().padStart(2, '0');
-  string += ".";
-  string += "0000000"
-  string += "+02:00";
-
-  //console.log(string);
-
-  return string;
+function isValidDateFormat(dateString) {
+	const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+	return dateRegex.test(dateString);
 }
 
-// function translateStation(station) {
-//   const foundStation = stations.find((s) => s.romanizedName === station);
-//   if (foundStation) {
-//     return foundStation.id;
-//   } else {
-//     return null; // Station not found
-//   }
-// }
+function formatDate(date) {
+    // check if the date is in format "YYYY-MM-DD"
+    if (!isValidDateFormat(date)) {
+		throw new Error('Invalid date format');
+    }
+
+    let string = "";
+
+    string += date.getFullYear();
+    string += "-";
+
+    let month = date.getMonth() + 1;
+    string += month.toString().padStart(2, '0');
+
+    string += "-";
+    let day = date.getDate();
+    string += day.toString().padStart(2, '0');
+    string += "T";
+
+    let hours = date.getHours();
+    string += hours.toString().padStart(2, '0');
+    string += ":";
+
+    let minutes = date.getMinutes();
+    string += minutes.toString().padStart(2, '0');
+    string += ":";
+
+    let seconds = date.getSeconds();
+    string += seconds.toString().padStart(2, '0');
+
+    string += ".";
+    string += "0000000"
+    string += "+02:00";
+
+    return string;
+}
 
 router.get('/:language/:from/:to/:date', async (req, res) => {
   let fromStation = null;
@@ -239,18 +231,20 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
     return;
   }
 
-  //const fromStationID = translateStation(from);
-  //const toStationID = translateStation(to);
-
   const date = req.params.date;
-  const formattedDate = formatDate(new Date(date)); // Format the date as a string
+  let formattedDate = null;
+  try {
+	formattedDate = formatDate(new Date(date));
+  } catch (error) {
+	res.status(400).json({ error: 'Bad Request' });
+	return;
+  }
 
   try {
     let trains_info = await get_trains_info(fromStation, toStation, formattedDate, language);
 
     res.json(trains_info);
   } catch (error) {
-    // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }

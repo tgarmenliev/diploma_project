@@ -38,11 +38,11 @@ async function getNomenclatures() {
       '.': '', // Remove dots
     };
   
-    const words = text
+    var words = text
       .replace(/[-\s.]+/g, '-') // Replace multiple spaces, dots, and dashes with a single dash
       .split('-');
   
-    const romanizedWords = words.map(word => {
+    words = words.map(word => {
       // Special case: if the word is "СП.", convert it to "st"
       console.log(word);
       if (word.toLowerCase() === 'сп') {
@@ -57,9 +57,9 @@ async function getNomenclatures() {
     });
   
     // Remove the trailing dash if it exists
-    const result = romanizedWords.join('-').replace(/-$/, '');
+    words = words.join('-').replace(/-$/, '');
   
-    return result;
+    return words;
   }
   
   function translateStations(nomenclatures) {
