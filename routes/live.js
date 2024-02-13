@@ -26,32 +26,31 @@ function get_delay_info(info) {
   let delayInfo = "";
 
   // Check if the delay is "допълнителна информация". Very corner case
-  if ((info[0] == "допълнителна" || info[0] == "more") && (info[1] == "информация" || info[1] == "information")) {
-    delayMinutes = 0;
+  if ((info[0] == "допълнителна" || info[0] == "more") && (info[1] == "информация" || info[1] == "information"))
+  {
     delayString = info[0] + " " + info[1];
-    for (let index = 3; index < info.length; index++) {
-      delayInfo += info[index];
-      delayInfo += " ";
+    delayInfo = info.slice(3).join(" ");
+  } 
+  else if (info[0].includes("Bus") || info[0].includes("Трансбордиране"))
+  {
+    if(info[0].includes("Bus")) {
+      delayString = "Transfer by bus."
+    } else {
+      delayString = info[0] + " " + info[1] + " " + info[2] + ".";
     }
-    return {
-      delayMinutes: delayMinutes,
-      delayString: delayString,
-      delayInfo: delayInfo,
-    };
-  }
+    delayInfo = info.slice(3).join(" ");
+  } 
+  else
+  {
+    for(let index = 0; index < 3; index++) {
+      delayString += info[index];
+      delayString += " ";
 
-  for(let index = 0; index < 3; index++) {
-    delayString += info[index];
-    delayString += " ";
-
-    if(index === 1) {
-      delayMinutes = parseInt(info[index]);
+      if(index === 1) {
+        delayMinutes = parseInt(info[index]);
+      }
     }
-  }
-
-  for(let index = 3; index < info.length; index++) {
-    delayInfo += info[index];
-    delayInfo += " ";
+    delayInfo = info.slice(3).join(" ");
   }
 
   return {
@@ -68,14 +67,15 @@ function makeTrainJson(string, trainNum, delayInfo) {
 
   let station = "";
 
+  // If the train is delayed, the station name starts from the 2nd index
+  // If the train is not delayed, the station name starts from the 1st index
   for(let index = 1 + prefix; index < string.length; index++) {
     station += string[index];
     station += " ";
   }
   
-  newDelayInfo = delayInfo;
   if(delayInfo.length === 0) {
-    newDelayInfo = {
+    delayInfo = {
       delayMinutes: 0,
       delayString: "",
       delayInfo: "",
@@ -87,7 +87,7 @@ function makeTrainJson(string, trainNum, delayInfo) {
     time: 0,
     isDelayed: prefix,
     delayedTime: 0,
-    delayInfo: newDelayInfo,
+    delayInfo: delayInfo,
     type: trainNum[0],
     trainNum: trainNum[1]
   };
@@ -101,32 +101,10 @@ function makeTrainJson(string, trainNum, delayInfo) {
   }
 
   let delayString = result["delayInfo"]["delayString"];
-  if (result["isDelayed"] && (delayString.includes("Трансбордиране с автобус") || delayString === "Bus undefined undefined ")) {
-    result["direction"] = result["time"]
-    result["time"] = result["delayedTime"]
-    result["delayedTime"] = 0
-    if(delayString.includes("Bus undefined undefined ")) {
-      delayString = "Bus"
-    }
-
-    result["delayInfo"] = {
-      delayMinutes: 0,
-      delayString: delayString,
-      delayInfo: "",
-    };
-  }
-  
-  // very corner case where is no delay, but previously was
-  // this can't be else if, because the previous if can also be true
-  if (result["isDelayed"] && (delayString.includes("more information") || delayString.includes("допълнителна информация"))) {
-    result["direction"] = result["time"] + " " + result["direction"] 
-    result["time"] = result["delayedTime"]
-    result["delayedTime"] = 0
-    result["delayInfo"] = {
-      delayMinutes: 0,
-      delayString: delayString,
-      delayInfo: result["delayInfo"]["delayInfo"],
-    };
+  if (result["isDelayed"] && (delayString.includes("Трансбордиране") || delayString.includes("Bus") || delayString.includes("more information") || delayString.includes("допълнителна информация"))) {
+    result["direction"] = result["time"] + " " + result["direction"];
+    result["time"] = result["delayedTime"];
+    result["delayedTime"] = 0;
   }
 
   return result;
@@ -159,13 +137,13 @@ getEverythingPastLoadingStation = (station) => {
 
 async function get_trains_info(number, language, type) {
 
-  const station = translateNumberToStation(number);
+  const stationName = translateNumberToStation(number);
 
-  if (station == null) {
+  if (stationName == null) {
     throw new Error('Station does not exist!');
   }
 
-  const url = 'https://live.bdz.bg/' + language + '/' + station + '/' + type;
+  const url = 'https://live.bdz.bg/' + language + '/' + stationName + '/' + type;
 
   try {
     // Make a GET request to the webpage
