@@ -25,6 +25,21 @@ function get_delay_info(info) {
   let delayString = "";
   let delayInfo = "";
 
+  // Check if the delay is "допълнителна информация". Very corner case
+  if ((info[0] == "допълнителна" || info[0] == "more") && (info[1] == "информация" || info[1] == "information")) {
+    delayMinutes = 0;
+    delayString = info[0] + " " + info[1];
+    for (let index = 3; index < info.length; index++) {
+      delayInfo += info[index];
+      delayInfo += " ";
+    }
+    return {
+      delayMinutes: delayMinutes,
+      delayString: delayString,
+      delayInfo: delayInfo,
+    };
+  }
+
   for(let index = 0; index < 3; index++) {
     delayString += info[index];
     delayString += " ";
@@ -32,7 +47,6 @@ function get_delay_info(info) {
     if(index === 1) {
       delayMinutes = parseInt(info[index]);
     }
-
   }
 
   for(let index = 3; index < info.length; index++) {
@@ -101,6 +115,19 @@ function makeTrainJson(string, trainNum, delayInfo) {
       delayInfo: "",
     };
   }
+  
+  // very corner case where is no delay, but previously was
+  // this can't be else if, because the previous if can also be true
+  if (result["isDelayed"] && (delayString.includes("more information") || delayString.includes("допълнителна информация"))) {
+    result["direction"] = result["time"] + " " + result["direction"] 
+    result["time"] = result["delayedTime"]
+    result["delayedTime"] = 0
+    result["delayInfo"] = {
+      delayMinutes: 0,
+      delayString: delayString,
+      delayInfo: result["delayInfo"]["delayInfo"],
+    };
+  }
 
   return result;
 }
@@ -134,6 +161,10 @@ async function get_trains_info(number, language, type) {
 
   const station = translateNumberToStation(number);
 
+  if (station == null) {
+    throw new Error('Station does not exist!');
+  }
+
   const url = 'https://live.bdz.bg/' + language + '/' + station + '/' + type;
 
   try {
@@ -162,10 +193,10 @@ async function get_trains_info(number, language, type) {
     content('.timetableItem').each((index, element) => {
       let currInfo = {};
 
-      let timeNames = content(element).find('.mb-lg-0').text(); // Replace 'time-class' with the actual class or selector for the time
+      let timeNames = content(element).find('.mb-lg-0').text();
       timeNames = splitWords(timeNames);
 
-      let trainNum = content(element).find('.text-nowrap').text(); // Replace 'train-name-class' with the actual class or selector for the train name
+      let trainNum = content(element).find('.text-nowrap').text();
       trainNum = splitWords(trainNum);
 
       let delayInfo = content(element).find('.col-lg-3').text();
@@ -197,21 +228,20 @@ router.get('/:language/:stationNumber/:type', async (req, res) => {
   try {
     stationNumber = parseInt(req.params.stationNumber);
   } catch (error) {
-    // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);
-    res.status(400).json({ error: 'Bad Request' });
+    res.status(400).json({ error: 'Bad Request! Station number is not correct!' });
     return;
   }
   const language = req.params.language;
   const type = req.params.type;
 
   if(language !== "bg" && language !== "en") {
-    res.status(400).json({ error: 'Bad Request' });
+    res.status(400).json({ error: 'Bad Request! Language does not exist!' });
     return;
   }
 
   if(type !== "departures" && type !== "arrivals") {
-    res.status(400).json({ error: 'Bad Request' });
+    res.status(400).json({ error: 'Bad Request! Wrong type of live table!' });
     return;
   }
 
@@ -220,9 +250,8 @@ router.get('/:language/:stationNumber/:type', async (req, res) => {
 
     res.json(trains_info);
   } catch (error) {
-    // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal Server Error!' });
   }
 });
 
