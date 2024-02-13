@@ -294,6 +294,10 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tomorro
     const fromStation = translateNumberToStation(fromStationNumber);
     const toStation = translateNumberToStation(toStationNumber);
 
+    if (fromStation == null || toStation == null) {
+        throw new Error('Station does not exist!');
+    }
+
     const url = "https://razpisanie.bdz.bg/" + language + "/" + fromStation + "/" + toStation + "/" + date;
 
     const divSelector = '.schedule-table';
@@ -369,7 +373,7 @@ router.get('/:language/:from/:to', async (req, res) => {
     const language = req.params.language;
 
     if(language !== "bg" && language !== "en") {
-        res.status(400).json({ error: 'Bad Request' });
+        res.status(400).json({ error: 'Bad Request! Language does not exist!' });
         return;
     }
 
@@ -378,7 +382,7 @@ router.get('/:language/:from/:to', async (req, res) => {
         toStation = parseInt(req.params.to);
     } catch (error) {
         console.error('Error:', error);
-        res.status(400).json({ error: 'Bad Request' });
+        res.status(400).json({ error: 'Bad Request! Stations numbers not correct!' });
         return;
     }
 
@@ -394,9 +398,8 @@ router.get('/:language/:from/:to', async (req, res) => {
 
         res.json(trains_info);
     } catch (error) {
-        // Handle the error appropriately, e.g., send an error response
         console.error('Error:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
+        res.status(500).json({ error: 'Internal Server Error!' });
     }
 });
 

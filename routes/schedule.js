@@ -178,7 +178,7 @@ function isValidDateFormat(dateString) {
 function formatDate(dateString) {
     // check if the date is in format "YYYY-MM-DD"
     if (!isValidDateFormat(dateString)) {
-		  throw new Error('Invalid date format');
+		  throw new Error('Invalid date format!');
     }
 
     date = new Date(dateString)
@@ -220,7 +220,7 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
   const language = req.params.language;
 
   if (language !== 'bg' && language !== 'en') {
-    res.status(400).json({ error: 'Invalid language' });
+    res.status(400).json({ error: 'Bad request! Language does not exist!' });
     return;
   }
 
@@ -229,7 +229,7 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
     toStation = parseInt(req.params.to);
   } catch (error) {
     console.error('Error:', error);
-    res.status(400).json({ error: 'Bad Request' });
+    res.status(400).json({ error: 'Bad Request! Stations numbers not correct!' });
     return;
   }
 
