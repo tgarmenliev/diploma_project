@@ -13,7 +13,6 @@ const topic8 = require('../guide/texts/topic8.json');
 const topic9 = require('../guide/texts/topic9.json');
 const topic10 = require('../guide/texts/topic10.json');
 const topic11 = require('../guide/texts/topic11.json');
-const { all } = require('axios');
 
 const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11];
 
@@ -53,12 +52,12 @@ router.get('/:language/:topic', async (req, res) => {
   } catch (error) {
       // Handle the error appropriately, e.g., send an error response
       console.error('Error:', error);
-      res.status(400).json({ error: 'Bad Request for guide!' });
+      res.status(400).json({ error: 'Bad Request! Please provide valid number for topic!' });
       return;
   }
 
   if (topic < 0 || topic > (allTopics.length - 1)) {
-    res.status(404).json({ error: 'Topic not found!' });
+    res.status(404).json({ error: 'Bad Request! Topic not found!' });
     return;
   }
 
@@ -69,7 +68,7 @@ router.get('/:language/:topic', async (req, res) => {
 
   } catch (error) {
     console.error('Error:', error);
-    res.status(500).json({ error: 'Internal Server Error with access to the guide!' });
+    res.status(500).json({ error: 'Internal Server Error with access to guide topic!' });
   }
 });
   

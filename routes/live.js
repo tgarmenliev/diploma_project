@@ -26,7 +26,7 @@ function get_delay_info(info) {
   let delayInfo = "";
 
   // Check if the delay is "допълнителна информация". Very corner case
-  if ((info[0] == "допълнителна" || info[0] == "more") && (info[1] == "информация" || info[1] == "information"))
+  if ((info[0].includes("допълнителна") || info[0].includes("more")) && (info[1].includes("информация") || info[1].includes("information")))
   {
     delayString = info[0] + " " + info[1];
     delayInfo = info.slice(3).join(" ");

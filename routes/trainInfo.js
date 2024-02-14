@@ -27,7 +27,7 @@ function makeJsonTrainInfo(string, trainNumber, date) {
   for(let index = 0; index < string.length; index++) {
     type += string[index];
 
-    if(string[index] === 'влак' || string[index] === 'Train') {
+    if(string[index].includes('влак') || string[index].includes('Train')) {
       fromIndex = index + 1;
       break;
     }
@@ -42,9 +42,9 @@ function makeJsonTrainInfo(string, trainNumber, date) {
     stations: [],
   };
 
+  var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
   for(let index = fromIndex; index < string.length; index++) {
     type = "";
-    var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
     for(; index < string.length; index++) {
 
@@ -58,7 +58,6 @@ function makeJsonTrainInfo(string, trainNumber, date) {
 
       type += string[index];
     }
-
 
     result.stations.push({
       station: type,
@@ -75,10 +74,8 @@ function makeJsonTrainInfo(string, trainNumber, date) {
 async function getTrainNoInfo(trainNo, language, date) {
   const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo + '/' + date;
 
-  // Selector for the specific <div> you want to scrape
-  const divSelector = '.bg-white.p-4.mb-4'; // Replace with your actual selector
-
-  let trainInfo = {};
+  // Selector for the specific <div> I want to scrape
+  const divSelector = '.bg-white.p-4.mb-4';
 
   // Make a GET request to the webpage
   try {
@@ -117,7 +114,7 @@ function formatDate(inputDate) {
   }
 
   // If the date format is not recognized, throw an error
-  throw new Error('Invalid date format');
+  throw new Error('Invalid date format!');
 }
 
 // Define a route with a parameter
@@ -126,19 +123,18 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
   const language = req.params.language;
 
   if(language !== 'bg' && language !== 'en') {
-    res.status(404).json({ error: 'Invalid language' });
+    res.status(404).json({ error: 'Bad request! Invalid language!' });
     return;
   }
 
   if(trainNo.length < 3 || trainNo.length > 5) {
-    res.status(404).json({ error: 'Invalid train number' });
+    res.status(404).json({ error: 'Bad request! Invalid train number!' });
     return;
   }
 
   let today = new Date();
   // Format the date in the format DD.MM.YYYY
   today = today.toLocaleDateString('bg-BG');
-  // Remove the last 3 characters from the date string
   today = today.slice(0, -3);
 
   let date = null;
@@ -153,7 +149,6 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
     let trains_info = await getTrainNoInfo(trainNo, language, date);
 
     if (!trains_info) {
-      // If the train info is not found, throw an error
       throw new Error('Train info not found');
     }
 

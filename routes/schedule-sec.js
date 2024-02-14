@@ -11,6 +11,20 @@ function capitalizeFirstLetterOfRoute(route) {
     return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
 }
 
+function splitWords(inputString) {
+
+    let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
+  
+    // Use a regular expression to split words by spaces
+    textWithoutSpaces = textWithoutSpaces.split(/\s+/);
+  
+    // Filter out any empty strings
+    // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
+    textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване' && word !== 'Fastest' && word !== 'trip');
+
+    return textWithoutSpaces;
+}
+
 function makeMoreInfoTrainJSON(string) {
     let trains = [];
     let curr_train = {};
@@ -222,10 +236,6 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tomorrow)
 
         curr_train["duration"] = string[index];
 
-        //curr_train["trains"] = moreInfoJson[curr_cycle - 1];
-
-        //curr_train["trains"] = transfer_stations;
-
         curr_train["trains"] = makeTrains(fromStation, toStation, moreInfoJson[curr_cycle - 1], transfer_stations, date, tomorrow, curr_train["duration"]);
 
         // Continue to the next train
@@ -243,20 +253,6 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tomorrow)
     }
     
     return trains;
-}
-
-function splitWords(inputString) {
-
-    let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
-  
-    // Use a regular expression to split words by spaces
-    textWithoutSpaces = textWithoutSpaces.split(/\s+/);
-  
-    // Filter out any empty strings
-    // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
-    textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване' && word !== 'Fastest' && word !== 'trip');
-
-    return textWithoutSpaces;
 }
 
 function getRoute(string)

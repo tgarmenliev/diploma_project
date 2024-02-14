@@ -32,11 +32,10 @@ function makeAllTopicsJson(language) {
     return result;
 }
 
-
 router.get('/:language', async (req, res) => {
     const language = req.params.language;
     if(language !== "bg" && language !== "en") {
-        res.status(400).json({ error: 'Language not provided' });
+        res.status(400).json({ error: 'Bad request! Language not provided!' });
         return;
     }
   
