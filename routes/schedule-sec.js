@@ -6,7 +6,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 const stations = require('../stations.json');
-
 function capitalizeFirstLetterOfRoute(route) {
     return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
 }
@@ -25,97 +24,120 @@ function splitWords(inputString) {
     return textWithoutSpaces;
 }
 
+function checkDepart(time) {
+    let currDate = new Date();
+    let currTime = [currDate.getHours(), currDate.getMinutes()];
+
+    if((parseInt(currTime[0])) > (parseInt(time[0]))) {
+        return false;
+    } else if((parseInt(currTime[0])) === (parseInt(time[0]))) {
+        if((parseInt(currTime[1])) > (parseInt(time[1]))) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function makeMoreInfoTrainJSON(string) {
+    if (string.length === 0) {
+        return [];
+    }
+
     let trains = [];
-    let curr_train = {};
+    let currentTrain = {};
+    let canBeShown = true;
 
     var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
     
-    for(let i = 0; i < string.length;) {
-
-        curr_train = {
-            station: string[i],
-            arriveAt: string[i+1],
-            departAt: string[i+2],
-            trainType: string[i+3],
-            trainNumber: string[i+4]
-        }
-
-        i += 5;
-
-        if(i + 2 < string.length) {
-            if((!timePattern.test(string[i + 1])) && (string[i + 1] !== '↦') && (string[i + 1] !== '↤')) {
-                i += 1;
+    let station = "";
+    for(let index = 0; index < string.length; index++) {
+        if(string[index] === '↦' || string[index] === '↤' || timePattern.test(string[index])) {
+            currentTrain = {
+                station: station,
+                arriveAt: string[index],
+                departAt: string[index + 1],
+                trainType: string[index + 2],
+                trainNumber: string[index + 3],
             }
+
+            if (string[index + 1] !== '↤' && canBeShown === true) {
+                canBeShown = checkDepart(string[index + 1].split(":"));
+            }
+
+            trains.push(currentTrain);
+            index += 4;
+            station = "";
         }
-
-        trains.push(curr_train);
-
-        if(string.length - i < 5)
-            break;
+        station += string[index] + " ";
     }
 
-    return trains;
+    let result = {
+        canBeShown: canBeShown,
+        trains: trains,
+    }
+
+    return result;
 }
 
-function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, date, tomorrow, duration) {
-    let curr_train = {};
+function makeTrains(moreInfoJson, date, tomorrow, duration, numOfTransfers) {
+    let currentTrain = {};
     let trains = [];
 
-    if(transfer_stations.length === 0) {
-        curr_train = {
-            "from": fromStation,
-            "to": toStation,
-            "depart": moreInfoJson[0]["departAt"],
-            "arrive": moreInfoJson[1]["arriveAt"],
+    if(numOfTransfers === 0) {
+        currentTrain = {
+            "from": moreInfoJson["trains"][0]["station"],
+            "to": moreInfoJson["trains"][1]["station"],
+            "depart": moreInfoJson["trains"][0]["departAt"],
+            "arrive": moreInfoJson["trains"][1]["arriveAt"],
             "departDate": date,
             "arriveDate": "",
-            "trainType": moreInfoJson[0]["trainType"],
-            "trainNumber": moreInfoJson[0]["trainNumber"],
+            "trainType": moreInfoJson["trains"][0]["trainType"],
+            "trainNumber": moreInfoJson["trains"][0]["trainNumber"],
             "duration": duration,
             "timeToWaitNext": 0,
         };
 
-        let arrayDep = moreInfoJson[0]["departAt"].split(":");
-        let arrayArr = moreInfoJson[1]["arriveAt"].split(":");
+        let arrayDep = moreInfoJson["trains"][0]["departAt"].split(":");
+        let arrayArr = moreInfoJson["trains"][1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arriveDate"] = tomorrow;
+            currentTrain["arriveDate"] = tomorrow;
         } else {
-            curr_train["arriveDate"] = date;
+            currentTrain["arriveDate"] = date;
         }
 
-        trains.push(curr_train);
+        trains.push(currentTrain);
         return trains;
     }
     
     let isTomorrow = false;
 
-    for(let i = 0; i < moreInfoJson.length - 1; i++) {
+    for(let index = 0; index < numOfTransfers + 1; index++) {
         // combine the info from the two jsons
-        curr_train = {
-            "from": i === 0 ? fromStation : transfer_stations[i - 1],
-            "to": i === moreInfoJson.length - 2 ? toStation : transfer_stations[i],
-            "depart": moreInfoJson[i]["departAt"],
-            "arrive": moreInfoJson[i + 1]["arriveAt"],
+        currentTrain = {
+            "from": moreInfoJson["trains"][index]["station"],
+            "to": moreInfoJson["trains"][index + 1]["station"],
+            "depart": moreInfoJson["trains"][index]["departAt"],
+            "arrive": moreInfoJson["trains"][index + 1]["arriveAt"],
             "departDate": isTomorrow ? tomorrow : date,
             "arriveDate": "",
-            "trainType": moreInfoJson[i]["trainType"],
-            "trainNumber": moreInfoJson[i]["trainNumber"],
+            "trainType": moreInfoJson["trains"][index]["trainType"],
+            "trainNumber": moreInfoJson["trains"][index]["trainNumber"],
             "duration": "",
             "timeToWaitNext": "",
         }
 
-        let arrayDep = moreInfoJson[i]["departAt"].split(":");
-        let arrayArr = moreInfoJson[i + 1]["arriveAt"].split(":");
+        let arrayDep = moreInfoJson["trains"][index]["departAt"].split(":");
+        let arrayArr = moreInfoJson["trains"][index + 1]["arriveAt"].split(":");
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arriveDate"] = tomorrow;
+            currentTrain["arriveDate"] = tomorrow;
             isTomorrow = true;
         } else {
-            curr_train["arriveDate"] = date;
+            currentTrain["arriveDate"] = date;
         }
 
-        let dep = moreInfoJson[i]["departAt"].split(":");
-        let arr = moreInfoJson[i + 1]["arriveAt"].split(":");
+        let dep = moreInfoJson["trains"][index]["departAt"].split(":");
+        let arr = moreInfoJson["trains"][index + 1]["arriveAt"].split(":");
         let depDate = new Date();
         let arrDate = new Date();
 
@@ -130,11 +152,11 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
         // convert minutes to hours and minutes
         let hours = Math.floor(minutes / 60);
         let mins = minutes % 60;
-        curr_train["duration"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
+        currentTrain["duration"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
 
-        if(i !== moreInfoJson.length - 2) {
+        if(index !== moreInfoJson["trains"].length - 2) {
 
-            dep = moreInfoJson[i + 1]["departAt"].split(":");
+            dep = moreInfoJson["trains"][index + 1]["departAt"].split(":");
 
             depDate.setHours(dep[0]);
             depDate.setMinutes(dep[1]);
@@ -145,57 +167,47 @@ function makeTrains(fromStation, toStation, moreInfoJson, transfer_stations, dat
             //convert minutes to hours and minutes
             hours = Math.floor(minutes / 60);
             mins = minutes % 60;
-            curr_train["timeToWaitNext"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
+            currentTrain["timeToWaitNext"] = hours.toString().padStart(2, '0') + ":" + mins.toString().padStart(2, '0');
             
         } else {
-            curr_train["timeToWaitNext"] = 0;
+            currentTrain["timeToWaitNext"] = 0;
         }
 
-        trains.push(curr_train);
+        trains.push(currentTrain);
     }
 
     return trains;
 }
 
-function checkHowManyTrainLseft(trains) 
-{
-    let currDate = new Date();
-    let currTime = currDate.getHours() + ":" + currDate.getMinutes();
-
-    let arrayCurrTime = currTime.split(":");
-
-    let left = trains.length;
-
-    for(let i = 0; i < trains.length; i++) {
-        let dep = trains[i]["departureTime"].split(":");
-
-        if((parseInt(arrayCurrTime[0])) > (parseInt(dep[0]))) {
-            left--;
-        } else if((parseInt(arrayCurrTime[0])) === (parseInt(dep[0]))) {
-            if((parseInt(arrayCurrTime[1])) > (parseInt(dep[1]))) {
-                left--
-            }
+function getDuration(string, fromIndex) {
+    let duration = "";
+    let index = fromIndex;
+    for(; index < string.length - 1; index++) {
+        if(string[index + 1] === "ч." || string[index + 1] === "h.") {
+            duration = string[index];
+            break;
         }
     }
-
-    return left;
-
+    return [duration, index];
 }
 
-function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tomorrow) 
+function makeJsonSchedule(string, moreInfoJson, date, tomorrow) 
 {
     let trains = [];
-    let curr_train = {};
+    let currentTrain = {};
+    let currentOption = {};
+    let currentNumOfTransfers = 0;
 
-    for(let index = 0, curr_cycle = 1; index < string.length; index++, curr_cycle++) {
+    for(let index = 0, cycle = 0; index < string.length; index++, cycle++) {
+        currentOption = moreInfoJson[cycle];
 
-        let transfer_stations = [];
+        if(currentOption === undefined || currentOption["canBeShown"] === false) {
+            continue;
+        }
 
-        index++;
+        currentNumOfTransfers = currentOption["trains"].length - 2;
 
-        fromStation = string[index];
-
-        curr_train = {
+        currentTrain = {
             "duration": "",
             "departureTime": "",
             "arrivalTime": "",
@@ -204,76 +216,34 @@ function makeJsonSchedule(string, numOfTransfers, moreInfoJson, date, tomorrow)
             "numOfTransfers": 0,
             "trains": [],
         }
-        
-        index += 2;
 
-        for(let j = 0; j < numOfTransfers[curr_cycle]; j++) {
-            transfer_stations.push(string[index]);
-            index += 2;
-        }
+        currentTrain["numOfTransfers"] = currentNumOfTransfers;
 
-        curr_train["numOfTransfers"] = transfer_stations.length;
-        toStation = string[index++];
-        curr_train["departureTime"] = string[index];
-
-        let arrayDep = string[index].split(":");
-
-        // Skip dashes
-        index += 2;
-
-        curr_train["arrivalTime"] = string[index];
-
-        let arrayArr = string[index].split(":");
+        currentTrain["departureTime"] = currentOption["trains"][0]["departAt"];
+        let arrayDep = currentTrain["departureTime"].split(":");
+        currentTrain["arrivalTime"] = currentOption["trains"][currentNumOfTransfers + 1]["arriveAt"];
+        let arrayArr = currentTrain["arrivalTime"].split(":");
 
         if((parseInt(arrayDep[0])) > (parseInt(arrayArr[0]))) {
-            curr_train["arrivalDate"] = tomorrow;
+            currentTrain["arrivalDate"] = tomorrow;
         } else {
-            curr_train["arrivalDate"] = date;
+            currentTrain["arrivalDate"] = date;
         }
 
-        // Skip useless info
-        index += 5;
+        [currentTrain["duration"], index] = getDuration(string, index + 2);
 
-        curr_train["duration"] = string[index];
+        currentTrain["trains"] = makeTrains(currentOption, date, tomorrow, currentTrain["duration"], currentNumOfTransfers);
 
-        curr_train["trains"] = makeTrains(fromStation, toStation, moreInfoJson[curr_cycle - 1], transfer_stations, date, tomorrow, curr_train["duration"]);
-
-        // Continue to the next train
-        index++;
-
-        trains.push(curr_train);
-        curr_train = {};
-    }
-
-    const left = checkHowManyTrainLseft(trains);
-    if(left === 0) {
-        trains = [];
-    } else {
-        trains = trains.slice(trains.length - left, trains.length);
+        trains.push(currentTrain);
+        currentTrain = {};
     }
     
     return trains;
 }
 
-function getRoute(string)
-{
-    let route = "";
-    
-    var timePattern = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
-
-    for(let index = 1; index < string.length; index++) {
-        if(index === 1) {
-            route += string[index];
-        }
-
-        if (timePattern.test(string[index + 1])) {
-            route += " - ";
-            route += string[index];
-            break;
-        }
-    }
-
-    return capitalizeFirstLetterOfRoute(route);
+function getRoute(string) {
+    let substrings = string.split(',');
+    return substrings[0].trim();
 }
 
 function translateNumberToStation(number)
@@ -286,7 +256,7 @@ function translateNumberToStation(number)
     }
 }
 
-async function get_trains_info(fromStationNumber, toStationNumber, date, tomorrow, language) {
+async function getTrainsInfo(fromStationNumber, toStationNumber, date, tomorrow, language) {
     const fromStation = translateNumberToStation(fromStationNumber);
     const toStation = translateNumberToStation(toStationNumber);
 
@@ -300,9 +270,9 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tomorro
 
     let fullResponseInfo = [];
 
-    let numOfTransfers = [];
-
     let trainsInfo = {};
+
+    let resultFromFullResponse = [];
 
     // Make a GET request to the webpage
     try {
@@ -315,10 +285,12 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tomorro
             let viaText = $(element).text();
             viaText = splitWords(viaText);
 
-            numOfTransfers[index] = ((viaText.length / 5) - 2).toFixed();
-
             if(index !== 0) {
-                fullResponseInfo.push(makeMoreInfoTrainJSON(viaText));
+                resultFromFullResponse = makeMoreInfoTrainJSON(viaText);
+
+                if (resultFromFullResponse != []) {
+                    fullResponseInfo.push(resultFromFullResponse);
+                }
             }
         });
 
@@ -327,11 +299,13 @@ async function get_trains_info(fromStationNumber, toStationNumber, date, tomorro
 
         divText = splitWords(divText);
 
-        trainsInfo = makeJsonSchedule(divText, numOfTransfers, fullResponseInfo, date, tomorrow);
+        let routeText = $('.show-schedule-search-form').text().trim();
+
+        trainsInfo = makeJsonSchedule(divText, fullResponseInfo, date, tomorrow);
 
         let result = {
             "date": date,
-            "route": getRoute(divText),
+            "route": getRoute(routeText),
             "totalTrains": trainsInfo.length,
             "options": trainsInfo,
         };
@@ -390,9 +364,9 @@ router.get('/:language/:from/:to', async (req, res) => {
     const formattedTomorrow = formatDate(tomorrow);
 
     try {
-        let trains_info = await get_trains_info(fromStation, toStation, formattedDate, formattedTomorrow, language);
+        let trainsInfo = await getTrainsInfo(fromStation, toStation, formattedDate, formattedTomorrow, language);
 
-        res.json(trains_info);
+        res.json(trainsInfo);
     } catch (error) {
         console.error('Error:', error);
         res.status(500).json({ error: 'Internal Server Error!' });
