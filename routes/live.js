@@ -20,7 +20,7 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
-function get_delay_info(info) {
+function getDelayInfo(info) {
   let delayMinutes = 0;
   let delayString = "";
   let delayInfo = "";
@@ -135,7 +135,7 @@ getEverythingPastLoadingStation = (station) => {
   return result;
 }
 
-async function get_trains_info(number, language, type) {
+async function getLiveInfo(number, language, type) {
 
   const stationName = translateNumberToStation(number);
 
@@ -180,7 +180,7 @@ async function get_trains_info(number, language, type) {
       let delayInfo = content(element).find('.col-lg-3').text();
       delayInfo = splitWords(delayInfo);
       if(delayInfo.length !== 0) {
-        delayInfo = get_delay_info(delayInfo);
+        delayInfo = getDelayInfo(delayInfo);
       }
 
       currInfo = makeTrainJson(timeNames, trainNum, delayInfo);
@@ -224,9 +224,9 @@ router.get('/:language/:stationNumber/:type', async (req, res) => {
   }
 
   try {
-    let trains_info = await get_trains_info(stationNumber, language, type);
+    let liveInfo = await getLiveInfo(stationNumber, language, type);
 
-    res.json(trains_info);
+    res.json(liveInfo);
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error!' });

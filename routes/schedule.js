@@ -109,9 +109,8 @@ function makeTrainsToOption(trains, language = 'bg') {
 
 }
 
-
 // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
-  // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+// needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 function makeOptionsTrains(options, language = 'bg') {
 	let result = [];
 
@@ -134,7 +133,7 @@ function makeOptionsTrains(options, language = 'bg') {
 	return result;
 }
 
-const get_trains_info = async (fromStation, toStation, date, language) => {
+const getTrainsInfo = async (fromStation, toStation, date, language) => {
 
 	const response = await axios.post('https://tickets.bdz.bg/portal/api/POSRoute/Trains', [
 	{
@@ -243,9 +242,9 @@ router.get('/:language/:from/:to/:date', async (req, res) => {
   }
 
   try {
-    let trains_info = await get_trains_info(fromStation, toStation, formattedDate, language);
+    let trainsInfo = await getTrainsInfo(fromStation, toStation, formattedDate, language);
 
-    res.json(trains_info);
+    res.json(trainsInfo);
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });

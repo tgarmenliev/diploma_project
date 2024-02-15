@@ -146,13 +146,13 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
   }
 
   try {
-    let trains_info = await getTrainNoInfo(trainNo, language, date);
+    let trainInfo = await getTrainNoInfo(trainNo, language, date);
 
-    if (!trains_info) {
+    if (!trainInfo) {
       throw new Error('Train info not found');
     }
 
-    const data = trains_info;
+    const data = trainInfo;
 
     res.json(data);
   } catch (error) {
