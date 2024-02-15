@@ -26,8 +26,8 @@ function splitWords(inputString) {
 
 function checkDepart(time) {
     let currDate = new Date();
-    let currTime = [currDate.getHours(), currDate.getMinutes()];
-
+    let options = {timeZone: 'Europe/Sofia', hour: '2-digit', minute: '2-digit', hour12: false};
+    let currTime = currDate.toLocaleTimeString('en-GB', options).split(':');
     if((parseInt(currTime[0])) > (parseInt(time[0]))) {
         return false;
     } else if((parseInt(currTime[0])) === (parseInt(time[0]))) {
