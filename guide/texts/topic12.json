@@ -1,0 +1,14 @@
+{
+    "title": "Какво е BulTrain?",
+    "englishTitle": "What is BulTrain?",
+    "subtitle": "Общ преглед на проекта.",
+    "englishSubtitle": "Overview of the project.",
+    "image": "topic12.jpg",
+    "content": [
+        {
+            "text": "Приложението BulTrain е създадено за удобство на пътуващите с услугите на Българските Държавни Железници. Неговата цел е пътниците да бъдат много по-информирани за своите пътувания. Едно от основните му предимства, спрямо уеб сайта на БДЖ, е наличието на офлайн пътуванията на потребителя, благодарение на които той може да провери кога трябва да се качи във влака и кога трябва да слезе. Друго основно предимство на мобилното приложение е наличието на точно този наръчник, който да отговаря на най-често задаваните въпроси в българските железници.\n\nПриложението тепърва предстои да расте и да се подобрява. Ако имате предложения за допълнителни теми, които да бъдат включени в този наръчник, или предложения и критики за работата на приложението, можете да използвате следния имейл адрес за комуникация: bultrain.app@gmail.com",
+            "englishText": "The BulTrain app is created for the convenience of passengers using the services of the Bulgarian State Railways. Its goal is to make passengers much more informed about their travels. One of its main advantages, compared to the BDZ website, is the presence of the user's offline trips, thanks to which he can check when he needs to get on the train and when he needs to get off. Another main advantage of the mobile application is the presence of this guide that answers the most frequently asked questions in Bulgarian railways.\n\nThe application is still to grow and improve. If you have suggestions for additional topics to be included in this guide, or suggestions and critics for the application, you can use the following email address for communication: bultrain.app@gmail.com",
+            "image": "bultrain-logo.jpg"
+        }
+    ]
+}
