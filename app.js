@@ -5,7 +5,6 @@ const path = require('path');
 
 require('dotenv').config();
 
-// const apiRoutes = require('./routes/api');
 const liveRoutes = require('./routes/live');
 const trainInfoRoutes = require('./routes/trainInfo');
 const scheduleRoutes = require('./routes/schedule');
@@ -21,7 +20,6 @@ app.use(cors())
 // Serve static images from the '/guide/images' directory
 app.use('/guide/images', express.static(path.join(__dirname, 'guide', 'images')));
 
-// app.use('/api', apiRoutes);
 app.use('/api/live', liveRoutes);
 app.use('/api/train-info', trainInfoRoutes);
 app.use('/api/schedule', scheduleRoutes);

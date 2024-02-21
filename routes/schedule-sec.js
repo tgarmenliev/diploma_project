@@ -1,4 +1,6 @@
 // routes/schedule-sec.js
+
+// Import required modules
 const express = require('express');
 const router = express.Router();
 
@@ -6,10 +8,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 const stations = require('../stations.json');
-function capitalizeFirstLetterOfRoute(route) {
-    return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
-}
 
+// Function to split a string into words and remove spaces
+// This function also removes the string "Най-бързо пътуване" as it is not needed
 function splitWords(inputString) {
 
     let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
@@ -18,16 +19,18 @@ function splitWords(inputString) {
     textWithoutSpaces = textWithoutSpaces.split(/\s+/);
   
     // Filter out any empty strings
-    // The words "Най-бързо" and "пътуване" are just confusing the algorithm so we remove them
+    // The words "Най-бързо" and "пътуване" are just confusing the algorithm so remove them
     textWithoutSpaces = textWithoutSpaces.filter(word => word !== '' && word !== 'Най-бързо' && word !== 'пътуване' && word !== 'Fastest' && word !== 'trip');
 
     return textWithoutSpaces;
 }
 
+// Function to check if the departure time is in the future
 function checkDepart(time) {
     let currDate = new Date();
     let options = {timeZone: 'Europe/Sofia', hour: '2-digit', minute: '2-digit', hour12: false};
     let currTime = currDate.toLocaleTimeString('en-GB', options).split(':');
+
     if((parseInt(currTime[0])) > (parseInt(time[0]))) {
         return false;
     } else if((parseInt(currTime[0])) === (parseInt(time[0]))) {
@@ -39,6 +42,7 @@ function checkDepart(time) {
     return true;
 }
 
+// Function to create an object with information about the trains from one option
 function makeMoreInfoTrainJSON(string) {
     if (string.length === 0) {
         return [];
@@ -80,6 +84,8 @@ function makeMoreInfoTrainJSON(string) {
     return result;
 }
 
+// Function to create an object with information about the trains from one option
+// The information is advanced here and it receives the result from the previous function
 function makeTrains(moreInfoJson, date, tomorrow, duration, numOfTransfers) {
     let currentTrain = {};
     let trains = [];
@@ -179,6 +185,7 @@ function makeTrains(moreInfoJson, date, tomorrow, duration, numOfTransfers) {
     return trains;
 }
 
+// Function to get the duration of the trip from the scraped content
 function getDuration(string, fromIndex) {
     let duration = "";
     let index = fromIndex;
@@ -191,6 +198,7 @@ function getDuration(string, fromIndex) {
     return [duration, index];
 }
 
+// Function to create an object with information about the options for the travel
 function makeJsonSchedule(string, moreInfoJson, date, tomorrow) 
 {
     let trains = [];
@@ -241,11 +249,13 @@ function makeJsonSchedule(string, moreInfoJson, date, tomorrow)
     return trains;
 }
 
+// Function to get the route from the scraped content
 function getRoute(string) {
     let substrings = string.split(',');
     return substrings[0].trim();
 }
 
+// Function to translate the station number to the station name
 function translateNumberToStation(number)
 {
     const foundStation = stations.find((s) => parseInt(s.id) === parseInt(number));
@@ -256,6 +266,7 @@ function translateNumberToStation(number)
     }
 }
 
+// Function to get the schedule information from the BDZ website
 async function getTrainsInfo(fromStationNumber, toStationNumber, date, tomorrow, language) {
     const fromStation = translateNumberToStation(fromStationNumber);
     const toStation = translateNumberToStation(toStationNumber);
@@ -317,6 +328,7 @@ async function getTrainsInfo(fromStationNumber, toStationNumber, date, tomorrow,
     }
 };
 
+// Function to format the date as a string in the format "dd.mm.yyyy"
 function formatDate(date) {
     let string = "";
 
@@ -336,6 +348,7 @@ function formatDate(date) {
     return string;
 }
 
+// Define the route for the schedule
 router.get('/:language/:from/:to', async (req, res) => {
     let fromStation = null;
     let toStation = null;

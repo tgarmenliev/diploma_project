@@ -1,9 +1,12 @@
 // routes/schedule.js
+
+// Import required modules
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const stations = require('../stations.json');
 
+// Function to transliterate Bulgarian to English
 function transliterateBulgarianToEnglish(text) {
   const cyrillicMap = {
     'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ж': 'zh', 'з': 'z',
@@ -19,6 +22,7 @@ function transliterateBulgarianToEnglish(text) {
   return text.split('').map(char => cyrillicMap[char] || char).join('');
 }
 
+// Function to translate station name to English using the stations.json file
 function translateStationToEnglish(station) {
   let foundStation = stations.find((s) => s.name === station.toUpperCase());
   if (foundStation) {
@@ -30,10 +34,12 @@ function translateStationToEnglish(station) {
   }
 }
 
+// Function to capitalize the first letter of a route
 function capitalizeFirstLetterOfRoute(route) {
   return route.toLowerCase().replace(/(?:^|\s)\S/g, (match) => match.toUpperCase());
 }
 
+// Function to translate train type from Bulgarian to English
 function translateTrainType(trainType) {
   switch(trainType) {
     case "ПВ":
@@ -47,22 +53,7 @@ function translateTrainType(trainType) {
   }
 }
 
-// time format
-// "2023-11-15T14:29:39.3985234+02:00"
-
-function splitWords(inputString) {
-
-  let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
-
-  // Use a regular expression to split words by spaces
-  textWithoutSpaces = textWithoutSpaces.split(/\s+/);
-
-  // Filter out any empty strings
-  textWithoutSpaces = textWithoutSpaces.filter(word => word !== '');
-
-  return textWithoutSpaces;
-}
-
+// Function to create an object with options information
 function makeTrainsToOption(trains, language = 'bg') {
   // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
@@ -72,7 +63,7 @@ function makeTrainsToOption(trains, language = 'bg') {
   {
     let currentTrain = {};
 
-    let nameWithoutSpaces = splitWords(trains[index].name);
+    let nameWithoutSpaces = trains[index].name.split(" ");
 
     let splitStations = trains[index].stations.split(" - ");
     
@@ -111,6 +102,7 @@ function makeTrainsToOption(trains, language = 'bg') {
 
 // needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
 // needed from trains: name, stations, depart, arrive, total_time, time_to_wait
+// Function to create an object with schedule information
 function makeOptionsTrains(options, language = 'bg') {
 	let result = [];
 
@@ -133,6 +125,7 @@ function makeOptionsTrains(options, language = 'bg') {
 	return result;
 }
 
+// Function to get train information from the API from BDZ tickets website
 const getTrainsInfo = async (fromStation, toStation, date, language) => {
 
 	const response = await axios.post('https://tickets.bdz.bg/portal/api/POSRoute/Trains', [
@@ -174,6 +167,9 @@ function isValidDateFormat(dateString) {
   return dateRegex.test(dateString);
 }
 
+// time format
+// "2023-11-15T14:29:39.3985234+02:00"
+// Function to format the date in "YYYY-MM-DDTHH:MM:SS.0000000+02:00" format
 function formatDate(dateString) {
     // check if the date is in format "YYYY-MM-DD"
     if (!isValidDateFormat(dateString)) {
@@ -213,6 +209,7 @@ function formatDate(dateString) {
     return string;
 }
 
+// Define a route with parameters
 router.get('/:language/:from/:to/:date', async (req, res) => {
   let fromStation = null;
   let toStation = null;

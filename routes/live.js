@@ -1,4 +1,6 @@
 // routes/live.js
+
+// Import required modules
 const express = require('express');
 const router = express.Router();
 
@@ -7,6 +9,7 @@ const cheerio = require('cheerio');
 
 const stations = require('../stations.json');
 
+// Function to split words and remove spaces
 function splitWords(inputString) {
 
   let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
@@ -20,6 +23,7 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
+// Function to get delay information about one train
 function getDelayInfo(info) {
   let delayMinutes = 0;
   let delayString = "";
@@ -60,6 +64,7 @@ function getDelayInfo(info) {
   };
 }
 
+// Function to create an object for a train
 function makeTrainJson(string, trainNum, delayInfo) {
   let result = {};
 
@@ -110,6 +115,7 @@ function makeTrainJson(string, trainNum, delayInfo) {
   return result;
 }
 
+// Function to translate station number to station name
 function translateNumberToStation(number) {
   const foundStation = stations.find((s) => s.id === number);
   if (foundStation) {
@@ -119,6 +125,7 @@ function translateNumberToStation(number) {
   }
 }
 
+// Function to get everything past "loading..." in the station name scraped content
 getEverythingPastLoadingStation = (station) => {
   let loadingStation = false;
   let result = "";
@@ -135,6 +142,7 @@ getEverythingPastLoadingStation = (station) => {
   return result;
 }
 
+// Function to get live table for a station
 async function getLiveInfo(number, language, type) {
 
   const stationName = translateNumberToStation(number);
@@ -151,10 +159,6 @@ async function getLiveInfo(number, language, type) {
 
     // Load the HTML content of the page into Cheerio
     const content = cheerio.load(response.data);
-
-    //const divSelector = '.mb-0';
-    //let divText = content(divSelector).text().trim();
-    //console.log(divText);
 
     let result = {};
 

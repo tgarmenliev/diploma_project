@@ -1,10 +1,13 @@
 // routes/trainInfo.js
+
+// Import required modules
 const express = require('express');
 const router = express.Router();
 
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+// Function to split a string into words and remove spaces
 function splitWords(inputString) {
 
   let textWithoutSpaces = inputString.replace(/\s\s+/g, ' ');
@@ -18,6 +21,7 @@ function splitWords(inputString) {
   return nonEmptyWords;
 }
 
+// Function to create an object with train information
 function makeJsonTrainInfo(string, trainNumber, date) {
   let result = {};
 
@@ -71,10 +75,11 @@ function makeJsonTrainInfo(string, trainNumber, date) {
   return result;
 }
 
+// Function to get train information from the BDZ website
 async function getTrainNoInfo(trainNo, language, date) {
   const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo + '/' + date;
 
-  // Selector for the specific <div> I want to scrape
+  // Selector for the specific <div> containing the train information
   const divSelector = '.bg-white.p-4.mb-4';
 
   // Make a GET request to the webpage
@@ -98,6 +103,7 @@ async function getTrainNoInfo(trainNo, language, date) {
   }
 }
 
+// Function to format the date in "DD.MM.YYYY" format
 function formatDate(inputDate) {
   // Check if the input date is in "DD.MM.YYYY" format
   const ddmmRegex = /^\d{2}.\d{2}.\d{4}$/;
@@ -156,7 +162,6 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
 
     res.json(data);
   } catch (error) {
-    // Handle the error appropriately, e.g., send an error response
     console.error('Error:', error);
     res.status(404).json({ error: 'Train info not found' });
   }

@@ -1,7 +1,10 @@
 // routes/guide-topics.js
+
+// Import required modules
 const express = require('express');
 const router = express.Router();
 
+// Import the JSON files with the guide topics
 const topic1 = require('../guide/texts/topic1.json');
 const topic2 = require('../guide/texts/topic2.json');
 const topic3 = require('../guide/texts/topic3.json');
@@ -17,6 +20,7 @@ const topic12 = require('../guide/texts/topic12.json');
 
 const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11, topic12];
 
+// Function to make the response with all topics in the requested language
 function makeAllTopicsJson(language) {
     let result = [];
 
@@ -33,6 +37,7 @@ function makeAllTopicsJson(language) {
     return result;
 }
 
+// Define the route for the all topics from the guide
 router.get('/:language', async (req, res) => {
     const language = req.params.language;
     if(language !== "bg" && language !== "en") {
