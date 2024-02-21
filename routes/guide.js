@@ -13,8 +13,9 @@ const topic8 = require('../guide/texts/topic8.json');
 const topic9 = require('../guide/texts/topic9.json');
 const topic10 = require('../guide/texts/topic10.json');
 const topic11 = require('../guide/texts/topic11.json');
+const topic12 = require('../guide/texts/topic12.json');
 
-const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11];
+const allTopics = [topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, topic9, topic10, topic11, topic12];
 
 const getTopic = (topic, language) => {
     chosenTopic = allTopics[topic];
