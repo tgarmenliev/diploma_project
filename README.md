@@ -1,3 +1,9 @@
+<h1 align="center">
+  <br>
+   <img src="./guide/images/bultrain-logo.jpg" alt="Logo BulTrain" title="Сървърен софтуер на приложението BulTrain" />
+  <br>
+</h1>
+
 <p align="center">
   Сървърен софтуер за извличане на полезна информация, свързана с железопътния транспорт в България.
 </p>
