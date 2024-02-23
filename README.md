@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-   <img src="./guide/images/bultrain-logo.jpg" alt="Logo BulTrain" title="Сървърен софтуер на приложението BulTrain" />
+   <img src="./guide/images/bultrain-logo.jpg" alt="Logo BulTrain" title="Сървърен софтуер на приложението BulTrain" width="500"/>
   <br>
 </h1>
 
