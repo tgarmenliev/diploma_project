@@ -56,7 +56,6 @@ router.get('/:language/:topic', async (req, res) => {
   try {
       topic = parseInt(req.params.topic);
   } catch (error) {
-      // Handle the error appropriately, e.g., send an error response
       console.error('Error:', error);
       res.status(400).json({ error: 'Bad Request! Please provide valid number for topic!' });
       return;

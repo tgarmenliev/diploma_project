@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-// Function to process stations
 function processStations(inputFilePath, outputFilePath) {
   try {
     // Read the existing stations from the input file
@@ -44,7 +43,6 @@ function processStations(inputFilePath, outputFilePath) {
   }
 }
 
-// Example usage
 const inputFilePath = '/Users/tisho/Desktop/backend/diploma_project/test/stations.json';
 const outputFilePath = 'new_names_stations.json';
 

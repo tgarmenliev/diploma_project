@@ -144,7 +144,7 @@ const getTrainsInfo = async (fromStation, toStation, date, language) => {
 	throw Error(response.message);
 	}
 
-	//needed: date, name, options
+	// needed: date, name, options
 	// needed from options: total_time, depart_time, arrive_time, depart_date, arrive_date, num_of_transfers, transfer_stations, trains
 	// needed from trains: name, stations, depart, arrive, total_time, time_to_wait
 
