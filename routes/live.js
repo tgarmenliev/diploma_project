@@ -106,7 +106,8 @@ function makeTrainJson(string, trainNum, delayInfo) {
   }
 
   let delayString = result["delayInfo"]["delayString"];
-  if (result["isDelayed"] && (delayString.includes("Трансбордиране") || delayString.includes("Bus") || delayString.includes("more information") || delayString.includes("допълнителна информация"))) {
+  console.log(delayString);
+  if (result["isDelayed"] && (delayString.includes("Трансбордиране") || delayString.includes("bus") || delayString.includes("more information") || delayString.includes("допълнителна информация"))) {
     result["direction"] = result["time"] + " " + result["direction"];
     result["time"] = result["delayedTime"];
     result["delayedTime"] = 0;
