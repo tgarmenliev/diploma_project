@@ -162,9 +162,9 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
       throw new Error('Train info not found');
     }
 
-    const data = trainInfo;
+    trainInfo['trainNumber'] = trainNo;
 
-    res.json(data);
+    res.json(trainInfo);
   } catch (error) {
     console.error('Error:', error);
     res.status(404).json({ error: 'Train info not found' });
