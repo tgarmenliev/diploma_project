@@ -31,7 +31,7 @@ function makeJsonTrainInfo(string, trainNumber, date) {
   for(let index = 0; index < string.length; index++) {
     type += string[index];
 
-    if(string[index].includes('влак') || string[index].includes('Train')) {
+    if(string[index].includes('влак') || string[index].includes('Train') || string[index].includes('автобус') || string[index].includes('Bus')) {
       fromIndex = index + 1;
       break;
     }
@@ -77,6 +77,10 @@ function makeJsonTrainInfo(string, trainNumber, date) {
 
 // Function to get train information from the BDZ website
 async function getTrainNoInfo(trainNo, language, date) {
+  if (trainNo[0] == 'A' || trainNo[0] == 'А') {
+    trainNo = trainNo.slice(1);
+    trainNo += '1';
+  }
   const url = 'https://razpisanie.bdz.bg/' + language + '/train-info/' + trainNo + '/' + date;
 
   // Selector for the specific <div> containing the train information
@@ -133,7 +137,7 @@ router.get('/:language/:trainNo/:date?', async (req, res) => {
     return;
   }
 
-  if(trainNo.length < 3 || trainNo.length > 5) {
+  if(trainNo.length < 3 || trainNo.length > 6) {
     res.status(404).json({ error: 'Bad request! Invalid train number!' });
     return;
   }
