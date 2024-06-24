@@ -11,6 +11,7 @@ const scheduleRoutes = require('./routes/schedule');
 const scheduleSecRoutes = require('./routes/schedule-sec');
 const guide = require('./routes/guide');
 const guideTopics = require('./routes/guide-topics');
+const translator = require('./routes/translator');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -26,6 +27,7 @@ app.use('/api/schedule', scheduleRoutes);
 app.use('/api/schedule', scheduleSecRoutes);
 app.use('/api/guide', guide);
 app.use('/api/guide', guideTopics);
+app.use('/api/translator', translator);
 
 // Start the server
 app.listen(port, () => {
